@@ -4,7 +4,8 @@
 			"SPQRobin",
 			"Esketti",
 			"McDutchie",
-			"Siebrand"
+			"Siebrand",
+			"Mar(c)"
 		]
 	},
 	"bs-whoisonline-desc": "Geeft een lijst weer met gebruikers die nu online zijn",
@@ -17,6 +18,6 @@
 	"bs-whoisonline-pref-orderby-time": "Uptime",
 	"bs-whoisonline-pref-orderby-name": "Naam",
 	"bs-whoisonline-pref-interval": "Tijd tussen bijwerken in seconden:",
-	"bs-whoisonline-tag-whoisonlinecount-desc": "Geeft het aantal aangemelde gebruikers weer.",
-	"bs-whoisonline-tag-whoisonlinepopup-desc": "Geeft een opklapbare lijst weer met de momenteel aangemelde gebruikers.\n\nMogelijke parameters:\n;<code>anchortext</code>: de tekst waaraan de lijst moet worden verankerd."
+	"bs-whoisonline-tag-whoisonlinecount-desc": "Geeft het aantal gebruikers die zich in de afgelopen 10 minuten hebben aangemeld.",
+	"bs-whoisonline-tag-whoisonlinepopup-desc": "Toont alle gebruikers die zich in de afgelopen 10 minuten hebben aangemeld."
 }
