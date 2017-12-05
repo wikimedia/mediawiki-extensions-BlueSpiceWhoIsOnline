@@ -1,7 +1,8 @@
 {
 	"@metadata": {
 		"authors": [
-			"Rachmat.Wahidi"
+			"Rachmat.Wahidi",
+			"Rachmat04"
 		]
 	},
 	"bs-whoisonline-tag-whoisonlinecount-desc": "Tampilkan jumlah semua pengguna yang masuk log dalam 10 menit terakhir.",
