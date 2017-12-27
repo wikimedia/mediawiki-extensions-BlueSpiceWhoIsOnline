@@ -7,7 +7,7 @@
 	"descriptionmsg": "bs-whoisonline-desc",
 	"type": "bluespice",
 	"bsgExtensions": {
-		"WhoIsOnline": {
+		"BlueSpiceWhoIsOnline": {
 			"className": "WhoIsOnline",
 			"extPath": "/BlueSpiceWhoIsOnline"
 		}
