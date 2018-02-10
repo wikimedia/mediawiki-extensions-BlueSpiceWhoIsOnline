@@ -45,8 +45,6 @@ class WhoIsOnline extends BsExtensionMW {
 	 * Initialization of ShoutBox extension
 	 */
 	protected function initExt() {
-		wfProfileIn( 'BS::'.__METHOD__ );
-
 		// Hooks
 		$this->setHook( 'ParserFirstCallInit' );
 		$this->setHook( 'BeforePageDisplay');
@@ -59,8 +57,6 @@ class WhoIsOnline extends BsExtensionMW {
 		BsConfig::registerVar( 'MW::WhoIsOnline::OrderBy', 'onlinetime', BsConfig::LEVEL_USER | BsConfig::TYPE_STRING | BsConfig::USE_PLUGIN_FOR_PREFS, 'bs-whoisonline-pref-orderby', 'select' );
 		BsConfig::registerVar( 'MW::WhoIsOnline::MaxIdleTime', 600, BsConfig::LEVEL_PUBLIC | BsConfig::TYPE_INT, 'bs-whoisonline-pref-maxidletime', 'int' );
 		BsConfig::registerVar( 'MW::WhoIsOnline::Interval', 10, BsConfig::LEVEL_PUBLIC | BsConfig::RENDER_AS_JAVASCRIPT | BsConfig::TYPE_INT, 'bs-whoisonline-pref-interval', 'int' );
-
-		wfProfileOut( 'BS::'.__METHOD__ );
 	}
 
 	/**
@@ -193,8 +189,6 @@ class WhoIsOnline extends BsExtensionMW {
 	 * @return ViewWidget.
 	 */
 	public function onWidgetListKeyword() {
-		wfProfileIn( 'BS::'.__METHOD__ );
-
 		$oWidgetView = new ViewWidget();
 		$oWidgetView
 			->setId( 'bs-whoisonline' )
@@ -203,7 +197,6 @@ class WhoIsOnline extends BsExtensionMW {
 			->setTooltip( wfMessage( 'bs-whoisonline-widget-title' )->plain() )
 			->setAdditionalBodyClasses( array( 'bs-nav-links', 'bs-whoisonline-portlet' ) ); //For correct margin and fontsize
 
-		wfProfileOut( 'BS::'.__METHOD__ );
 		return $oWidgetView;
 	}
 
@@ -266,12 +259,9 @@ class WhoIsOnline extends BsExtensionMW {
 	 * @return array Rendered HTML and flags. Used by magic word function hook as well as by onUsersCountTag.
 	 */
 	public function onUsersCount( $oParser ) {
-		wfProfileIn( 'BS::'.__METHOD__ );
-
 		$oParser ->getOutput()->setProperty( 'bs-tag-userscount', 1 );
 		$sOut = '<span class="bs-whoisonline-count">'.count( $this->getWhoIsOnline() ).'</span>';
 
-		wfProfileOut( 'BS::'.__METHOD__ );
 		return array( $sOut, 'noparse' => 1 );
 	}
 
@@ -297,7 +287,6 @@ class WhoIsOnline extends BsExtensionMW {
 		$oParser->disableCache();
 		$oParser ->getOutput()->setProperty( 'bs-tag-userslink', 1 );
 
-		wfProfileIn( 'BS::'.__METHOD__ );
 		$sLinkTitle = BsCore::sanitize( $sLinkTitle, '', BsPARAMTYPE::STRING );
 
 		if( empty( $sLinkTitle ) ) $sLinkTitle = wfMessage('bs-whoisonline-widget-title')->plain();
@@ -306,7 +295,6 @@ class WhoIsOnline extends BsExtensionMW {
 		$oWhoIsOnlineTagView->setPortlet( $this->getPortlet() );
 		$sOut = $oWhoIsOnlineTagView->execute();
 
-		wfProfileOut( 'BS::'.__METHOD__ );
 		return $oParser->insertStripItem( $sOut, $oParser->mStripState );
 	}
 
@@ -316,8 +304,6 @@ class WhoIsOnline extends BsExtensionMW {
 	 * @return string Rendered HTML
 	 */
 	private function getPortlet( $vWrapperId = false, $iLimit = 0 ) {
-		wfProfileIn( 'BS::'.__METHOD__ );
-
 		$aWhoIsOnline = $this->getWhoIsOnline();
 
 		// who (names)
@@ -337,7 +323,6 @@ class WhoIsOnline extends BsExtensionMW {
 			$iCount++;
 		}
 
-		wfProfileOut( 'BS::'.__METHOD__ );
 		return $oWhoIsOnlineWidgetView;
 	}
 
@@ -380,10 +365,7 @@ class WhoIsOnline extends BsExtensionMW {
 	 * @return type
 	 */
 	private function getWhoIsOnline( $sOrderBy = '', $bForceReload = false){
-		wfProfileIn( 'BS::'.__METHOD__ );
-
 		if ( isset( $this->aWhoIsOnlineData[$sOrderBy] ) && $bForceReload === false ) {
-			wfProfileOut( 'BS::'.__METHOD__ );
 			return $this->aWhoIsOnlineData[$sOrderBy];
 		}
 
@@ -421,7 +403,6 @@ class WhoIsOnline extends BsExtensionMW {
 		while( $oRow = $dbr->fetchObject($rRes) )
 			$this->aWhoIsOnlineData[$sOrderBy][] = $oRow;
 
-		wfProfileOut( 'BS::'.__METHOD__ );
 		return $this->aWhoIsOnlineData[$sOrderBy];
 	}
 
@@ -454,7 +435,6 @@ class WhoIsOnline extends BsExtensionMW {
 				return true;
 
 		//log action
-		wfProfileIn( 'BS::'.__METHOD__ );
 		$oRequest->setSessionData( $this->mExtensionKey.'::lastLoggedPageHash', $sCurrentPageHash );
 		$oRequest->setSessionData( $this->mExtensionKey.'::lastLoggedTime', $iCurrentTimestamp );
 
@@ -482,7 +462,6 @@ class WhoIsOnline extends BsExtensionMW {
 
 		$dbw->insert( 'bs_whoisonline', $aNewRow );
 
-		wfProfileOut( 'BS::'.__METHOD__ );
 		return true;
 	}
 
