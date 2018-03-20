@@ -62,6 +62,9 @@ class ViewWhoIsOnlineTag extends ViewBaseElement {
 	public function execute( $params = false ) {
 		$sTargetId = $this->getTargetId().'-target';
 
+		$config = \BlueSpice\Services::getInstance()->getConfigFactory()
+			->makeConfig( 'bsg' );
+
 		$sLink = Html::element(
 			'a',
 			array(
@@ -69,7 +72,7 @@ class ViewWhoIsOnlineTag extends ViewBaseElement {
 				'id' => $this->getTargetId(),
 				'data-bs-tt-title' => wfMessage('bs-whoisonline-widget-title')->plain(),
 				'data-bs-tt-target' => $sTargetId,
-				'data-bs-tt-maxheight' => (BsConfig::get('MW::WhoIsOnline::LimitCount')*20)
+				'data-bs-tt-maxheight' => $config->get( 'WhoIsOnlineLimitCount' ) * 20
 			),
 			$this->getOption( 'title' )
 		);

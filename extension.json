@@ -6,15 +6,22 @@
 	"author": "Markus Glaser",
 	"descriptionmsg": "bs-whoisonline-desc",
 	"type": "bluespice",
-	"bsgExtensions": {
-		"BlueSpiceWhoIsOnline": {
-			"className": "WhoIsOnline",
-			"extPath": "/BlueSpiceWhoIsOnline"
+	"attributes": {
+		"BlueSpiceFoundation": {
+			"Extensions": {
+				"BlueSpiceWhoIsOnline": {
+					"className": "WhoIsOnline",
+					"extPath": "/BlueSpiceWhoIsOnline",
+					"configDefinitions": {
+						"WhoIsOnlineMaxIdleTime": "\\BlueSpice\\WhoIsOnline\\ConfigDefinition\\MaxIdleTime::getInstance",
+						"WhoIsOnlineInterval": "\\BlueSpice\\WhoIsOnline\\ConfigDefinition\\Interval::getInstance"
+					}
+				}
+			}
 		}
 	},
-
 	"MessagesDirs": {
-		"WhoIsOnline": [
+		"BlueSpiceWhoIsOnline": [
 			"i18n"
 		]
 	},
@@ -40,6 +47,29 @@
 	"Hooks": {
 		"LoadExtensionSchemaUpdates": "WhoIsOnline::getSchemaUpdates"
 	},
+	"DefaultUserOptions": {
+		"bs-whoisonline-pref-limitcount": 7,
+		"bs-whoisonline-pref-orderby": "onlinetime"
+	},
+	"config_prefix": "bsg",
+	"config": {
+		"WhoIsOnlineMaxIdleTime": {
+			"value": 600,
+			"descriptionmsg": "bs-whoisonline-pref-maxidletime",
+			"public": true
+		},
+		"WhoIsOnlineInterval": {
+			"value": 10,
+			"descriptionmsg": "bs-whoisonline-pref-interval",
+			"public": true
+		}
+	},
+	"Hooks": {
+		"GetPreferences": [
+			"\\BlueSpice\\WhoIsOnline\\Hook\\GetPreferences\\LimitCount::callback",
+			"\\BlueSpice\\WhoIsOnline\\Hook\\GetPreferences\\OrderBy::callback"
+		]
+	},
 	"load_composer_autoloader" : true,
-	"manifest_version": 1
+	"manifest_version": 2
 }

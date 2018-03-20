@@ -52,11 +52,6 @@ class WhoIsOnline extends BsExtensionMW {
 		$this->setHook( 'BSWidgetListHelperInitKeyWords' );
 		$this->setHook( 'BSInsertMagicAjaxGetData' );
 		$this->setHook( 'BsAdapterAjaxPingResult' );
-
-		BsConfig::registerVar( 'MW::WhoIsOnline::LimitCount', 7, BsConfig::LEVEL_USER | BsConfig::RENDER_AS_JAVASCRIPT | BsConfig::TYPE_INT, 'bs-whoisonline-pref-limitcount', 'int' );
-		BsConfig::registerVar( 'MW::WhoIsOnline::OrderBy', 'onlinetime', BsConfig::LEVEL_USER | BsConfig::TYPE_STRING | BsConfig::USE_PLUGIN_FOR_PREFS, 'bs-whoisonline-pref-orderby', 'select' );
-		BsConfig::registerVar( 'MW::WhoIsOnline::MaxIdleTime', 600, BsConfig::LEVEL_PUBLIC | BsConfig::TYPE_INT, 'bs-whoisonline-pref-maxidletime', 'int' );
-		BsConfig::registerVar( 'MW::WhoIsOnline::Interval', 10, BsConfig::LEVEL_PUBLIC | BsConfig::RENDER_AS_JAVASCRIPT | BsConfig::TYPE_INT, 'bs-whoisonline-pref-interval', 'int' );
 	}
 
 	/**
@@ -158,22 +153,6 @@ class WhoIsOnline extends BsExtensionMW {
 	}
 
 	/**
-	 * Sets parameters for more complex options in preferences
-	 * @param string $sAdapterName Name of the adapter, e.g. MW
-	 * @param BsConfig $oVariable Instance of variable
-	 * @return array Preferences options
-	 */
-	public function runPreferencePlugin( $sAdapterName, $oVariable ) {
-		$aPrefs = array(
-			'options' => array(
-				wfMessage( 'bs-whoisonline-pref-orderby-name' )->plain() => 'name',
-				wfMessage( 'bs-whoisonline-pref-orderby-time' )->plain() => 'onlinetime',
-			)
-		);
-		return $aPrefs;
-	}
-
-	/**
 	 * Event-Handler for 'MW::Utility::WidgetListHelper::InitKeywords'. Registers a callback for the WHOISONLINE Keyword.
 	 * @param BsEvent $oEvent The Event object
 	 * @param array $aKeywords An array of Keywords array( 'KEYWORD' => $callable )
@@ -190,10 +169,14 @@ class WhoIsOnline extends BsExtensionMW {
 	 */
 	public function onWidgetListKeyword() {
 		$oWidgetView = new ViewWidget();
+		$portletBody = $this->getPortlet(
+			false,
+			$this->getUser()->getOption( 'bs-whoisonline-pref-limitcount' )
+		);
 		$oWidgetView
 			->setId( 'bs-whoisonline' )
 			->setTitle( wfMessage( 'bs-whoisonline-widget-title' )->plain() )
-			->setBody( $this->getPortlet(false, BsConfig::get('MW::WhoIsOnline::LimitCount') )->execute() )
+			->setBody( $portletBody->execute() )
 			->setTooltip( wfMessage( 'bs-whoisonline-widget-title' )->plain() )
 			->setAdditionalBodyClasses( array( 'bs-nav-links', 'bs-whoisonline-portlet' ) ); //For correct margin and fontsize
 
@@ -369,10 +352,13 @@ class WhoIsOnline extends BsExtensionMW {
 			return $this->aWhoIsOnlineData[$sOrderBy];
 		}
 
-		if ( empty( $sOrderBy ) ) $sOrderBy = BsConfig::get( 'MW::WhoIsOnline::OrderBy' );
+		if ( empty( $sOrderBy ) ) {
+			$sOrderBy = $this->getUser()->getOption(
+				'bs-whoisonline-pref-orderby'
+			);
+		}
 
-		$sMaxIdle = BsConfig::get( 'MW::WhoIsOnline::MaxIdleTime' );
-		//$iLimit   = BsConfig::get( 'MW::WhoIsOnline::LimitCount' );
+		$sMaxIdle = $this->getConfig()->get( 'WhoIsOnlineMaxIdleTime' );
 
 		$this->aWhoIsOnlineData[$sOrderBy] = array();
 
@@ -427,8 +413,8 @@ class WhoIsOnline extends BsExtensionMW {
 		$vLastLoggedPageHash = $oRequest->getSessionData( $this->mExtensionKey.'::lastLoggedPageHash' );
 		$vLastLoggedTime     = $oRequest->getSessionData( $this->mExtensionKey.'::lastLoggedTime' );
 		$sCurrentPageHash    = md5( $iPageId.$iPageNamespaceId.$sPageTitle ); //this combination should be pretty unique, even with specialpages.
-		$iMaxIdleTime        = BsConfig::get( 'MW::WhoIsOnline::MaxIdleTime' );
-		$iInterval           = BsConfig::get( 'MW::WhoIsOnline::Interval' );
+		$iMaxIdleTime = $this->getConfig()->get( 'WhoIsOnlineMaxIdleTime' );
+		$iInterval = $this->getConfig()->get( 'WhoIsOnlineInterval' );
 
 		if ( $vLastLoggedPageHash == $sCurrentPageHash
 			&& $vLastLoggedTime + $iMaxIdleTime + $iInterval + ($iMaxIdleTime * 0.1) > $iCurrentTimestamp )
