@@ -45,7 +45,11 @@
 		"remoteExtPath": "BlueSpiceWhoIsOnline/resources"
 	},
 	"Hooks": {
-		"LoadExtensionSchemaUpdates": "WhoIsOnline::getSchemaUpdates"
+		"LoadExtensionSchemaUpdates": "WhoIsOnline::getSchemaUpdates",
+		"GetPreferences": [
+			"\\BlueSpice\\WhoIsOnline\\Hook\\GetPreferences\\LimitCount::callback",
+			"\\BlueSpice\\WhoIsOnline\\Hook\\GetPreferences\\OrderBy::callback"
+		]
 	},
 	"DefaultUserOptions": {
 		"bs-whoisonline-pref-limitcount": 7,
@@ -63,12 +67,6 @@
 			"descriptionmsg": "bs-whoisonline-pref-interval",
 			"public": true
 		}
-	},
-	"Hooks": {
-		"GetPreferences": [
-			"\\BlueSpice\\WhoIsOnline\\Hook\\GetPreferences\\LimitCount::callback",
-			"\\BlueSpice\\WhoIsOnline\\Hook\\GetPreferences\\OrderBy::callback"
-		]
 	},
 	"load_composer_autoloader" : true,
 	"manifest_version": 2
