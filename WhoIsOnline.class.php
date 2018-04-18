@@ -299,9 +299,13 @@ class WhoIsOnline extends BsExtensionMW {
 			if( $iLimit > 0 && $iCount > $iLimit ) break;
 
 			$oUser = User::newFromId( $oWhoIsOnline->wo_user_id );
+			$userHelper = \BlueSpice\Services::getInstance()
+				->getBSUtilityFactory()->getUserHelper( $oUser );
 			$oWhoIsOnlineItemWidgetView = new ViewWhoIsOnlineItemWidget();
 			$oWhoIsOnlineItemWidgetView->setUser( $oUser );
-			$oWhoIsOnlineItemWidgetView->setUserDisplayName( $this->mCore->getUserDisplayName( $oUser ) );
+			$oWhoIsOnlineItemWidgetView->setUserDisplayName(
+				$userHelper->getDisplayName()
+			);
 			$oWhoIsOnlineWidgetView->addItem( $oWhoIsOnlineItemWidgetView );
 			$iCount++;
 		}
@@ -331,9 +335,13 @@ class WhoIsOnline extends BsExtensionMW {
 		$aSingleResult['portletItems'] = array();
 		foreach ( $aWhoIsOnline as $oWhoIsOnline ) {
 			$oUser = User::newFromId( $oWhoIsOnline->wo_user_id );
+			$userHelper = \BlueSpice\Services::getInstance()
+				->getBSUtilityFactory()->getUserHelper( $oUser );
 			$oWhoIsOnlineItemWidgetView = new ViewWhoIsOnlineItemWidget();
 			$oWhoIsOnlineItemWidgetView->setUser( $oUser );
-			$oWhoIsOnlineItemWidgetView->setUserDisplayName( $this->mCore->getUserDisplayName( $oUser ) );
+			$oWhoIsOnlineItemWidgetView->setUserDisplayName(
+				$userHelper->getDisplayName()
+			);
 			$aSingleResult['portletItems'][] = $oWhoIsOnlineItemWidgetView->execute();
 		}
 
