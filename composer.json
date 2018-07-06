@@ -1,8 +1,11 @@
 {
-	"name": "mediawiki/blue-spice-who-is-online",
+	"name": "bluespice/whoisonline",
 	"type": "mediawiki-extension",
 	"description": "Displays a list of users who are currently online",
 	"license": "GPL-3.0-only",
+	"extra": {
+		"installer-name": "BlueSpiceWhoIsOnline"
+	},
 	"autoload" : {
 		"psr-4": {
 			"BlueSpice\\WhoIsOnline\\": "src",
