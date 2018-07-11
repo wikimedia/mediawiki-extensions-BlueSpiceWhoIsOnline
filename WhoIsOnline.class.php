@@ -48,7 +48,6 @@ class WhoIsOnline extends BsExtensionMW {
 		// Hooks
 		$this->setHook( 'ParserFirstCallInit' );
 		$this->setHook( 'BeforePageDisplay');
-		$this->setHook( 'LanguageGetMagic' );
 		$this->setHook( 'BSWidgetListHelperInitKeyWords' );
 		$this->setHook( 'BSInsertMagicAjaxGetData' );
 		$this->setHook( 'BsAdapterAjaxPingResult' );
@@ -209,18 +208,6 @@ class WhoIsOnline extends BsExtensionMW {
 		$oParser->setHook( 'bs:whoisonline:popup', array( $this, 'onUsersLinkTag' ) );
 		$oParser->setHook( 'bs:whoisonlinepopup', array( $this, 'onUsersLinkTag' ) );
 
-		return true;
-	}
-
-	/**
-	 * Add magic words. Used for legacy support.
-	 * @param array $aMagicWords Array of magic words. Add to this array.
-	 * @param string $sLangCode Current langugage.
-	 * @return bool allow other hooked methods to be executed. Always true.
-	 */
-	public function onLanguageGetMagic( &$aMagicWords, $sLangCode ) {
-		$aMagicWords[ 'userscount' ] = array( 0, 'userscount' );
-		$aMagicWords[ 'userslink' ]  = array( 0, 'userslink' );
 		return true;
 	}
 
