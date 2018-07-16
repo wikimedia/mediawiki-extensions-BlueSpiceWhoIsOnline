@@ -78,7 +78,7 @@ class ViewWhoIsOnlineItemWidget extends ViewBaseElement {
 	 * @deprecated since version 2.23
 	 */
 	public function setUserName( $sUserName ) {
-		wfDeprecated( __METHOD__, '2.23' );
+		wfDebugLog( 'bluespice-deprecations', __METHOD__, 'private' );
 		$this->sUserName = $sUserName;
 	}
 
