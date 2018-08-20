@@ -48,7 +48,6 @@ class WhoIsOnline extends BsExtensionMW {
 		// Hooks
 		$this->setHook( 'ParserFirstCallInit' );
 		$this->setHook( 'BeforePageDisplay');
-		$this->setHook( 'BSWidgetListHelperInitKeyWords' );
 		$this->setHook( 'BSInsertMagicAjaxGetData' );
 		$this->setHook( 'BsAdapterAjaxPingResult' );
 	}
@@ -149,37 +148,6 @@ class WhoIsOnline extends BsExtensionMW {
 		$oResponse->result[] = $oDescriptor;
 
 		return true;
-	}
-
-	/**
-	 * Event-Handler for 'MW::Utility::WidgetListHelper::InitKeywords'. Registers a callback for the WHOISONLINE Keyword.
-	 * @param BsEvent $oEvent The Event object
-	 * @param array $aKeywords An array of Keywords array( 'KEYWORD' => $callable )
-	 * @return array The appended array of Keywords array( 'KEYWORD' => $callable )
-	 */
-	public function onBSWidgetListHelperInitKeyWords( &$aKeywords, $oTitle ) {
-		$aKeywords[ 'WHOISONLINE' ] = array( $this, 'onWidgetListKeyword' );
-		return true;
-	}
-
-	/**
-	 * Callback for WidgetListHelper. Adds the WhoIsOnline Widget to the list if Keyword is found.
-	 * @return ViewWidget.
-	 */
-	public function onWidgetListKeyword() {
-		$oWidgetView = new ViewWidget();
-		$portletBody = $this->getPortlet(
-			false,
-			$this->getUser()->getOption( 'bs-whoisonline-pref-limitcount' )
-		);
-		$oWidgetView
-			->setId( 'bs-whoisonline' )
-			->setTitle( wfMessage( 'bs-whoisonline-widget-title' )->plain() )
-			->setBody( $portletBody->execute() )
-			->setTooltip( wfMessage( 'bs-whoisonline-widget-title' )->plain() )
-			->setAdditionalBodyClasses( array( 'bs-nav-links', 'bs-whoisonline-portlet' ) ); //For correct margin and fontsize
-
-		return $oWidgetView;
 	}
 
 	/**
