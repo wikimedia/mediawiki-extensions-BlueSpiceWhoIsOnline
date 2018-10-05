@@ -66,6 +66,11 @@
 			"value": 10,
 			"descriptionmsg": "bs-whoisonline-pref-interval",
 			"public": true
+		},
+		"WhoIsOnlineLimitCount": {
+			"value": 7,
+			"descriptionmsg": "bs-whoisonline-pref-limitcount",
+			"public": true
 		}
 	},
 	"load_composer_autoloader" : true,
