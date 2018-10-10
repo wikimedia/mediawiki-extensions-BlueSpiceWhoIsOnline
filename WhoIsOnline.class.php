@@ -122,6 +122,10 @@ class WhoIsOnline extends BsExtensionMW {
 	public function onBSInsertMagicAjaxGetData( &$oResponse, $type ) {
 		if ( $type != 'tags' ) return true;
 
+		$extension = \BlueSpice\Services::getInstance()->getBSExtensionFactory()
+				->getExtension( 'BlueSpiceWhoIsOnline' );
+		$helplink = $extension->getUrl();
+
 		$oDescriptor = new stdClass();
 		$oDescriptor->id = 'bs:whoisonlinecount';
 		$oDescriptor->type = 'tag';
@@ -129,7 +133,7 @@ class WhoIsOnline extends BsExtensionMW {
 		$oDescriptor->desc = wfMessage( 'bs-whoisonline-tag-whoisonlinecount-desc' )->plain();
 		$oDescriptor->code = '<bs:whoisonlinecount />';
 		$oDescriptor->previewable = false;
-		$oDescriptor->helplink = 'https://help.bluespice.com/index.php/WhoIsOnline';
+		$oDescriptor->helplink = $helplink;
 		$oResponse->result[] = $oDescriptor;
 
 		$oDescriptor = new stdClass();
@@ -144,7 +148,7 @@ class WhoIsOnline extends BsExtensionMW {
 				'code' => '<bs:whoisonlinepopup anchortext="Online users" />'
 			)
 		);
-		$oDescriptor->helplink = 'https://help.bluespice.com/index.php/WhoIsOnline';
+		$oDescriptor->helplink = $helplink;
 		$oResponse->result[] = $oDescriptor;
 
 		return true;
