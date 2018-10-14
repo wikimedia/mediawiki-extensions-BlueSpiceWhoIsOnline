@@ -37,7 +37,9 @@
 	"ResourceModules": {
 		"ext.bluespice.whoisonline": {
 			"scripts": "bluespice.whoIsOnline.js",
-			"position": "bottom"
+			"dependencies": [
+				"ext.bluespice"
+			]
 		}
 	},
 	"ResourceFileModulePaths": {
