@@ -53,60 +53,6 @@ class WhoIsOnline extends BsExtensionMW {
 	}
 
 	/**
-	 * Sets up required database tables
-	 * @param DatabaseUpdater $updater Provided by MediaWikis update.php
-	 * @return boolean Always true to keep the hook running
-	 */
-	public static function getSchemaUpdates( $updater ) {
-		global $wgDBtype, $wgExtNewTables, $wgExtModifiedFields, $wgExtNewIndexes, $wgExtNewFields;
-		$sDir = __DIR__ . '/';
-
-		if( $wgDBtype == 'mysql' ) {
-			$wgExtNewTables[] = array( 'bs_whoisonline', $sDir . 'whoisonline.sql' );
-
-			$wgExtModifiedFields[] = array( 'bs_whoisonline', 'wo_timestamp', $sDir . 'db/mysql/whoisonline.patch.wo_timestamp.sql' );
-
-			$wgExtNewFields[] = array( 'bs_whoisonline', 'wo_action', $sDir . 'db/mysql/whoisonline.patch.wo_action.sql' );
-
-			$wgExtNewIndexes[] = array( 'bs_whoisonline', 'wo_user_id',        $sDir . 'db/mysql/whoisonline.patch.wo_user_id.index.sql' );
-			$wgExtNewIndexes[] = array( 'bs_whoisonline', 'wo_page_namespace', $sDir . 'db/mysql/whoisonline.patch.wo_page_namespace.index.sql' );
-			$wgExtNewIndexes[] = array( 'bs_whoisonline', 'wo_timestamp',      $sDir . 'db/mysql/whoisonline.patch.wo_timestamp.index.sql' );
-
-		} elseif( $wgDBtype == 'sqlite' ) {
-			$wgExtNewTables[] = array( 'bs_whoisonline', $sDir . 'whoisonline.sql' );
-
-		} elseif( $wgDBtype == 'postgres' ) {
-
-			$wgExtNewTables[] = array( 'bs_whoisonline', $sDir . 'whoisonline.pg.sql' );
-
-			$wgExtModifiedFields[] = array( 'bs_whoisonline', 'wo_timestamp', $sDir . 'db/postgres/whoisonline.patch.wo_timestamp.pg.sql' );
-			//PW(25.06.2012): wont work on mw 1.16.5
-			//global $wgExtPGNewFields;
-			//$wgExtPGNewFields[] = array( 'bs_whoisonline', 'wo_action', $sDir . 'db/postgres/whoisonline.patch.wo_action.sql' );
-			$dbr = wfGetDB( DB_MASTER );
-			if( $dbr->tableExists( 'bs_whoisonline' ) && !$dbr->fieldExists( 'bs_whoisonline', 'wo_action' ) ) {
-				$dbr->query( "ALTER TABLE ".$dbr->tableName( "bs_whoisonline" )." ADD wo_action text NOT NULL DEFAULT 'view';" );
-			}
-
-			$wgExtNewIndexes[] = array( 'bs_whoisonline', 'wo_user_id',        $sDir . 'db/postgres/whoisonline.patch.wo_user_id.index.pg.sql' );
-			$wgExtNewIndexes[] = array( 'bs_whoisonline', 'wo_page_namespace', $sDir . 'db/postgres/whoisonline.patch.wo_page_namespace.index.pg.sql' );
-			$wgExtNewIndexes[] = array( 'bs_whoisonline', 'wo_timestamp',      $sDir . 'db/postgres/whoisonline.patch.wo_timestamp.index.pg.sql' );
-
-		} elseif( $wgDBtype == 'oracle' ) {
-			$wgExtNewTables[] = array( 'bs_whoisonline', $sDir . 'whoisonline.oci.sql' );
-
-			$wgExtModifiedFields[] = array( 'bs_whoisonline', 'wo_timestamp', $sDir . 'db/oracle/whoisonline.patch.wo_timestamp.oci.sql' );
-
-			#$wgExtNewFields[] = array( 'bs_whoisonline', 'wo_action', $sDir . 'db/oracle/whoisonline.patch.wo_action.sql' );
-
-			$wgExtNewIndexes[] = array( 'bs_whoisonline', 'wo_user_id',        $sDir . 'db/oracle/whoisonline.patch.wo_user_id.index.oci.sql' );
-			$wgExtNewIndexes[] = array( 'bs_whoisonline', 'wo_page_namespace', $sDir . 'db/oracle/whoisonline.patch.wo_page_namespace.index.oci.sql' );
-			$wgExtNewIndexes[] = array( 'bs_whoisonline', 'wo_timestamp',      $sDir . 'db/oracle/whoisonline.patch.wo_timestamp.index.oci.sql' );
-		}
-		return true;
-	}
-
-	/**
 	 * Hook-Handler for MediaWiki 'BeforePageDisplay' hook. Sets context if needed.
 	 * @param OutputPage $oOutputPage
 	 * @param Skin $oSkin
