@@ -50,7 +50,7 @@
 		"remoteExtPath": "BlueSpiceWhoIsOnline/resources"
 	},
 	"Hooks": {
-		"LoadExtensionSchemaUpdates": "WhoIsOnline::getSchemaUpdates",
+		"LoadExtensionSchemaUpdates": "\\BlueSpice\\WhoIsOnline\\Hook\\LoadExtensionSchemaUpdates\\AddWhoIsOnlineTable::callback",
 		"GetPreferences": [
 			"\\BlueSpice\\WhoIsOnline\\Hook\\GetPreferences\\LimitCount::callback",
 			"\\BlueSpice\\WhoIsOnline\\Hook\\GetPreferences\\OrderBy::callback"
