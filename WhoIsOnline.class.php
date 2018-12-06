@@ -307,7 +307,6 @@ class WhoIsOnline extends BsExtensionMW {
 
 	/**
 	 * Inserts a trace of the user action into the database
-	 * @global string $wgDBtype
 	 * @param Title $oTitle
 	 * @param User $oUser
 	 * @param Request $oRequest
@@ -355,9 +354,6 @@ class WhoIsOnline extends BsExtensionMW {
 		$aNewRow[ 'wo_user_real_name' ] = $oUser->getRealName();
 		$aNewRow[ 'wo_timestamp' ]      = $iCurrentTimestamp;
 		$aNewRow[ 'wo_action' ]         = $oRequest->getVal( 'action', 'view' );
-
-		global $wgDBtype;
-		if ( $wgDBtype == 'oracle' ) $aNewRow[ 'wo_id' ] = 0;
 
 		$dbw->insert( 'bs_whoisonline', $aNewRow );
 
