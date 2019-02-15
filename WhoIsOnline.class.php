@@ -266,9 +266,7 @@ class WhoIsOnline extends BsExtensionMW {
 		}
 
 		if ( empty( $sOrderBy ) ) {
-			$sOrderBy = $this->getUser()->getOption(
-				'bs-whoisonline-pref-orderby'
-			);
+			$sOrderBy = "onlinetime";
 		}
 
 		$sMaxIdle = $this->getConfig()->get( 'WhoIsOnlineMaxIdleTime' );

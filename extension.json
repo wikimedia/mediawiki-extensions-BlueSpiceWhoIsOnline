@@ -50,15 +50,7 @@
 		"remoteExtPath": "BlueSpiceWhoIsOnline/resources"
 	},
 	"Hooks": {
-		"LoadExtensionSchemaUpdates": "\\BlueSpice\\WhoIsOnline\\Hook\\LoadExtensionSchemaUpdates\\AddWhoIsOnlineTable::callback",
-		"GetPreferences": [
-			"\\BlueSpice\\WhoIsOnline\\Hook\\GetPreferences\\LimitCount::callback",
-			"\\BlueSpice\\WhoIsOnline\\Hook\\GetPreferences\\OrderBy::callback"
-		]
-	},
-	"DefaultUserOptions": {
-		"bs-whoisonline-pref-limitcount": 7,
-		"bs-whoisonline-pref-orderby": "onlinetime"
+		"LoadExtensionSchemaUpdates": "\\BlueSpice\\WhoIsOnline\\Hook\\LoadExtensionSchemaUpdates\\AddWhoIsOnlineTable::callback"
 	},
 	"config_prefix": "bsg",
 	"config": {
