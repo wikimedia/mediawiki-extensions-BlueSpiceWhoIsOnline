@@ -16,9 +16,7 @@ BsWhoIsOnline = {
 		BsWhoIsOnline.interval = mw.config.get(
 			'bsgWhoIsOnlineInterval'
 		) * 1000;
-		BsWhoIsOnline.limit = mw.user.options.get(
-			'bs-whoisonline-pref-limitcount'
-		);
+		BsWhoIsOnline.limit = 7;
 		if(BsWhoIsOnline.interval < 1) return;
 
 		BSPing.registerListener('WhoIsOnline', BsWhoIsOnline.interval, [], BsWhoIsOnline.pingListener);
