@@ -20,6 +20,9 @@
 						"WhoIsOnlineInterval": "\\BlueSpice\\WhoIsOnline\\ConfigDefinition\\Interval::getInstance"
 					}
 				}
+			},
+			"RunJobsTriggerHandlerRegistry": {
+				"bs-whoisonline-deleteoldentries": "\\BlueSpice\\WhoIsOnline\\RunJobsTriggerHandler\\DeleteOldEntries::factory"
 			}
 		}
 	},

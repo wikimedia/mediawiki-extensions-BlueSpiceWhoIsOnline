@@ -334,13 +334,7 @@ class WhoIsOnline extends BsExtensionMW {
 		$oRequest->setSessionData( $this->mExtensionKey.'::lastLoggedPageHash', $sCurrentPageHash );
 		$oRequest->setSessionData( $this->mExtensionKey.'::lastLoggedTime', $iCurrentTimestamp );
 
-		$iRemoveEntriesAfter = 2592000;
-
 		$dbw = wfGetDB( DB_MASTER );
-		$dbw->delete(
-			'bs_whoisonline',
-			array( 'wo_timestamp < ' . ( $iCurrentTimestamp - $iRemoveEntriesAfter ) )
-		);
 
 		$aNewRow = array();
 
