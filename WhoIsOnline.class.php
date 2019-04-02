@@ -261,12 +261,11 @@ class WhoIsOnline extends BsExtensionMW {
 	 * @return type
 	 */
 	private function getWhoIsOnline( $sOrderBy = '', $bForceReload = false){
-		if ( isset( $this->aWhoIsOnlineData[$sOrderBy] ) && $bForceReload === false ) {
-			return $this->aWhoIsOnlineData[$sOrderBy];
-		}
-
 		if ( empty( $sOrderBy ) ) {
 			$sOrderBy = "onlinetime";
+		}
+		if ( isset( $this->aWhoIsOnlineData[$sOrderBy] ) && $bForceReload === false ) {
+			return $this->aWhoIsOnlineData[$sOrderBy];
 		}
 
 		$sMaxIdle = $this->getConfig()->get( 'WhoIsOnlineMaxIdleTime' );
