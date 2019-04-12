@@ -26,7 +26,7 @@
  * @package    BlueSpice_Extensions
  * @subpackage WhoIsOnline
  * @copyright  Copyright (C) 2016 Hallo Welt! GmbH, All rights reserved.
- * @license    http://www.gnu.org/copyleft/gpl.html GNU Public License v3
+ * @license    http://www.gnu.org/copyleft/gpl.html GPL-3.0-only
  * @filesource
 
 /**
@@ -36,10 +36,8 @@
  */
 class WhoIsOnline extends BsExtensionMW {
 
-	private $aWhoIsOnlineData = array();
+	private $aWhoIsOnlineData = [];
 	protected static $bContextAlreadyTraced = false;
-
-
 
 	/**
 	 * Initialization of ShoutBox extension
@@ -47,26 +45,30 @@ class WhoIsOnline extends BsExtensionMW {
 	protected function initExt() {
 		// Hooks
 		$this->setHook( 'ParserFirstCallInit' );
-		$this->setHook( 'BeforePageDisplay');
+		$this->setHook( 'BeforePageDisplay' );
 		$this->setHook( 'BSInsertMagicAjaxGetData' );
 		$this->setHook( 'BsAdapterAjaxPingResult' );
 	}
 
 	/**
 	 * Hook-Handler for MediaWiki 'BeforePageDisplay' hook. Sets context if needed.
-	 * @param OutputPage $oOutputPage
-	 * @param Skin $oSkin
+	 * @param OutputPage &$oOutputPage
+	 * @param Skin &$oSkin
 	 * @return bool
 	 */
 	public function onBeforePageDisplay( &$oOutputPage, &$oSkin ) {
-		if ( !$this->getTitle()->userCan( 'read' ) ) return true;
+		if ( !$this->getTitle()->userCan( 'read' ) ) {
+			return true;
+		}
 
 		$oOutputPage->addModules( 'ext.bluespice.whoisonline' );
 		return true;
 	}
 
 	public function onBSInsertMagicAjaxGetData( &$oResponse, $type ) {
-		if ( $type != 'tags' ) return true;
+		if ( $type != 'tags' ) {
+			return true;
+		}
 
 		$extension = \BlueSpice\Services::getInstance()->getBSExtensionFactory()
 				->getExtension( 'BlueSpiceWhoIsOnline' );
@@ -89,11 +91,11 @@ class WhoIsOnline extends BsExtensionMW {
 		$oDescriptor->desc = wfMessage( 'bs-whoisonline-tag-whoisonlinepopup-desc' )->plain();
 		$oDescriptor->code = '<bs:whoisonlinepopup />';
 		$oDescriptor->previewable = false;
-		$oDescriptor->examples = array(
-			array(
+		$oDescriptor->examples = [
+			[
 				'code' => '<bs:whoisonlinepopup anchortext="Online users" />'
-			)
-		);
+			]
+		];
 		$oDescriptor->helplink = $helplink;
 		$oResponse->result[] = $oDescriptor;
 
@@ -102,15 +104,15 @@ class WhoIsOnline extends BsExtensionMW {
 
 	/**
 	 * Add various tags and magic words. Magic Words are only supported for legacy reasons.
-	 * @param Parser $oParser Current MediaWiki Parser object
+	 * @param Parser &$oParser Current MediaWiki Parser object
 	 * @return bool allow other hooked methods to be executed. Always true.
 	 */
 	public function onParserFirstCallInit( &$oParser ) {
 		$oTitle = RequestContext::getMain()->getTitle();
 
-		//Only trace once, or the bs_whoisonline table gets filled with all
-		//transcluded articles f.e.
-		if( !static::$bContextAlreadyTraced && $oTitle instanceof Title ) {
+		// Only trace once, or the bs_whoisonline table gets filled with all
+		// transcluded articles f.e.
+		if ( !static::$bContextAlreadyTraced && $oTitle instanceof Title ) {
 			$this->insertTrace(
 				$oTitle,
 				RequestContext::getMain()->getUser(),
@@ -119,12 +121,12 @@ class WhoIsOnline extends BsExtensionMW {
 			static::$bContextAlreadyTraced = true;
 		}
 
-		$oParser->setFunctionHook( 'userscount', array( $this, 'onUsersCount' ) );
-		$oParser->setHook( 'bs:whoisonline:count', array( $this, 'onUsersCountTag' ) );
-		$oParser->setHook( 'bs:whoisonlinecount', array( $this, 'onUsersCountTag' ) );
-		$oParser->setFunctionHook( 'userslink', array( $this, 'onUsersLink' ) );
-		$oParser->setHook( 'bs:whoisonline:popup', array( $this, 'onUsersLinkTag' ) );
-		$oParser->setHook( 'bs:whoisonlinepopup', array( $this, 'onUsersLinkTag' ) );
+		$oParser->setFunctionHook( 'userscount', [ $this, 'onUsersCount' ] );
+		$oParser->setHook( 'bs:whoisonline:count', [ $this, 'onUsersCountTag' ] );
+		$oParser->setHook( 'bs:whoisonlinecount', [ $this, 'onUsersCountTag' ] );
+		$oParser->setFunctionHook( 'userslink', [ $this, 'onUsersLink' ] );
+		$oParser->setHook( 'bs:whoisonline:popup', [ $this, 'onUsersLinkTag' ] );
+		$oParser->setHook( 'bs:whoisonlinepopup', [ $this, 'onUsersLinkTag' ] );
 
 		return true;
 	}
@@ -147,10 +149,10 @@ class WhoIsOnline extends BsExtensionMW {
 	 * @return array Rendered HTML and flags. Used by magic word function hook as well as by onUsersCountTag.
 	 */
 	public function onUsersCount( $oParser ) {
-		$oParser ->getOutput()->setProperty( 'bs-tag-userscount', 1 );
-		$sOut = '<span class="bs-whoisonline-count">'.count( $this->getWhoIsOnline() ).'</span>';
+		$oParser->getOutput()->setProperty( 'bs-tag-userscount', 1 );
+		$sOut = '<span class="bs-whoisonline-count">' . count( $this->getWhoIsOnline() ) . '</span>';
 
-		return array( $sOut, 'noparse' => 1 );
+		return [ $sOut, 'noparse' => 1 ];
 	}
 
 	/**
@@ -161,8 +163,8 @@ class WhoIsOnline extends BsExtensionMW {
 	 * @return string Rendered HTML.
 	 */
 	public function onUsersLinkTag( $sInput, $aAttributes, $oParser ) {
-		//Validation in onUsersLink.
-		return $this->onUsersLink( $oParser, isset($aAttributes[ 'anchortext' ])?$aAttributes[ 'anchortext' ] : "" );
+		// Validation in onUsersLink.
+		return $this->onUsersLink( $oParser, isset( $aAttributes[ 'anchortext' ] ) ? $aAttributes[ 'anchortext' ] : "" );
 	}
 
 	/**
@@ -173,11 +175,13 @@ class WhoIsOnline extends BsExtensionMW {
 	 */
 	public function onUsersLink( $oParser, $sLinkTitle = '' ) {
 		$oParser->disableCache();
-		$oParser ->getOutput()->setProperty( 'bs-tag-userslink', 1 );
+		$oParser->getOutput()->setProperty( 'bs-tag-userslink', 1 );
 
 		$sLinkTitle = BsCore::sanitize( $sLinkTitle, '', BsPARAMTYPE::STRING );
 
-		if( empty( $sLinkTitle ) ) $sLinkTitle = wfMessage('bs-whoisonline-widget-title')->plain();
+		if ( empty( $sLinkTitle ) ) {
+			$sLinkTitle = wfMessage( 'bs-whoisonline-widget-title' )->plain();
+		}
 		$oWhoIsOnlineTagView = new ViewWhoIsOnlineTag();
 		$oWhoIsOnlineTagView->setOption( 'title', $sLinkTitle );
 		$oWhoIsOnlineTagView->setPortlet( $this->getPortlet() );
@@ -196,12 +200,14 @@ class WhoIsOnline extends BsExtensionMW {
 
 		// who (names)
 		$oWhoIsOnlineWidgetView = new ViewWhoIsOnlineWidget();
-		$oWhoIsOnlineWidgetView->setOption( 'count', count($aWhoIsOnline) );
+		$oWhoIsOnlineWidgetView->setOption( 'count', count( $aWhoIsOnline ) );
 		$oWhoIsOnlineWidgetView->setOption( 'wrapper-id', $vWrapperId );
 
 		$iCount = 1;
-		foreach( $aWhoIsOnline as $oWhoIsOnline) {
-			if( $iLimit > 0 && $iCount > $iLimit ) break;
+		foreach ( $aWhoIsOnline as $oWhoIsOnline ) {
+			if ( $iLimit > 0 && $iCount > $iLimit ) {
+				break;
+			}
 
 			$oUser = User::newFromId( $oWhoIsOnline->wo_user_id );
 			$userHelper = \BlueSpice\Services::getInstance()
@@ -224,20 +230,27 @@ class WhoIsOnline extends BsExtensionMW {
 	 * @global WebRequest $wgRequest
 	 * @param string $sRef
 	 * @param array $aData
-	 * @param integer $iArticleId
-	 * @param array $aSingleResult
-	 * @return boolean
+	 * @param int $iArticleId
+	 * @param string $sTitle
+	 * @param int $iNamespace
+	 * @param int $iRevision
+	 * @param array &$aSingleResult
+	 * @return bool
 	 */
 	public function onBsAdapterAjaxPingResult( $sRef, $aData, $iArticleId, $sTitle, $iNamespace, $iRevision, &$aSingleResult ) {
-		if ( $sRef !== 'WhoIsOnline') return true;
+		if ( $sRef !== 'WhoIsOnline' ) {
+			return true;
+		}
 
 		$oTitle = Title::newFromText( $sTitle, $iNamespace );
-		if ( is_null($oTitle) || !$oTitle->userCan('read') ) return true;
+		if ( is_null( $oTitle ) || !$oTitle->userCan( 'read' ) ) {
+			return true;
+		}
 
 		$aWhoIsOnline = $this->getWhoIsOnline();
 		$aSingleResult['count'] = count( $aWhoIsOnline );
 
-		$aSingleResult['portletItems'] = array();
+		$aSingleResult['portletItems'] = [];
 		foreach ( $aWhoIsOnline as $oWhoIsOnline ) {
 			$oUser = User::newFromId( $oWhoIsOnline->wo_user_id );
 			$userHelper = \BlueSpice\Services::getInstance()
@@ -260,7 +273,7 @@ class WhoIsOnline extends BsExtensionMW {
 	 * @param bool $bForceReload
 	 * @return type
 	 */
-	private function getWhoIsOnline( $sOrderBy = '', $bForceReload = false){
+	private function getWhoIsOnline( $sOrderBy = '', $bForceReload = false ) {
 		if ( empty( $sOrderBy ) ) {
 			$sOrderBy = "onlinetime";
 		}
@@ -270,21 +283,21 @@ class WhoIsOnline extends BsExtensionMW {
 
 		$sMaxIdle = $this->getConfig()->get( 'WhoIsOnlineMaxIdleTime' );
 
-		$this->aWhoIsOnlineData[$sOrderBy] = array();
+		$this->aWhoIsOnlineData[$sOrderBy] = [];
 
-		$aTables = array(
+		$aTables = [
 			'bs_whoisonline'
-		);
-		$aFields = array(
+		];
+		$aFields = [
 			'wo_user_id', 'wo_user_name'
-		);
-		$aConditions = array(
-			'wo_timestamp > '.( time() - $sMaxIdle )
-		);
-		$aOptions = array(
+		];
+		$aConditions = [
+			'wo_timestamp > ' . ( time() - $sMaxIdle )
+		];
+		$aOptions = [
 			'GROUP BY' => 'wo_user_name',
-			//'LIMIT'    => (int) $iLimit,
-		);
+			// 'LIMIT'    => (int) $iLimit,
+		];
 
 		$dbr = wfGetDB( DB_REPLICA );
 		switch ( $sOrderBy ) {
@@ -296,8 +309,9 @@ class WhoIsOnline extends BsExtensionMW {
 		}
 
 		$rRes = $dbr->select( $aTables, $aFields, $aConditions, __METHOD__, $aOptions );
-		while( $oRow = $dbr->fetchObject($rRes) )
+		while ( $oRow = $dbr->fetchObject( $rRes ) ) {
 			$this->aWhoIsOnlineData[$sOrderBy][] = $oRow;
+		}
 
 		return $this->aWhoIsOnlineData[$sOrderBy];
 	}
@@ -307,35 +321,42 @@ class WhoIsOnline extends BsExtensionMW {
 	 * @param Title $oTitle
 	 * @param User $oUser
 	 * @param Request $oRequest
-	 * @return boolean
+	 * @return bool
 	 */
-	public function insertTrace( $oTitle, $oUser, $oRequest) {
-		if ( wfReadOnly() ) return true;
-		if ( ( $oUser->getId() == 0 ) ) return true; // Anonymous user
+	public function insertTrace( $oTitle, $oUser, $oRequest ) {
+		if ( wfReadOnly() ) {
+			return true;
+		}
+		if ( ( $oUser->getId() == 0 ) ) {
+			return true; // Anonymous user
+		}
 
 		$sPageTitle = $oTitle->getText();
-		if ( $sPageTitle == '-' ) return true; // otherwise strange '-' with page_id 0 are logged
+		if ( $sPageTitle == '-' ) {
+			return true; // otherwise strange '-' with page_id 0 are logged
+		}
 
 		$iPageId             = $oTitle->getArticleId();
 		$iPageNamespaceId    = $oTitle->getNamespace();
 		$iCurrentTimestamp   = time();
-		$vLastLoggedPageHash = $oRequest->getSessionData( $this->mExtensionKey.'::lastLoggedPageHash' );
-		$vLastLoggedTime     = $oRequest->getSessionData( $this->mExtensionKey.'::lastLoggedTime' );
-		$sCurrentPageHash    = md5( $iPageId.$iPageNamespaceId.$sPageTitle ); //this combination should be pretty unique, even with specialpages.
+		$vLastLoggedPageHash = $oRequest->getSessionData( $this->mExtensionKey . '::lastLoggedPageHash' );
+		$vLastLoggedTime     = $oRequest->getSessionData( $this->mExtensionKey . '::lastLoggedTime' );
+		$sCurrentPageHash    = md5( $iPageId . $iPageNamespaceId . $sPageTitle ); // this combination should be pretty unique, even with specialpages.
 		$iMaxIdleTime = $this->getConfig()->get( 'WhoIsOnlineMaxIdleTime' );
 		$iInterval = $this->getConfig()->get( 'WhoIsOnlineInterval' );
 
 		if ( $vLastLoggedPageHash == $sCurrentPageHash
-			&& $vLastLoggedTime + $iMaxIdleTime + $iInterval + ($iMaxIdleTime * 0.1) > $iCurrentTimestamp )
+			&& $vLastLoggedTime + $iMaxIdleTime + $iInterval + ( $iMaxIdleTime * 0.1 ) > $iCurrentTimestamp ) {
 				return true;
+		}
 
-		//log action
-		$oRequest->setSessionData( $this->mExtensionKey.'::lastLoggedPageHash', $sCurrentPageHash );
-		$oRequest->setSessionData( $this->mExtensionKey.'::lastLoggedTime', $iCurrentTimestamp );
+		// log action
+		$oRequest->setSessionData( $this->mExtensionKey . '::lastLoggedPageHash', $sCurrentPageHash );
+		$oRequest->setSessionData( $this->mExtensionKey . '::lastLoggedTime', $iCurrentTimestamp );
 
 		$dbw = wfGetDB( DB_MASTER );
 
-		$aNewRow = array();
+		$aNewRow = [];
 
 		$aNewRow[ 'wo_page_id' ]        = $oTitle->getArticleId();
 		$aNewRow[ 'wo_page_namespace' ] = $oTitle->getNamespace();
@@ -353,22 +374,22 @@ class WhoIsOnline extends BsExtensionMW {
 
 	/**
 	 * Register tag with UsageTracker extension
-	 * @param array $aCollectorsConfig
+	 * @param array &$aCollectorsConfig
 	 * @return Always true to keep hook running
 	 */
 	public function onBSUsageTrackerRegisterCollectors( &$aCollectorsConfig ) {
-		$aCollectorsConfig['bs:whoisonline:count'] = array(
+		$aCollectorsConfig['bs:whoisonline:count'] = [
 			'class' => 'Property',
-			'config' => array(
+			'config' => [
 				'identifier' => 'bs-tag-userscount'
-			)
-		);
-		$aCollectorsConfig['bs:whoisonline:popup'] = array(
+			]
+		];
+		$aCollectorsConfig['bs:whoisonline:popup'] = [
 			'class' => 'Property',
-			'config' => array(
+			'config' => [
 				'identifier' => 'bs-tag-userslink'
-			)
-		);
+			]
+		];
 		return true;
 	}
 }

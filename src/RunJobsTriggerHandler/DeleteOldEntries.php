@@ -31,7 +31,7 @@ class DeleteOldEntries extends RunJobsTriggerHandler {
 				[ "wo_timestamp < $oneHourAgo" ],
 				__METHOD__
 			);
-		} catch( Exception $e ) {
+		} catch ( Exception $e ) {
 			$status->fatal( $e->getMessage() );
 		}
 
