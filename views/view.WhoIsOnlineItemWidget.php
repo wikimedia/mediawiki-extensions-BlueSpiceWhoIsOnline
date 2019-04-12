@@ -9,7 +9,7 @@
  * @package    BlueSpice_Extensions
  * @subpackage WhoIsOnline
  * @copyright  Copyright (C) 2016 Hallo Welt! GmbH, All rights reserved.
- * @license    http://www.gnu.org/copyleft/gpl.html GNU Public License v2 or later
+ * @license    http://www.gnu.org/copyleft/gpl.html GPL-2.0-or-later
  * @filesource
  */
 
@@ -23,7 +23,7 @@ class ViewWhoIsOnlineItemWidget extends ViewBaseElement {
 	 * Username to be rendered in link. Used directly to point to users' page.
 	 * @var string Name of the user.
 	 */
-	protected $sUserName        = '';
+	protected $sUserName = '';
 	/**
 	 * Username to be rendered as link description.
 	 * @var string. Display name of the user.
@@ -49,14 +49,14 @@ class ViewWhoIsOnlineItemWidget extends ViewBaseElement {
 	 * @return string HTML output
 	 */
 	public function execute( $params = false ) {
-		if( $this->oUser instanceof User === false ) {
+		if ( $this->oUser instanceof User === false ) {
 			$this->oUser = User::newFromName( $this->sUserName );
 		}
-		//In some rare cases (LDAPAuth + special characters in username)
-		//the username isn't saved correctly to the DB, causing '
-		//User::newFromName' to return false.
-		//TODO: Find and fix real issue
-		if( $this->oUser instanceof User === false ) {
+		// In some rare cases (LDAPAuth + special characters in username)
+		// the username isn't saved correctly to the DB, causing '
+		// User::newFromName' to return false.
+		// TODO: Find and fix real issue
+		if ( $this->oUser instanceof User === false ) {
 			return '';
 		}
 
@@ -64,7 +64,7 @@ class ViewWhoIsOnlineItemWidget extends ViewBaseElement {
 			$this->sUserDisplayName = $this->oUser->getName();
 		}
 
-		$aOut = array();
+		$aOut = [];
 		$aOut[] = '<li>';
 		$aOut[] = Linker::link( $this->oUser->getUserPage(), $this->sUserDisplayName );
 		$aOut[] = '</li>';

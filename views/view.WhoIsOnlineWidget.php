@@ -9,7 +9,7 @@
  * @package    BlueSpice_Extensions
  * @subpackage WhoIsOnline
  * @copyright  Copyright (C) 2016 Hallo Welt! GmbH, All rights reserved.
- * @license    http://www.gnu.org/copyleft/gpl.html GNU Public License v2 or later
+ * @license    http://www.gnu.org/copyleft/gpl.html GPL-2.0-or-later
  * @filesource
  */
 
@@ -33,20 +33,19 @@ class ViewWhoIsOnlineWidget extends ViewBaseElement {
 	 * @return string HTML output
 	 */
 	public function execute( $params = false ) {
-		$aOut = array();
+		$aOut = [];
 		$aOut[] = '<ul>';
 		if ( $this->getOption( 'count' ) == 0 ) {
 			$aOut[] = '<li>' . wfMessage( 'bs-whoisonline-nousers' )->plain() . '</li>';
-		}
-		else {
+		} else {
 			$this->setAutoElement( '' );
 			$aOut[] = parent::execute();
 		}
 		$aOut[] = '</ul>';
 
 		$sOut = implode( "\n", $aOut );
-		if( $this->getOption( 'wrapper-id' ) !== false ) {
-			return '<div style="display: none;" class="bs-tooltip"><div id="'.$this->getOption( 'wrapper-id' ).'">'.$sOut.'</div></div>';
+		if ( $this->getOption( 'wrapper-id' ) !== false ) {
+			return '<div style="display: none;" class="bs-tooltip"><div id="' . $this->getOption( 'wrapper-id' ) . '">' . $sOut . '</div></div>';
 		}
 		return $sOut;
 	}
