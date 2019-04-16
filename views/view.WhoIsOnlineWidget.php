@@ -9,7 +9,7 @@
  * @package    BlueSpice_Extensions
  * @subpackage WhoIsOnline
  * @copyright  Copyright (C) 2016 Hallo Welt! GmbH, All rights reserved.
- * @license    http://www.gnu.org/copyleft/gpl.html GPL-2.0-or-later
+ * @license    http://www.gnu.org/copyleft/gpl.html GPL-3.0-only
  * @filesource
  */
 
