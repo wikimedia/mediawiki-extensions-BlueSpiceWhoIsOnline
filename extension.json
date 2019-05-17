@@ -81,6 +81,9 @@
 			"public": true
 		}
 	},
+	"AutoloadNamespaces": {
+		"BlueSpice\\WhoIsOnline\\": "src/"
+	},
 	"load_composer_autoloader" : true,
 	"manifest_version": 2
 }
