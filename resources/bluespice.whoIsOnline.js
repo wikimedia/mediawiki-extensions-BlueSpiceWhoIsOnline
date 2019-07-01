@@ -8,40 +8,27 @@
  * @license    http://www.gnu.org/copyleft/gpl.html GPL-3.0-only
  * @filesource
  */
-
-BsWhoIsOnline = {
-	interval: 0,
-	limit: 0,
-	init: function() {
-		BsWhoIsOnline.interval = mw.config.get(
-			'bsgWhoIsOnlineInterval'
-		) * 1000;
-		BsWhoIsOnline.limit = 7;
-		if(BsWhoIsOnline.interval < 1) return;
-
-		BSPing.registerListener('WhoIsOnline', BsWhoIsOnline.interval, [], BsWhoIsOnline.pingListener);
-	},
-	pingListener: function( result, Listener) {
-		if(result.success !== true) return;
-
-		$('.bs-whoisonline-portlet').each(function(){
-			var aCurrentPortlet = result['portletItems'];
-			if( $(this).hasClass( 'bs-widget-body' ) == false ) {
-				$(this).html( '<ul>' + aCurrentPortlet.join("\n") + '</ul>' );
-				return;
-			}
-
-			$(this).html('<ul>' + aCurrentPortlet.slice(0, BsWhoIsOnline.limit).join("\n") + '</ul>');
-		});
-
-		$('.bs-whoisonline-count').each(function(){
-			$(this).html(result['count']);
-		});
-
-		BSPing.registerListener('WhoIsOnline', BsWhoIsOnline.interval, [], BsWhoIsOnline.pingListener);
+( function( mw, $, bs, d ){
+	var interval = mw.config.get( 'bsgWhoIsOnlineInterval', 0 ) * 1000;
+	if ( interval < 1 ) {
+		return;
 	}
-};
+	var listener = function( result, Listener ) {
+		if( result.success !== true ) {
+			return;
+		}
 
-mw.loader.using( 'ext.bluespice', function() {
-	BsWhoIsOnline.init();
-});
+		$( '.bs-whoisonline-portlet' ).each( function(){
+			var portlet = result['portletItems'];
+			$( this ).html( portlet );
+		});
+
+		$( '.bs-whoisonline-count').each( function(){
+			$( this ).html( result['count'] );
+		} );
+
+		BSPing.registerListener( 'WhoIsOnline', interval, [], listener );
+	}
+	BSPing.registerListener( 'WhoIsOnline', interval, [], listener );
+
+} )( mediaWiki, jQuery, blueSpice, document );

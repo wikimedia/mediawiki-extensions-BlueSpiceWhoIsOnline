@@ -6,6 +6,10 @@ use BlueSpice\ConfigDefinition\IntSetting;
 
 class MaxIdleTime extends IntSetting {
 
+	/**
+	 *
+	 * @return string[]
+	 */
 	public function getPaths() {
 		return [
 			static::MAIN_PATH_FEATURE . '/' . static::FEATURE_ADMINISTRATION . '/BlueSpiceWhoIsOnline',
@@ -14,6 +18,10 @@ class MaxIdleTime extends IntSetting {
 		];
 	}
 
+	/**
+	 *
+	 * @return string
+	 */
 	public function getLabelMessageKey() {
 		return 'bs-whoisonline-pref-maxidletime';
 	}

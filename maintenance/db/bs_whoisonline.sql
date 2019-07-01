@@ -18,7 +18,7 @@ CREATE TABLE IF NOT EXISTS /*$wgDBprefix*/bs_whoisonline (
       wo_page_id        int(10)    unsigned NOT NULL,
       wo_page_namespace int(11)             NOT NULL,
       wo_page_title     varbinary(255)      NOT NULL,
-      wo_timestamp      int(11)    unsigned NOT NULL,
-      wo_action         varbinary(32)       NOT NULL
+      wo_action         varbinary(32)       NOT NULL,
+      wo_log_ts         varchar(16)         NOT NULL DEFAULT '0' /* YmdHis */
 ) /*$wgDBTableOptions*/
 COMMENT='BlueSpice: WhoIsOnline - Stores information on users activities';
