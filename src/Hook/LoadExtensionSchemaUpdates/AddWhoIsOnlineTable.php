@@ -4,6 +4,10 @@ namespace BlueSpice\WhoIsOnline\Hook\LoadExtensionSchemaUpdates;
 
 class AddWhoIsOnlineTable extends \BlueSpice\Hook\LoadExtensionSchemaUpdates {
 
+	/**
+	 *
+	 * @return bool
+	 */
 	protected function doProcess() {
 		$dir = $this->getExtensionPath();
 
@@ -18,10 +22,16 @@ class AddWhoIsOnlineTable extends \BlueSpice\Hook\LoadExtensionSchemaUpdates {
 			"$dir/maintenance/db/bs_whoisonline.patch.wo_action.sql"
 		);
 
-		$this->updater->modifyExtensionField(
+		$this->updater->dropExtensionField(
 			'bs_whoisonline',
 			'wo_timestamp',
 			"$dir/maintenance/db/bs_whoisonline.patch.wo_timestamp.sql"
+		);
+
+		$this->updater->addExtensionField(
+			'bs_whoisonline',
+			'wo_log_ts',
+			"$dir/maintenance/db/bs_whoisonline.patch.wo_log_ts.sql"
 		);
 
 		$this->updater->addExtensionIndex(
@@ -38,11 +48,16 @@ class AddWhoIsOnlineTable extends \BlueSpice\Hook\LoadExtensionSchemaUpdates {
 
 		$this->updater->addExtensionIndex(
 			'bs_whoisonline',
-			'wo_timestamp',
-			"$dir/maintenance/db/bs_whoisonline.patch.wo_timestamp.index.sql"
+			'wo_log_ts',
+			"$dir/maintenance/db/bs_whoisonline.patch.wo_log_ts.index.sql"
 		);
+		return true;
 	}
 
+	/**
+	 *
+	 * @return string
+	 */
 	protected function getExtensionPath() {
 		return dirname( dirname( dirname( __DIR__ ) ) );
 	}
