@@ -32,6 +32,7 @@ class ViewWhoIsOnlineTag extends ViewBaseElement {
 	protected $sTargetId = '';
 
 	protected $oPortlet = null;
+
 	/**
 	 * Constructor
 	 */
