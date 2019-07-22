@@ -8,7 +8,7 @@ use BlueSpice\Timestamp;
 use DateTime;
 use BlueSpice\RunJobsTriggerHandler;
 use BlueSpice\RunJobsTriggerHandler\Interval;
-use BlueSpice\RunJobsTriggerHandler\Interval\OnceEveryHour;
+use BlueSpice\RunJobsTriggerHandler\Interval\OnceADay;
 
 class DeleteOldEntries extends RunJobsTriggerHandler {
 
@@ -17,7 +17,7 @@ class DeleteOldEntries extends RunJobsTriggerHandler {
 	 * @return Interval
 	 */
 	public function getInterval() {
-		return new OnceEveryHour();
+		return new OnceADay();
 	}
 
 	/**
@@ -27,7 +27,7 @@ class DeleteOldEntries extends RunJobsTriggerHandler {
 		$status = Status::newGood();
 
 		$oneHourAgo = Timestamp::getInstance(
-			( new DateTime() )->modify( '-1 hour' )
+			( new DateTime() )->modify( '-1 day' )
 		);
 		try {
 			$this->loadBalancer->getConnection( DB_MASTER )->delete(
