@@ -163,6 +163,9 @@ class Tracer {
 		if ( !empty( $this->hash ) || $this->readOnly->isReadOnly() ) {
 			return false;
 		}
+		if ( defined( 'MW_NO_SESSION' ) ) {
+			return false;
+		}
 		if ( $context instanceof \ResourceLoaderContext ) {
 			return false;
 		}
