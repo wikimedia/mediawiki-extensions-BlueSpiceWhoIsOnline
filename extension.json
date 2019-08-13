@@ -36,6 +36,14 @@
 			},
 			"RendererRegistry": {
 				"whoisonline-userlist": "\\BlueSpice\\WhoIsOnline\\Renderer\\UserList::factory"
+			},
+			"EntityRegistry": {
+				"userlogin": "\\BlueSpice\\WhoIsOnline\\EntityConfig\\Collection\\UserLogin"
+			}
+		},
+		"BlueSpiceExtendedStatistics": {
+			"SnapshotDataCollectorRegistry": {
+				"userlogin": "\\BlueSpice\\WhoIsOnline\\DataCollector\\StoreSourced\\UserLogin::factory"
 			}
 		}
 	},
@@ -58,6 +66,12 @@
 			"scripts": "bluespice.whoIsOnline.js",
 			"dependencies": [
 				"ext.bluespice"
+			]
+		},
+		"ext.bluespice.whoisonline.collection.userlogin": {
+			"messages": [
+				"bs-whoisonline-collection-type-userlogin",
+				"bs-whoisonline-collection-var-login"
 			]
 		}
 	},
