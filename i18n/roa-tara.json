@@ -15,5 +15,7 @@
 	"bs-whoisonline-pref-orderby-name": "Nome",
 	"bs-whoisonline-pref-interval": "'Ndervalle de aggiornamende in seconde:",
 	"bs-whoisonline-tag-whoisonlinecount-desc": "Fà 'ndrucà 'u numere de tutte le utinde ca onne trasute jndr'à l'urteme 10 minute.",
-	"bs-whoisonline-tag-whoisonlinepopup-desc": "Fà 'ndrucà tutte le utinde ca onne trasute jndr'à l'urteme 10 minute."
+	"bs-whoisonline-tag-whoisonlinepopup-desc": "Fà 'ndrucà tutte le utinde ca onne trasute jndr'à l'urteme 10 minute.",
+	"bs-whoisonline-collection-type-userlogin": "Accesse de l'utende",
+	"bs-whoisonline-collection-var-login": "Tràse"
 }
