@@ -38,7 +38,7 @@
 				"whoisonline-userlist": "\\BlueSpice\\WhoIsOnline\\Renderer\\UserList::factory"
 			},
 			"EntityRegistry": {
-				"userlogin": "\\BlueSpice\\WhoIsOnline\\EntityConfig\\Collection\\UserLogin"
+				"userlogin": "\\BlueSpice\\WhoIsOnline\\EntityConfig\\Collection\\UserLogin::factory"
 			}
 		},
 		"BlueSpiceExtendedStatistics": {
