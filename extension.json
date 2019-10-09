@@ -1,19 +1,25 @@
 {
 	"name": "BlueSpiceWhoIsOnline",
-	"version": "3.0.1",
+	"version": "3.1.0",
 	"license-name": "GPL-3.0-only",
 	"url": "https://en.wiki.bluespice.com/wiki/Reference:WhoIsOnline",
-	"author": "Markus Glaser",
+	"author": [
+		"Markus Glaser",
+		"Patric Wirth"
+	],
 	"descriptionmsg": "bs-whoisonline-desc",
 	"type": "bluespice",
 	"requires": {
-		"MediaWiki": ">= 1.29.0"
+		"MediaWiki": "~1.31",
+		"extensions": {
+			"BlueSpiceFoundation": "~3.1"
+		}
 	},
 	"attributes": {
 		"BlueSpiceFoundation": {
 			"Extensions": {
 				"BlueSpiceWhoIsOnline": {
-					"className": "WhoIsOnline",
+					"className": "\\BlueSpice\\WhoIsOnline\\Extension",
 					"extPath": "/BlueSpiceWhoIsOnline",
 					"configDefinitions": {
 						"WhoIsOnlineMaxIdleTime": "\\BlueSpice\\WhoIsOnline\\ConfigDefinition\\MaxIdleTime::getInstance",
@@ -23,9 +29,19 @@
 			},
 			"RunJobsTriggerHandlerRegistry": {
 				"bs-whoisonline-deleteoldentries": "\\BlueSpice\\WhoIsOnline\\RunJobsTriggerHandler\\DeleteOldEntries::factory"
+			},
+			"TagRegistry": {
+				"whoisonlinecount": "\\BlueSpice\\WhoIsOnline\\Tag\\Count",
+				"whoisonlinepopup": "\\BlueSpice\\WhoIsOnline\\Tag\\PopUp"
+			},
+			"RendererRegistry": {
+				"whoisonline-userlist": "\\BlueSpice\\WhoIsOnline\\Renderer\\UserList::factory"
 			}
 		}
 	},
+	"ServiceWiringFiles": [
+		"includes/ServiceWiring.php"
+	],
 	"MessagesDirs": {
 		"BlueSpiceWhoIsOnline": [
 			"i18n"
@@ -35,10 +51,7 @@
 		"WhoIsOnlineMagic": "languages/WhoIsOnline.i18n.magic.php"
 	},
 	"AutoloadClasses": {
-		"WhoIsOnline": "WhoIsOnline.class.php",
-		"ViewWhoIsOnlineTag": "views/view.WhoIsOnlineTag.php",
-		"ViewWhoIsOnlineItemWidget": "views/view.WhoIsOnlineItemWidget.php",
-		"ViewWhoIsOnlineWidget": "views/view.WhoIsOnlineWidget.php"
+		"ClearWhoIsOnlineTableAfterUpgradeTimestamp": "maintenance/ClearWhoIsOnlineTableAfterUpgradeTimestamp.php"
 	},
 	"ResourceModules": {
 		"ext.bluespice.whoisonline": {
@@ -53,15 +66,18 @@
 		"remoteExtPath": "BlueSpiceWhoIsOnline/resources"
 	},
 	"Hooks": {
-		"LoadExtensionSchemaUpdates": "\\BlueSpice\\WhoIsOnline\\Hook\\LoadExtensionSchemaUpdates\\AddWhoIsOnlineTable::callback",
-		"GetPreferences": [
-			"\\BlueSpice\\WhoIsOnline\\Hook\\GetPreferences\\LimitCount::callback",
-			"\\BlueSpice\\WhoIsOnline\\Hook\\GetPreferences\\OrderBy::callback"
-		]
-	},
-	"DefaultUserOptions": {
-		"bs-whoisonline-pref-limitcount": 7,
-		"bs-whoisonline-pref-orderby": "onlinetime"
+		"ParserFirstCallInit": "\\BlueSpice\\WhoIsOnline\\Hook\\ParserFirstCallInit\\Trace::callback",
+		"BSInsertMagicAjaxGetData": [
+			"\\BlueSpice\\WhoIsOnline\\Hook\\BSInsertMagicAjaxGetData\\AddCountTag::callback",
+			"\\BlueSpice\\WhoIsOnline\\Hook\\BSInsertMagicAjaxGetData\\AddPopUpTag::callback"
+		],
+		"BSUsageTrackerRegisterCollectors": "\\BlueSpice\\WhoIsOnline\\Extension::onBSUsageTrackerRegisterCollectors",
+		"BeforePageDisplay": "\\BlueSpice\\WhoIsOnline\\Hook\\BeforePageDisplay\\AddModules::callback",
+		"LoadExtensionSchemaUpdates": [
+			"\\BlueSpice\\WhoIsOnline\\Hook\\LoadExtensionSchemaUpdates\\AddWhoIsOnlineTable::callback",
+			"\\BlueSpice\\WhoIsOnline\\Hook\\LoadExtensionSchemaUpdates\\AddClearTableLoggedUpdate::callback"
+		],
+		"BsAdapterAjaxPingResult": "\\BlueSpice\\WhoIsOnline\\Hook\\BsAdapterAjaxPingResult\\UpdatePortlets::callback"
 	},
 	"config_prefix": "bsg",
 	"config": {
