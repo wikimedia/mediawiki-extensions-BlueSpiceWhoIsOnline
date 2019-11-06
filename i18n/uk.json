@@ -2,7 +2,8 @@
 	"@metadata": {
 		"authors": [
 			"NataChe",
-			"Ата"
+			"Ата",
+			"Movses"
 		]
 	},
 	"bs-whoisonline-desc": "Виводить список користувачів, які зараз онлайн",
@@ -16,5 +17,7 @@
 	"bs-whoisonline-pref-orderby-name": "Ім'я",
 	"bs-whoisonline-pref-interval": "Інтервал оновлення в секундах:",
 	"bs-whoisonline-tag-whoisonlinecount-desc": "Показує кількість усіх користувачів, які увійшли в систему за останні 10 хвилин.",
-	"bs-whoisonline-tag-whoisonlinepopup-desc": "Показує усіх користувачів, що увійшли в систему за останні 10 хвилин."
+	"bs-whoisonline-tag-whoisonlinepopup-desc": "Показує усіх користувачів, що увійшли в систему за останні 10 хвилин.",
+	"bs-whoisonline-collection-type-userlogin": "Ім'я користувача",
+	"bs-whoisonline-collection-var-login": "Увійти"
 }

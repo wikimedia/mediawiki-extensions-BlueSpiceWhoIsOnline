@@ -1,7 +1,8 @@
 {
 	"@metadata": {
 		"authors": [
-			"Bjankuloski06"
+			"Bjankuloski06",
+			"Vlad5250"
 		]
 	},
 	"bs-whoisonline-desc": "Прикажува список на корисници што се моментално на линија",
@@ -15,5 +16,7 @@
 	"bs-whoisonline-pref-orderby-name": "Име",
 	"bs-whoisonline-pref-interval": "Интервал на поднова во секунди:",
 	"bs-whoisonline-tag-whoisonlinecount-desc": "Покажува колку вкупно корисници се најавиле во последните 10 минути.",
-	"bs-whoisonline-tag-whoisonlinepopup-desc": "Ги покажува сите корисници што се најавиле во последните 10 минути."
+	"bs-whoisonline-tag-whoisonlinepopup-desc": "Ги покажува сите корисници што се најавиле во последните 10 минути.",
+	"bs-whoisonline-collection-type-userlogin": "Корисничка најава",
+	"bs-whoisonline-collection-var-login": "Најава"
 }
