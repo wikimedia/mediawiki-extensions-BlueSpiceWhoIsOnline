@@ -1,7 +1,8 @@
 {
 	"@metadata": {
 		"authors": [
-			"Guycn2"
+			"Guycn2",
+			"Steeve815"
 		]
 	},
 	"bs-whoisonline-desc": "הצגת רשימה של המשתמשים המחוברים לאתר",
@@ -15,5 +16,6 @@
 	"bs-whoisonline-pref-orderby-name": "שם",
 	"bs-whoisonline-pref-interval": "כל כמה שניות לעדכן:",
 	"bs-whoisonline-tag-whoisonlinecount-desc": "הצגת מספר המשתמשים שהיו מחוברים לחשבון ב־10 הדקות האחרונות.",
-	"bs-whoisonline-tag-whoisonlinepopup-desc": "הצגת רשימת המשתמשים שהיו מחוברים לחשבון ב־10 הדקות האחרונות."
+	"bs-whoisonline-tag-whoisonlinepopup-desc": "הצגת רשימת המשתמשים שהיו מחוברים לחשבון ב־10 הדקות האחרונות.",
+	"bs-whoisonline-collection-var-login": "כניסה"
 }
