@@ -2,9 +2,12 @@
 	"@metadata": {
 		"authors": [
 			"Sayginer",
-			"Sadrettin"
+			"Sadrettin",
+			"BaRaN6161 TURK"
 		]
 	},
+	"bs-whoisonline-desc": "Çevrimiçi durumda olan kullanıcıların listesini görüntüler.",
+	"bs-whoisonline-nousers": "Hiç kimse giriş yapmamış.",
 	"bs-whoisonline-widget-title": "Kim çevrimiçi?",
 	"prefs-whoisonline": "Kim çevrimiçi?",
 	"bs-whoisonline-pref-limitcount": "Maksimum gösterilen kullanıcı sayısı:",
@@ -13,5 +16,8 @@
 	"bs-whoisonline-pref-orderby-time": "Çalışma süresi",
 	"bs-whoisonline-pref-orderby-name": "Ad",
 	"bs-whoisonline-pref-interval": "Saniyeler içinde güncelleme aralığı:",
-	"bs-whoisonline-tag-whoisonlinecount-desc": "Şu an giriş yapmış kullanıcı sayısını verir."
+	"bs-whoisonline-tag-whoisonlinecount-desc": "Son 10 dakika içinde giriş yapan tüm kullanıcıların sayısını gösterir.",
+	"bs-whoisonline-tag-whoisonlinepopup-desc": "Son 10 dakika içinde giriş yapan tüm kullanıcıları gösterir.",
+	"bs-whoisonline-collection-type-userlogin": "Kullanıcı girişi",
+	"bs-whoisonline-collection-var-login": "Giriş"
 }
