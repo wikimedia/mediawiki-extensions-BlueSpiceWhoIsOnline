@@ -2,13 +2,13 @@
 
 namespace BlueSpice\WhoIsOnline\Tag;
 
+use BlueSpice\Services;
+use BlueSpice\Tag\Handler;
+use BlueSpice\WhoIsOnline\Tracer;
 use Config;
 use Html;
 use Parser;
 use PPFrame;
-use BlueSpice\Services;
-use BlueSpice\Tag\Handler;
-use BlueSpice\WhoIsOnline\Tracer;
 
 class CountHandler extends Handler {
 

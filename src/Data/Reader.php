@@ -2,8 +2,8 @@
 
 namespace BlueSpice\WhoIsOnline\Data;
 
-use BlueSpice\Data\ReaderParams;
 use BlueSpice\Data\DatabaseReader;
+use BlueSpice\Data\ReaderParams;
 
 class Reader extends DatabaseReader {
 

@@ -3,19 +3,19 @@
 
 namespace BlueSpice\WhoIsOnline;
 
+use BlueSpice\Data\FieldType;
+use BlueSpice\Data\Filter;
+use BlueSpice\Data\Filter\Date;
+use BlueSpice\Data\ReaderParams;
+use BlueSpice\Data\RecordSet;
+use BlueSpice\Timestamp;
+use BlueSpice\UtilityFactory;
+use BlueSpice\WhoIsOnline\Data\Record;
+use BlueSpice\WhoIsOnline\Data\Tracer\Store;
+use Config;
 use IContextSource;
 use ReadOnlyMode;
 use Wikimedia\Rdbms\LoadBalancer;
-use Config;
-use BlueSpice\Timestamp;
-use BlueSpice\UtilityFactory;
-use BlueSpice\Data\ReaderParams;
-use BlueSpice\Data\Filter;
-use BlueSpice\Data\Filter\Date;
-use BlueSpice\Data\FieldType;
-use BlueSpice\Data\RecordSet;
-use BlueSpice\WhoIsOnline\Data\Tracer\Store;
-use BlueSpice\WhoIsOnline\Data\Record;
 
 class Tracer {
 	const SESSION_LOG_TS = 'BlueSpiceWhoIsOnline::lastLoggedTime';

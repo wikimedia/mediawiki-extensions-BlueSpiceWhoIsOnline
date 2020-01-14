@@ -2,12 +2,12 @@
 
 namespace BlueSpice\WhoIsOnline\Tag;
 
-use Parser;
-use PPFrame;
-use BlueSpice\Tag\GenericHandler;
-use BlueSpice\Tag\MarkerType\NoWiki;
 use BlueSpice\ParamProcessor\ParamDefinition;
 use BlueSpice\ParamProcessor\ParamType;
+use BlueSpice\Tag\GenericHandler;
+use BlueSpice\Tag\MarkerType\NoWiki;
+use Parser;
+use PPFrame;
 
 class PopUp extends \BlueSpice\Tag\Tag {
 	const PARAM_ANCHOR_TEXT = 'anchortext';

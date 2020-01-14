@@ -2,25 +2,25 @@
 
 namespace BlueSpice\WhoIsOnline\DataCollector\StoreSourced;
 
-use DateTime;
-use DateTimeZone;
-use Config;
-use BlueSpice\Services;
-use BlueSpice\Timestamp;
-use BlueSpice\Data\IRecord;
-use BlueSpice\Data\RecordSet;
-use BlueSpice\Data\IStore;
+use BlueSpice\Data\FieldType;
 use BlueSpice\Data\Filter;
 use BlueSpice\Data\Filter\Date;
+use BlueSpice\Data\IRecord;
+use BlueSpice\Data\IStore;
+use BlueSpice\Data\RecordSet;
 use BlueSpice\Data\Sort;
-use BlueSpice\Data\FieldType;
 use BlueSpice\EntityFactory;
-use BlueSpice\ExtendedStatistics\Util\SnapshotRange\Daily;
-use BlueSpice\ExtendedStatistics\Entity\Snapshot;
 use BlueSpice\ExtendedStatistics\DataCollector\StoreSourced;
-use BlueSpice\WhoIsOnline\Data\Store;
+use BlueSpice\ExtendedStatistics\Entity\Snapshot;
+use BlueSpice\ExtendedStatistics\Util\SnapshotRange\Daily;
+use BlueSpice\Services;
+use BlueSpice\Timestamp;
 use BlueSpice\WhoIsOnline\Data\Record;
+use BlueSpice\WhoIsOnline\Data\Store;
 use BlueSpice\WhoIsOnline\Entity\Collection\UserLogin as Collection;
+use Config;
+use DateTime;
+use DateTimeZone;
 
 class UserLogin extends StoreSourced {
 

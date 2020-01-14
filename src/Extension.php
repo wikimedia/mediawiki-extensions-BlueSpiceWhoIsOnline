@@ -22,7 +22,7 @@
  * For further information visit https://bluespice.com
  *
  * @author     Markus Glaser <glaser@hallowelt.com>
-
+ *
  * @package    BlueSpice_Extensions
  * @subpackage WhoIsOnline
  * @copyright  Copyright (C) 2016 Hallo Welt! GmbH, All rights reserved.

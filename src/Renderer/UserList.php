@@ -2,17 +2,17 @@
 
 namespace BlueSpice\WhoIsOnline\Renderer;
 
-use Config;
-use IContextSource;
-use Html;
-use HtmlArmor;
-use User;
-use BlueSpice\Services;
-use BlueSpice\UtilityFactory;
 use BlueSpice\Data\ResultSet;
 use BlueSpice\Renderer\Params;
-use MediaWiki\Linker\LinkRenderer;
+use BlueSpice\Services;
+use BlueSpice\UtilityFactory;
 use BlueSpice\WhoIsOnline\Data\Record;
+use Config;
+use Html;
+use HtmlArmor;
+use IContextSource;
+use MediaWiki\Linker\LinkRenderer;
+use User;
 
 class UserList extends \BlueSpice\Renderer {
 	const PARAM_RECORD_SET = 'recordset';

@@ -2,10 +2,10 @@
 
 namespace BlueSpice\WhoIsOnline\Tag;
 
-use Parser;
-use PPFrame;
 use BlueSpice\Tag\GenericHandler;
 use BlueSpice\Tag\MarkerType\NoWiki;
+use Parser;
+use PPFrame;
 
 class Count extends \BlueSpice\Tag\Tag {
 

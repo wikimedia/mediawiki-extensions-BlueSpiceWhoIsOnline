@@ -2,13 +2,13 @@
 
 namespace BlueSpice\WhoIsOnline\RunJobsTriggerHandler;
 
-use Exception;
-use Status;
-use BlueSpice\Timestamp;
-use DateTime;
 use BlueSpice\RunJobsTriggerHandler;
 use BlueSpice\RunJobsTriggerHandler\Interval;
 use BlueSpice\RunJobsTriggerHandler\Interval\OnceADay;
+use BlueSpice\Timestamp;
+use DateTime;
+use Exception;
+use Status;
 
 class DeleteOldEntries extends RunJobsTriggerHandler {
 

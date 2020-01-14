@@ -1,7 +1,7 @@
 <?php
 
-use MediaWiki\MediaWikiServices;
 use BlueSpice\WhoIsOnline\Tracer;
+use MediaWiki\MediaWikiServices;
 
 return [
 

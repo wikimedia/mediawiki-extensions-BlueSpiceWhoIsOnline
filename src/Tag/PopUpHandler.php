@@ -2,16 +2,16 @@
 
 namespace BlueSpice\WhoIsOnline\Tag;
 
-use Config;
-use Html;
-use RequestContext;
-use Parser;
-use PPFrame;
+use BlueSpice\Renderer\Params;
 use BlueSpice\Services;
 use BlueSpice\Tag\Handler;
-use BlueSpice\Renderer\Params;
 use BlueSpice\WhoIsOnline\Renderer\UserList;
 use BlueSpice\WhoIsOnline\Tracer;
+use Config;
+use Html;
+use Parser;
+use PPFrame;
+use RequestContext;
 
 class PopUpHandler extends Handler {
 

@@ -2,13 +2,13 @@
 
 namespace BlueSpice\WhoIsOnline\EntityConfig\Collection;
 
-use Config;
-use BlueSpice\Services;
+use BlueSpice\Data\FieldType;
 use BlueSpice\EntityConfig;
 use BlueSpice\ExtendedStatistics\Data\Entity\Collection\Schema;
-use BlueSpice\Data\FieldType;
 use BlueSpice\ExtendedStatistics\EntityConfig\Collection;
+use BlueSpice\Services;
 use BlueSpice\WhoIsOnline\Entity\Collection\UserLogin as Entity;
+use Config;
 
 class UserLogin extends EntityConfig {
 
