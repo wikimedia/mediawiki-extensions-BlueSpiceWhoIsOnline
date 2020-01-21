@@ -38,25 +38,4 @@ namespace BlueSpice\WhoIsOnline;
  * @subpackage WhoIsOnline
  */
 class Extension extends \BlueSpice\Extension {
-
-	/**
-	 * Register tag with UsageTracker extension
-	 * @param array &$config
-	 * @return Always true to keep hook running
-	 */
-	public static function onBSUsageTrackerRegisterCollectors( &$config ) {
-		$config['bs:whoisonline:count'] = [
-			'class' => 'Property',
-			'config' => [
-				'identifier' => 'bs-tag-userscount'
-			]
-		];
-		$config['bs:whoisonline:popup'] = [
-			'class' => 'Property',
-			'config' => [
-				'identifier' => 'bs-tag-userslink'
-			]
-		];
-		return true;
-	}
 }
