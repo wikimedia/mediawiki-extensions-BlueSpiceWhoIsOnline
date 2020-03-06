@@ -41,7 +41,7 @@ class AddPopUpTag extends BSInsertMagicAjaxGetData {
 	 * @return string
 	 */
 	protected function getHelpLink() {
-		return $this->getServices()->getBSExtensionFactory()
+		return $this->getServices()->getService( 'BSExtensionFactory' )
 			->getExtension( 'BlueSpiceWhoIsOnline' )->getUrl();
 	}
 
