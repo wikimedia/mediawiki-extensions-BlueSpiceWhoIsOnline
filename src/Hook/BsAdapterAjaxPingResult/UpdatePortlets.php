@@ -32,7 +32,7 @@ class UpdatePortlets extends \BlueSpice\Hook\BsAdapterAjaxPingResult {
 		$recordSet = $this->getTracer()->getTracedRecords();
 		$this->singleResults['count'] = $recordSet->getTotal();
 
-		$portlet = $this->getServices()->getBSRendererFactory()->get(
+		$portlet = $this->getServices()->getService( 'BSRendererFactory' )->get(
 			'whoisonline-userlist',
 			new Params( [
 				UserList::PARAM_RECORD_SET => $recordSet

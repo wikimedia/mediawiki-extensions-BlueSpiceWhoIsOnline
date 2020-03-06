@@ -88,7 +88,7 @@ class UserList extends \BlueSpice\Renderer {
 			$linkRenderer = $services->getLinkRenderer();
 		}
 		if ( !$util ) {
-			$util = $services->getBSUtilityFactory();
+			$util = $services->getService( 'BSUtilityFactory' );
 		}
 
 		return new static( $config, $params, $linkRenderer, $context, $name, $util );

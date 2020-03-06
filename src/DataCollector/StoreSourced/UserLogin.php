@@ -123,7 +123,7 @@ class UserLogin extends StoreSourced {
 			$config = $snapshot->getConfig();
 		}
 		if ( !$factory ) {
-			$factory = $services->getBSEntityFactory();
+			$factory = $services->getService( 'BSEntityFactory' );
 		}
 		if ( !$store ) {
 			$store = new Store();

@@ -66,7 +66,7 @@ class PopUpHandler extends Handler {
 				: $this->processedArgs[PopUp::PARAM_ANCHOR_TEXT] )
 		);
 
-		$portlet = Services::getInstance()->getBSRendererFactory()->get(
+		$portlet = Services::getInstance()->getService( 'BSRendererFactory' )->get(
 			'whoisonline-userlist',
 			new Params( [
 				UserList::PARAM_RECORD_SET => $recordSet
