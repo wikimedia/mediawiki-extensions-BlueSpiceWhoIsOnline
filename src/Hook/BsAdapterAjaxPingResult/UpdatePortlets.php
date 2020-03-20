@@ -18,7 +18,10 @@ class UpdatePortlets extends \BlueSpice\Hook\BsAdapterAjaxPingResult {
 			return true;
 		}
 		$title = Title::newFromText( $this->titleText, $this->namespaceIndex );
-		if ( !$title || !$title->userCan( 'read' ) ) {
+		if ( !$title || !\MediaWiki\MediaWikiServices::getInstance()
+			->getPermissionManager()
+			->userCan( 'read', $this->getContext()->getUser(), $title )
+		) {
 			return true;
 		}
 		return false;
