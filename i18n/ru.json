@@ -1,11 +1,11 @@
 {
 	"@metadata": {
 		"authors": [
-			"Shuba",
 			"HarpyWar",
+			"Katunchik",
 			"Meshkov.a",
 			"Okras",
-			"Katunchik"
+			"Shuba"
 		]
 	},
 	"bs-whoisonline-desc": "Отображает список пользователей, которые в настоящее время \"в сети (online)\"",

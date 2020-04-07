@@ -1,11 +1,11 @@
 {
 	"@metadata": {
 		"authors": [
-			"SPQRobin",
 			"Esketti",
+			"Mar(c)",
 			"McDutchie",
-			"Siebrand",
-			"Mar(c)"
+			"SPQRobin",
+			"Siebrand"
 		]
 	},
 	"bs-whoisonline-desc": "Geeft een lijst weer met gebruikers die nu online zijn",
