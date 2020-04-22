@@ -1,6 +1,5 @@
 <?php
 
-
 namespace BlueSpice\WhoIsOnline;
 
 use BlueSpice\Data\FieldType;

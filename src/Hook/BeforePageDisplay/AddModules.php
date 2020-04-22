@@ -1,6 +1,5 @@
 <?php
 
-
 namespace BlueSpice\WhoIsOnline\Hook\BeforePageDisplay;
 
 class AddModules extends \BlueSpice\Hook\BeforePageDisplay {
