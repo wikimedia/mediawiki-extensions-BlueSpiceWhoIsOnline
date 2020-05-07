@@ -1,9 +1,9 @@
 {
 	"@metadata": {
 		"authors": [
+			"Movses",
 			"NataChe",
-			"Ата",
-			"Movses"
+			"Ата"
 		]
 	},
 	"bs-whoisonline-desc": "Виводить список користувачів, які зараз онлайн",
