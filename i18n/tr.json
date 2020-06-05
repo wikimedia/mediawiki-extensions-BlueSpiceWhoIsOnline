@@ -16,7 +16,7 @@
 	"bs-whoisonline-pref-interval": "Saniyeler içinde güncelleme aralığı:",
 	"bs-whoisonline-tag-whoisonlinecount-desc": "Son 10 dakika içinde giriş yapan tüm kullanıcıların sayısını gösterir.",
 	"bs-whoisonline-desc": "Çevrimiçi durumda olan kullanıcıların listesini görüntüler.",
-	"bs-whoisonline-nousers": "Hiç kimse giriş yapmamış.",
+	"bs-whoisonline-nousers": "Hiç kimse oturum açmamış.",
 	"bs-whoisonline-tag-whoisonlinepopup-desc": "Son 10 dakika içinde giriş yapan tüm kullanıcıları gösterir.",
 	"bs-whoisonline-collection-type-userlogin": "Kullanıcı girişi",
 	"bs-whoisonline-collection-var-login": "Oturum aç"
