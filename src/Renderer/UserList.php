@@ -4,7 +4,6 @@ namespace BlueSpice\WhoIsOnline\Renderer;
 
 use BlueSpice\Data\ResultSet;
 use BlueSpice\Renderer\Params;
-use BlueSpice\Services;
 use BlueSpice\UtilityFactory;
 use BlueSpice\WhoIsOnline\Data\Record;
 use Config;
@@ -12,6 +11,7 @@ use Html;
 use HtmlArmor;
 use IContextSource;
 use MediaWiki\Linker\LinkRenderer;
+use MediaWiki\MediaWikiServices;
 use User;
 
 class UserList extends \BlueSpice\Renderer {
@@ -64,7 +64,7 @@ class UserList extends \BlueSpice\Renderer {
 	/**
 	 *
 	 * @param string $name
-	 * @param Services $services
+	 * @param MediaWikiServices $services
 	 * @param Config $config
 	 * @param Params $params
 	 * @param IContextSource|null $context
@@ -72,8 +72,8 @@ class UserList extends \BlueSpice\Renderer {
 	 * @param UtilityFactory|null $util
 	 * @return Renderer
 	 */
-	public static function factory( $name, Services $services, Config $config, Params $params,
-		IContextSource $context = null, LinkRenderer $linkRenderer = null,
+	public static function factory( $name, MediaWikiServices $services, Config $config,
+		Params $params, IContextSource $context = null, LinkRenderer $linkRenderer = null,
 		UtilityFactory $util = null ) {
 		if ( !$context ) {
 			$context = $params->get(

@@ -3,12 +3,12 @@
 namespace BlueSpice\WhoIsOnline\Tag;
 
 use BlueSpice\Renderer\Params;
-use BlueSpice\Services;
 use BlueSpice\Tag\Handler;
 use BlueSpice\WhoIsOnline\Renderer\UserList;
 use BlueSpice\WhoIsOnline\Tracer;
 use Config;
 use Html;
+use MediaWiki\MediaWikiServices;
 use Parser;
 use PPFrame;
 use RequestContext;
@@ -39,7 +39,7 @@ class PopUpHandler extends Handler {
 		Parser $parser, PPFrame $frame, Tracer $tracer = null ) {
 		parent::__construct( $processedInput, $processedArgs, $parser, $frame );
 		if ( !$tracer ) {
-			$tracer = Services::getInstance()->getService( 'BSWhoIsOnlineTracer' );
+			$tracer = MediaWikiServices::getInstance()->getService( 'BSWhoIsOnlineTracer' );
 		}
 		$this->tracer = $tracer;
 	}
@@ -66,7 +66,7 @@ class PopUpHandler extends Handler {
 				: $this->processedArgs[PopUp::PARAM_ANCHOR_TEXT] )
 		);
 
-		$portlet = Services::getInstance()->getService( 'BSRendererFactory' )->get(
+		$portlet = MediaWikiServices::getInstance()->getService( 'BSRendererFactory' )->get(
 			'whoisonline-userlist',
 			new Params( [
 				UserList::PARAM_RECORD_SET => $recordSet
@@ -101,6 +101,6 @@ class PopUpHandler extends Handler {
 	 * @return Config
 	 */
 	protected function getConfig() {
-		return Services::getInstance()->getConfigFactory()->makeConfig( 'bsg' );
+		return MediaWikiServices::getInstance()->getConfigFactory()->makeConfig( 'bsg' );
 	}
 }

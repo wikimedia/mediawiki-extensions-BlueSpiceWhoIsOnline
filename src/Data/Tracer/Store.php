@@ -2,8 +2,8 @@
 
 namespace BlueSpice\WhoIsOnline\Data\Tracer;
 
-use BlueSpice\Services;
 use BlueSpice\WhoIsOnline\Data\Writer;
+use MediaWiki\MediaWikiServices;
 
 class Store extends \BlueSpice\WhoIsOnline\Data\Store {
 
@@ -13,7 +13,7 @@ class Store extends \BlueSpice\WhoIsOnline\Data\Store {
 	 */
 	public function getReader() {
 		return new Reader(
-			Services::getInstance()->getDBLoadBalancer()
+			MediaWikiServices::getInstance()->getDBLoadBalancer()
 		);
 	}
 
@@ -24,7 +24,7 @@ class Store extends \BlueSpice\WhoIsOnline\Data\Store {
 	public function getWriter() {
 		return new Writer(
 			$this->getReader(),
-			Services::getInstance()->getDBLoadBalancer()
+			MediaWikiServices::getInstance()->getDBLoadBalancer()
 		);
 	}
 }
