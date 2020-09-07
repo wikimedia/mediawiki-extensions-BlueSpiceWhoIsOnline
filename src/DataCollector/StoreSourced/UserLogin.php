@@ -13,7 +13,6 @@ use BlueSpice\EntityFactory;
 use BlueSpice\ExtendedStatistics\DataCollector\StoreSourced;
 use BlueSpice\ExtendedStatistics\Entity\Snapshot;
 use BlueSpice\ExtendedStatistics\Util\SnapshotRange\Daily;
-use BlueSpice\Services;
 use BlueSpice\Timestamp;
 use BlueSpice\WhoIsOnline\Data\Record;
 use BlueSpice\WhoIsOnline\Data\Store;
@@ -21,6 +20,7 @@ use BlueSpice\WhoIsOnline\Entity\Collection\UserLogin as Collection;
 use Config;
 use DateTime;
 use DateTimeZone;
+use MediaWiki\MediaWikiServices;
 
 class UserLogin extends StoreSourced {
 
@@ -110,14 +110,14 @@ class UserLogin extends StoreSourced {
 	/**
 	 *
 	 * @param string $type
-	 * @param Services $services
+	 * @param MediaWikiServices $services
 	 * @param Snapshot $snapshot
 	 * @param Config|null $config
 	 * @param EntityFactory|null $factory
 	 * @param IStore|null $store
 	 * @return DataCollector
 	 */
-	public static function factory( $type, Services $services, Snapshot $snapshot,
+	public static function factory( $type, MediaWikiServices $services, Snapshot $snapshot,
 		Config $config = null, EntityFactory $factory = null, IStore $store = null ) {
 		if ( !$config ) {
 			$config = $snapshot->getConfig();

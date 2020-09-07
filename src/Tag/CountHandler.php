@@ -2,11 +2,11 @@
 
 namespace BlueSpice\WhoIsOnline\Tag;
 
-use BlueSpice\Services;
 use BlueSpice\Tag\Handler;
 use BlueSpice\WhoIsOnline\Tracer;
 use Config;
 use Html;
+use MediaWiki\MediaWikiServices;
 use Parser;
 use PPFrame;
 
@@ -24,7 +24,7 @@ class CountHandler extends Handler {
 		Parser $parser, PPFrame $frame, Tracer $tracer = null ) {
 		parent::__construct( $processedInput, $processedArgs, $parser, $frame );
 		if ( !$tracer ) {
-			$tracer = Services::getInstance()->getService( 'BSWhoIsOnlineTracer' );
+			$tracer = MediaWikiServices::getInstance()->getService( 'BSWhoIsOnlineTracer' );
 		}
 		$this->tracer = $tracer;
 	}
@@ -49,6 +49,6 @@ class CountHandler extends Handler {
 	 * @return Config
 	 */
 	protected function getConfig() {
-		return Services::getInstance()->getConfigFactory()->makeConfig( 'bsg' );
+		return MediaWikiServices::getInstance()->getConfigFactory()->makeConfig( 'bsg' );
 	}
 }
