@@ -169,6 +169,9 @@ class Tracer {
 		if ( $context instanceof \ResourceLoaderContext ) {
 			return false;
 		}
+		if ( $context->getRequest()->getVal( 'action', 'view' ) === 'raw' ) {
+			return false;
+		}
 		if ( !$context->getUser() || $context->getUser()->isAnon() ) {
 			return false;
 		}
