@@ -1,7 +1,8 @@
 {
 	"@metadata": {
 		"authors": [
-			"Shirayuki"
+			"Shirayuki",
+			"つぶあん派"
 		]
 	},
 	"bs-whoisonline-nousers": "誰もログインしていません。",
@@ -13,5 +14,5 @@
 	"bs-whoisonline-pref-orderby-time": "オンライン時間",
 	"bs-whoisonline-pref-orderby-name": "名前",
 	"bs-whoisonline-pref-interval": "更新間隔 (秒):",
-	"bs-whoisonline-tag-whoisonlinecount-desc": "現在ログインしている利用者数を出力する。"
+	"bs-whoisonline-tag-whoisonlinecount-desc": "過去10分以内にログインした全ユーザーの数を表示します。"
 }
