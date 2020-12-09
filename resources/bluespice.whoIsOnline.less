@@ -1,0 +1,17 @@
+.bs-userminiprofile[data-bs-whoisonline-marker] {
+	a::after {
+		font-family: 'icomoon';
+		color: grey;
+		content: '\e91b';
+		position: absolute;
+		vertical-align: bottom;
+		right: 5%;
+		bottom: 5%;
+		font-size: 100%;
+	}
+	&.bs-whoisonline-marker-online {
+		a::after {
+			color: greenyellow;
+		}
+	}
+}
