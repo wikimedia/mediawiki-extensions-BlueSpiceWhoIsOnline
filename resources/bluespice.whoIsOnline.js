@@ -13,10 +13,53 @@
 	if ( interval < 1 ) {
 		return;
 	}
+	if ( !String.prototype.startsWith ) {
+		// old browsers
+		Object.defineProperty( String.prototype, 'startsWith', {
+			value: function(search, rawPos) {
+				var pos = rawPos > 0 ? rawPos|0 : 0;
+				return this.substring(pos, pos + search.length) === search;
+			}
+		} );
+	}
+	var markers = {};
+	var onlineMarkers = function() {
+		$( '.bs-userminiprofile[data-bs-whoisonline-marker]' ).each( function() {
+			var userName = $( this ).data( 'bs-whoisonline-marker' );
+			if ( !userName || userName.length < 1 ) {
+				return;
+			}
+			markers[userName] = 'unchecked';
+		} );
+		return markers;
+	};
 	var listener = function( result, Listener ) {
 		if( result.success !== true ) {
 			return;
 		}
+
+		markers = result['onlinemarkers'];
+		$( '.bs-userminiprofile[data-bs-whoisonline-marker]' ).removeClass( function ( index, classString ) {
+			var classes = classString.split(" "),
+				remove = [];
+			for ( var i = 0; classes.length > i; i++ ) {
+				if ( classes[i].startsWith( 'bs-whoisonline-marker-' ) !== true ) {
+					continue;
+				}
+				remove.push( classes[i] );
+			}
+			return remove.join(" ");
+		} );
+
+		$( '.bs-userminiprofile[data-bs-whoisonline-marker]' ).each( function() {
+			var userName = $( this ).data( 'bs-whoisonline-marker' );
+			if ( !userName || userName.length < 1 ) {
+				return;
+			}
+			$( this ).addClass(
+				'bs-whoisonline-marker-' + ( markers[userName] ? markers[userName] : 'unchecked' )
+			);
+		} );
 
 		$( '.bs-whoisonline-portlet' ).each( function(){
 			var portlet = result['portletItems'];
@@ -27,8 +70,18 @@
 			$( this ).html( result['count'] );
 		} );
 
-		BSPing.registerListener( 'WhoIsOnline', interval, [], listener );
-	}
-	BSPing.registerListener( 'WhoIsOnline', interval, [], listener );
+		BSPing.registerListener(
+			'WhoIsOnline',
+			interval,
+			[ { 'onlinemarkers': onlineMarkers() } ],
+			listener
+		);
+	};
+	BSPing.registerListener(
+		'WhoIsOnline',
+		interval,
+		[ { 'onlinemarkers': onlineMarkers() } ],
+		listener
+	);
 
 } )( mediaWiki, jQuery, blueSpice, document );

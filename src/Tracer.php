@@ -5,6 +5,7 @@ namespace BlueSpice\WhoIsOnline;
 
 use IContextSource;
 use ReadOnlyMode;
+use User;
 use Wikimedia\Rdbms\LoadBalancer;
 use Config;
 use BlueSpice\Timestamp;
@@ -20,6 +21,8 @@ use BlueSpice\WhoIsOnline\Data\Record;
 class Tracer {
 	const SESSION_LOG_TS = 'BlueSpiceWhoIsOnline::lastLoggedTime';
 	const SESSION_LOG_HASH = 'BlueSpiceWhoIsOnline::lastLoggedPageHash';
+	const ONLINE_STATUS_OFFLINE = 'offline';
+	const ONLINE_STATUS_ONLINE = 'online';
 
 	/**
 	 *
@@ -139,6 +142,25 @@ class Tracer {
 		);
 
 		return true;
+	}
+
+	/**
+	 * TODO: maybe add more that just on-/offline. Even a user defined status in
+	 * preferences could be applied
+	 * @param User $user
+	 * @return string
+	 */
+	public function getUserOnlineStatus( User $user ) {
+		if ( $user->isAnon() ) {
+			return static::ONLINE_STATUS_OFFLINE;
+		}
+		return array_filter(
+			$this->getTracedRecords()->getRecords(),
+			function ( Record $e ) use( $user ) {
+				return $e->get( Record::USER_NAME, 'Anon' ) === $user->getName();
+			} )
+			? static::ONLINE_STATUS_ONLINE
+			: static::ONLINE_STATUS_OFFLINE;
 	}
 
 	/**

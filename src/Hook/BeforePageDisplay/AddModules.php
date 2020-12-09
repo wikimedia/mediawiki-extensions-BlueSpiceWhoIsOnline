@@ -18,7 +18,10 @@ class AddModules extends \BlueSpice\Hook\BeforePageDisplay {
 	 * @return bool
 	 */
 	protected function doProcess() {
-		$this->out->addModules( 'ext.bluespice.whoisonline' );
+		$this->out->addModules( [
+			'ext.bluespice.whoisonline',
+			'ext.bluespice.whoisonline.styles'
+		] );
 		return true;
 	}
 
