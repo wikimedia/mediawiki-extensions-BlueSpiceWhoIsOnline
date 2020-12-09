@@ -62,6 +62,11 @@
 		"ClearWhoIsOnlineTableAfterUpgradeTimestamp": "maintenance/ClearWhoIsOnlineTableAfterUpgradeTimestamp.php"
 	},
 	"ResourceModules": {
+		"ext.bluespice.whoisonline.styles": {
+			"styles": [
+				"bluespice.whoIsOnline.less"
+			]
+		},
 		"ext.bluespice.whoisonline": {
 			"scripts": "bluespice.whoIsOnline.js",
 			"dependencies": [
@@ -94,7 +99,11 @@
 			"\\BlueSpice\\WhoIsOnline\\Hook\\LoadExtensionSchemaUpdates\\AddWhoIsOnlineTable::callback",
 			"\\BlueSpice\\WhoIsOnline\\Hook\\LoadExtensionSchemaUpdates\\AddClearTableLoggedUpdate::callback"
 		],
-		"BsAdapterAjaxPingResult": "\\BlueSpice\\WhoIsOnline\\Hook\\BsAdapterAjaxPingResult\\UpdatePortlets::callback"
+		"BsAdapterAjaxPingResult": [
+			"\\BlueSpice\\WhoIsOnline\\Hook\\BsAdapterAjaxPingResult\\UpdatePortlets::callback",
+			"\\BlueSpice\\WhoIsOnline\\Hook\\BsAdapterAjaxPingResult\\UpdateOnlineMarkers::callback"
+		],
+		"BSFoundationRendererMakeTagAttribs": "\\BlueSpice\\WhoIsOnline\\Hook\\BSFoundationRendererMakeTagAttribs\\AddUserProfileOnlineMarkerMetaData::callback"
 	},
 	"config_prefix": "bsg",
 	"config": {
