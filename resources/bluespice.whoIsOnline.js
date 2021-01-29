@@ -84,4 +84,6 @@
 		listener
 	);
 
+	$('.wo-link').tooltip();
+
 } )( mediaWiki, jQuery, blueSpice, document );

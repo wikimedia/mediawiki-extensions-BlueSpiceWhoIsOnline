@@ -52,19 +52,6 @@ class PopUpHandler extends Handler {
 		$recordSet = $this->tracer->getTracedRecords();
 
 		$this->parser->getOutput()->setProperty( 'bs-tag-userscount', 1 );
-		$targetId = $this->getTargetId();
-		$maxHeigt = $this->getConfig()->get( 'WhoIsOnlineLimitCount' ) * 20;
-		$anchor = Html::element( 'a', [
-				'class' => 'bs-tooltip-link',
-				'data-bs-tt-title' => wfMessage( 'bs-whoisonline-widget-title' ),
-				'data-bs-tt-target' => "$targetId-target",
-				'data-bs-tt-maxheight' => $maxHeigt,
-				'id' => $targetId,
-			],
-			( empty( $this->processedArgs[PopUp::PARAM_ANCHOR_TEXT] )
-				? wfMessage( 'bs-whoisonline-widget-title' )
-				: $this->processedArgs[PopUp::PARAM_ANCHOR_TEXT] )
-		);
 
 		$portlet = Services::getInstance()->getService( 'BSRendererFactory' )->get(
 			'whoisonline-userlist',
@@ -74,18 +61,20 @@ class PopUpHandler extends Handler {
 			RequestContext::getMain()
 		);
 
-		$target = Html::rawElement( 'div', [
-				'class' => 'bs-tooltip-body bs-whoisonline-portlet',
-				'id' => "$targetId-target"
+		$anchor = Html::element( 'a', [
+				'class' => 'wo-link',
+				'title' => wfMessage( 'bs-whoisonline-widget-title' ),
+				'data-toggle' => 'tooltip',
+				'data-placement' => 'auto',
+				'data-template' => $portlet->render(),
+				'data-delay' => '{ "show": 250, "hide": 1000 }'
 			],
-			$portlet->render()
+			( empty( $this->processedArgs[PopUp::PARAM_ANCHOR_TEXT] )
+				? wfMessage( 'bs-whoisonline-widget-title' )
+				: $this->processedArgs[PopUp::PARAM_ANCHOR_TEXT] )
 		);
 
-		return $anchor . Html::rawElement(
-			'div',
-			[ 'class' => 'bs-tooltip' ],
-			$target
-		);
+		return $anchor;
 	}
 
 	/**

@@ -98,7 +98,7 @@ class UserList extends \BlueSpice\Renderer {
 	 *
 	 * @return string
 	 */
-	public function render() {
+	private function renderList() {
 		$out = '';
 		$out .= Html::openElement( 'ul' );
 		if ( $this->recordSet->getTotal() < 1 ) {
@@ -122,6 +122,24 @@ class UserList extends \BlueSpice\Renderer {
 			$out .= Html::closeElement( 'li' );
 		}
 		$out .= Html::closeElement( 'ul' );
+		return $out;
+	}
+
+	/**
+	 *
+	 * @return string
+	 */
+	public function render() {
+		// wrap the list in a template for bootstrap tooltip
+		$out = '<div class="tooltip bs-tooltip" role="tooltip">';
+		$out .= '<div class="tooltip-arrow"></div>';
+		$out .= '<div class="tooltip-body">';
+		// content of '.tooltip-inner' element will be replaced by link attribute 'title'
+		$out .= '<div class="tooltip-inner"></div>';
+		$out .= $this->renderList();
+		$out .= '</div>';
+		$out .= '</div>';
+
 		return $out;
 	}
 
