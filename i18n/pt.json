@@ -1,9 +1,9 @@
 {
 	"@metadata": {
 		"authors": [
-			"Vitorvicentevalente",
 			"Hamilton Abreu",
-			"Mansil alfalb"
+			"Mansil alfalb",
+			"Vitorvicentevalente"
 		]
 	},
 	"bs-whoisonline-desc": "Mostra uma lista de utilizadores que estão atualmente on-line",

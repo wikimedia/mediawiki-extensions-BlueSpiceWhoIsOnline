@@ -1,6 +1,7 @@
 {
 	"@metadata": {
 		"authors": [
+			")8",
 			"Liuxinyu970226"
 		]
 	},
@@ -15,5 +16,7 @@
 	"bs-whoisonline-pref-orderby-name": "名称",
 	"bs-whoisonline-pref-interval": "每秒更新间隔：",
 	"bs-whoisonline-tag-whoisonlinecount-desc": "显示在过去10分钟内登录的所有用户数量。",
-	"bs-whoisonline-tag-whoisonlinepopup-desc": "显示在过去10分钟内登录的所有用户。"
+	"bs-whoisonline-tag-whoisonlinepopup-desc": "显示在过去10分钟内登录的所有用户。",
+	"bs-whoisonline-collection-type-userlogin": "用户登录",
+	"bs-whoisonline-collection-var-login": "登录"
 }

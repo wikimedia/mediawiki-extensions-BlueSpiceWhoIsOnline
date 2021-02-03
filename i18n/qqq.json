@@ -1,11 +1,11 @@
 {
 	"@metadata": {
 		"authors": [
-			"Stephan Muggli <muggli@hallowelt.biz>",
 			"Liuxinyu970226",
+			"Nemo bis",
 			"Robby",
 			"Shirayuki",
-			"Nemo bis"
+			"Stephan Muggli <muggli@hallowelt.biz>"
 		]
 	},
 	"bs-whoisonline-desc": "Used in [{{canonicalurl:Special:WikiAdmin|mode=ExtensionInfo}} Special:WikiAdmin?mode=ExtensionInfo], description of who is online extension",

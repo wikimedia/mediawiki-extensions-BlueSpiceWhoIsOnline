@@ -1,11 +1,11 @@
 {
 	"@metadata": {
 		"authors": [
-			"SPQRobin",
 			"Esketti",
+			"Mar(c)",
 			"McDutchie",
-			"Siebrand",
-			"Mar(c)"
+			"SPQRobin",
+			"Siebrand"
 		]
 	},
 	"bs-whoisonline-desc": "Geeft een lijst weer met gebruikers die nu online zijn",
@@ -18,6 +18,6 @@
 	"bs-whoisonline-pref-orderby-time": "Uptime",
 	"bs-whoisonline-pref-orderby-name": "Naam",
 	"bs-whoisonline-pref-interval": "Tijd tussen bijwerken in seconden:",
-	"bs-whoisonline-tag-whoisonlinecount-desc": "Geeft het aantal gebruikers die zich in de afgelopen 10 minuten hebben aangemeld.",
-	"bs-whoisonline-tag-whoisonlinepopup-desc": "Toont alle gebruikers die zich in de afgelopen 10 minuten hebben aangemeld."
+	"bs-whoisonline-tag-whoisonlinecount-desc": "Geeft het aantal gebruikers die in de afgelopen 10 minuten aangemeld waren.",
+	"bs-whoisonline-tag-whoisonlinepopup-desc": "Toont alle gebruikers die in de afgelopen 10 minuten aangemeld waren."
 }

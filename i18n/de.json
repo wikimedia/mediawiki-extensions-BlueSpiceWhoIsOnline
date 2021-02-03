@@ -1,10 +1,10 @@
 {
 	"@metadata": {
 		"authors": [
-			"Stephan Muggli <muggli@hallowelt.biz>",
-			"Metalhead64",
 			"Ferdinand0101",
-			"Mglaser"
+			"Metalhead64",
+			"Mglaser",
+			"Stephan Muggli <muggli@hallowelt.biz>"
 		]
 	},
 	"bs-whoisonline-desc": "Zeigt eine Liste der User an, die momentan online sind",
