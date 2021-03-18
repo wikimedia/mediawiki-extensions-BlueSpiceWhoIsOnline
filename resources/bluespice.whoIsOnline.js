@@ -84,6 +84,8 @@
 		listener
 	);
 
-	$('.wo-link').tooltip();
+	mw.loader.using( 'ext.bootstrap.scripts' ).done( function() {
+		$('.wo-link').tooltip();
+	} );
 
 } )( mediaWiki, jQuery, blueSpice, document );
