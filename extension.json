@@ -20,12 +20,12 @@
 			"Extensions": {
 				"BlueSpiceWhoIsOnline": {
 					"className": "\\BlueSpice\\WhoIsOnline\\Extension",
-					"extPath": "/BlueSpiceWhoIsOnline",
-					"configDefinitions": {
-						"WhoIsOnlineMaxIdleTime": "\\BlueSpice\\WhoIsOnline\\ConfigDefinition\\MaxIdleTime::getInstance",
-						"WhoIsOnlineInterval": "\\BlueSpice\\WhoIsOnline\\ConfigDefinition\\Interval::getInstance"
-					}
+					"extPath": "/BlueSpiceWhoIsOnline"
 				}
+			},
+			"ConfigDefinitionRegistry": {
+				"WhoIsOnlineMaxIdleTime": "\\BlueSpice\\WhoIsOnline\\ConfigDefinition\\MaxIdleTime::getInstance",
+				"WhoIsOnlineInterval": "\\BlueSpice\\WhoIsOnline\\ConfigDefinition\\Interval::getInstance"
 			},
 			"RunJobsTriggerHandlerRegistry": {
 				"bs-whoisonline-deleteoldentries": "\\BlueSpice\\WhoIsOnline\\RunJobsTriggerHandler\\DeleteOldEntries::factory"
