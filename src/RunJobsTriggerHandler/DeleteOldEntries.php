@@ -30,7 +30,7 @@ class DeleteOldEntries extends RunJobsTriggerHandler {
 			( new DateTime() )->modify( '-1 day' )
 		);
 		try {
-			$this->loadBalancer->getConnection( DB_MASTER )->delete(
+			$this->loadBalancer->getConnection( DB_PRIMARY )->delete(
 				'bs_whoisonline',
 				[ "wo_log_ts < {$oneHourAgo->getTimestamp( TS_MW )}" ],
 				__METHOD__

@@ -13,7 +13,7 @@ class ClearWhoIsOnlineTableAfterUpgradeTimestamp extends LoggedUpdateMaintenance
 	protected function doDBUpdates() {
 		$this->output( "...bs_whoisonline -> clear table..." );
 
-		$this->getDB( DB_MASTER )->delete(
+		$this->getDB( DB_PRIMARY )->delete(
 			'bs_whoisonline',
 			[ 'wo_id != 0' ],
 			__METHOD__

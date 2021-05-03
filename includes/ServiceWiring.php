@@ -5,7 +5,7 @@ use MediaWiki\MediaWikiServices;
 
 return [
 
-	'BSWhoIsOnlineTracer' => function ( MediaWikiServices $services ) {
+	'BSWhoIsOnlineTracer' => static function ( MediaWikiServices $services ) {
 		return new Tracer(
 			$services->getDBLoadBalancer(),
 			$services->getConfigFactory()->makeConfig( 'bsg' ),

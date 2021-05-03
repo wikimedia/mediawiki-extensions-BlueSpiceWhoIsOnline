@@ -102,7 +102,7 @@ class UserLogin extends StoreSourced {
 	 * @return Record[]
 	 */
 	protected function extractRecordsByUserName( array $records, $userName ) {
-		return array_filter( $records, function ( Record $record ) use ( $userName ) {
+		return array_filter( $records, static function ( Record $record ) use ( $userName ) {
 			return $record->get( Record::USER_NAME ) === $userName;
 		} );
 	}
