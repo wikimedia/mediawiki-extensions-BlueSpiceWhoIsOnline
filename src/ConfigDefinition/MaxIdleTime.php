@@ -25,4 +25,12 @@ class MaxIdleTime extends IntSetting {
 	public function getLabelMessageKey() {
 		return 'bs-whoisonline-pref-maxidletime';
 	}
+
+	/**
+	 *
+	 * @return string
+	 */
+	public function getHelpMessageKey() {
+		return 'bs-whoisonline-pref-maxidletime-help';
+	}
 }

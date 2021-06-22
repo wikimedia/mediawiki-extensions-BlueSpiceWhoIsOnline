@@ -23,5 +23,7 @@
 	"bs-whoisonline-collection-type-userlogin": "Label for source type \"userlogin\" in entry field \"type\"\n{{Identical|User login}}",
 	"bs-whoisonline-collection-var-login": "Label for entry field \"login\"\n{{Identical|Login}}",
 	"bs-whoisonline-statistics-report-login-duration": "Statistics report name",
-	"bs-whoisonline-statistics-report-login-duration-axis-value": "Label for the \"value\" axis"
+	"bs-whoisonline-statistics-report-login-duration-axis-value": "Label for the \"value\" axis",
+	"bs-whoisonline-pref-interval-help": "Description for config variable \"WhoIsOnlineInterval\"",
+	"bs-whoisonline-pref-maxidletime-help": "Description for config variable \"WhoIsOnlineMaxIdleTime\""
 }
