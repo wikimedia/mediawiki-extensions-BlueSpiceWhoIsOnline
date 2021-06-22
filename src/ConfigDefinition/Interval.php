@@ -33,4 +33,12 @@ class Interval extends IntSetting {
 	public function isRLConfigVar() {
 		return true;
 	}
+
+	/**
+	 *
+	 * @return string
+	 */
+	public function getHelpMessageKey() {
+		return 'bs-whoisonline-pref-interval-help';
+	}
 }
