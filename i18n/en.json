@@ -19,5 +19,7 @@
 	"bs-whoisonline-collection-type-userlogin": "User login",
 	"bs-whoisonline-collection-var-login": "Login",
 	"bs-whoisonline-statistics-report-login-duration": "Login duration",
-	"bs-whoisonline-statistics-report-login-duration-axis-value": "Login duration (sec)"
+	"bs-whoisonline-statistics-report-login-duration-axis-value": "Login duration (sec)",
+	"bs-whoisonline-pref-interval-help": "The list of users is upated every x seconds.",
+	"bs-whoisonline-pref-maxidletime-help": "After this time in seconds without activity, a user is considered offline."
 }
