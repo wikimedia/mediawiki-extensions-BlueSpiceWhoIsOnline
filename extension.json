@@ -103,7 +103,8 @@
 			"\\BlueSpice\\WhoIsOnline\\Hook\\BsAdapterAjaxPingResult\\UpdatePortlets::callback",
 			"\\BlueSpice\\WhoIsOnline\\Hook\\BsAdapterAjaxPingResult\\UpdateOnlineMarkers::callback"
 		],
-		"BSFoundationRendererMakeTagAttribs": "\\BlueSpice\\WhoIsOnline\\Hook\\BSFoundationRendererMakeTagAttribs\\AddUserProfileOnlineMarkerMetaData::callback"
+		"BSFoundationRendererMakeTagAttribs": "\\BlueSpice\\WhoIsOnline\\Hook\\BSFoundationRendererMakeTagAttribs\\AddUserProfileOnlineMarkerMetaData::callback",
+		"MergeAccountFromTo": "\\BlueSpice\\WhoIsOnline\\Hook\\MergeAccountFromTo\\MergeWhoIsOnlineDBFields::callback"
 	},
 	"config_prefix": "bsg",
 	"config": {
