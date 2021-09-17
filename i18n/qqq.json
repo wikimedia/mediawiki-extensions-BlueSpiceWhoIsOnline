@@ -21,5 +21,7 @@
 	"bs-whoisonline-tag-whoisonlinecount-desc": "Used in InsertMagic extension, tag description for renders the number of currently logged in users.\n{{Related|Bs-tag-desc}}",
 	"bs-whoisonline-tag-whoisonlinepopup-desc": "Description of a tag which produces a little popup list of users who are currently logged in.\n{{Related|Bs-tag-desc}}",
 	"bs-whoisonline-collection-type-userlogin": "Label for source type \"userlogin\" in entry field \"type\"\n{{Identical|User login}}",
-	"bs-whoisonline-collection-var-login": "Label for entry field \"login\"\n{{Identical|Login}}"
+	"bs-whoisonline-collection-var-login": "Label for entry field \"login\"\n{{Identical|Login}}",
+	"bs-whoisonline-statistics-report-login-duration": "Statistics report name",
+	"bs-whoisonline-statistics-report-login-duration-axis-value": "Label for the \"value\" axis"
 }
