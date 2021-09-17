@@ -17,5 +17,7 @@
 	"bs-whoisonline-tag-whoisonlinecount-desc": "Shows the number of all users who have been logged in within the last 10 minutes.",
 	"bs-whoisonline-tag-whoisonlinepopup-desc": "Shows all users who have been logged in within the last 10 minutes.",
 	"bs-whoisonline-collection-type-userlogin": "User login",
-	"bs-whoisonline-collection-var-login": "Login"
+	"bs-whoisonline-collection-var-login": "Login",
+	"bs-whoisonline-statistics-report-login-duration": "Login duration",
+	"bs-whoisonline-statistics-report-login-duration-axis-value": "Login duration (sec)"
 }
