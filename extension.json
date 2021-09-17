@@ -36,14 +36,19 @@
 			},
 			"RendererRegistry": {
 				"whoisonline-userlist": "\\BlueSpice\\WhoIsOnline\\Renderer\\UserList::factory"
-			},
-			"EntityRegistry": {
-				"userlogin": "\\BlueSpice\\WhoIsOnline\\EntityConfig\\Collection\\UserLogin::factory"
 			}
 		},
 		"BlueSpiceExtendedStatistics": {
-			"SnapshotDataCollectorRegistry": {
-				"userlogin": "\\BlueSpice\\WhoIsOnline\\DataCollector\\StoreSourced\\UserLogin::factory"
+			"SnapshotProviders": {
+				"wo-loginduration": {
+					"class": "\\BlueSpice\\WhoIsOnline\\Statistics\\SnapshotProvider\\LoginDuration",
+					"services": [ "DBLoadBalancer" ]
+				}
+			},
+			"Reports": {
+				"wo-loginduration": {
+					"class": "\\BlueSpice\\WhoIsOnline\\Statistics\\Report\\LoginDuration"
+				}
 			}
 		}
 	},
@@ -77,6 +82,18 @@
 			"messages": [
 				"bs-whoisonline-collection-type-userlogin",
 				"bs-whoisonline-collection-var-login"
+			]
+		},
+		"ext.bluespice.whoisonline.statistics": {
+			"scripts": [
+				"statistics/LoginDurationReport.js"
+			],
+			"dependencies": [
+				"ext.bluespice"
+			],
+			"messages": [
+				"bs-whoisonline-statistics-report-login-duration",
+				"bs-whoisonline-statistics-report-login-duration-axis-value"
 			]
 		}
 	},
