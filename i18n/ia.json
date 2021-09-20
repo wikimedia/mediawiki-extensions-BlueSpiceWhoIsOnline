@@ -1,0 +1,21 @@
+{
+	"@metadata": {
+		"authors": [
+			"McDutchie"
+		]
+	},
+	"bs-whoisonline-desc": "Monstra un lista de usatores que es actualmente in linea",
+	"bs-whoisonline-nousers": "Necuno ha aperite session.",
+	"bs-whoisonline-widget-title": "Qui es in linea?",
+	"prefs-whoisonline": "Qui es in linea?",
+	"bs-whoisonline-pref-limitcount": "Numero maxime de usatores monstrate:",
+	"bs-whoisonline-pref-orderby": "Ordinar per:",
+	"bs-whoisonline-pref-maxidletime": "Tempore in secundas usque un usator es marcate como foras de linea:",
+	"bs-whoisonline-pref-orderby-time": "Durata del session",
+	"bs-whoisonline-pref-orderby-name": "Nomine",
+	"bs-whoisonline-pref-interval": "Intervallo de actualisation in secundas:",
+	"bs-whoisonline-tag-whoisonlinecount-desc": "Monstra le numero de usatores que con session aperte in le ultime 10 minutas.",
+	"bs-whoisonline-tag-whoisonlinepopup-desc": "Monstra tote le usatores con session aperte in le ultime 10 minutas.",
+	"bs-whoisonline-collection-type-userlogin": "Session de usator",
+	"bs-whoisonline-collection-var-login": "Nomine de usator"
+}
