@@ -19,5 +19,7 @@
 	"bs-whoisonline-collection-type-userlogin": "Session de usator",
 	"bs-whoisonline-collection-var-login": "Nomine de usator",
 	"bs-whoisonline-statistics-report-login-duration": "Durata del session",
-	"bs-whoisonline-statistics-report-login-duration-axis-value": "Durata del session (sec)"
+	"bs-whoisonline-statistics-report-login-duration-axis-value": "Durata del session (sec)",
+	"bs-whoisonline-pref-interval-help": "Le lista de usatores se actualisa cata x secundas.",
+	"bs-whoisonline-pref-maxidletime-help": "Post iste tempore in secundas sin activitate, un usator es considerate foras de linea."
 }
