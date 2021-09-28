@@ -1,6 +1,7 @@
 {
 	"@metadata": {
 		"authors": [
+			"DDPAT",
 			"Movses",
 			"NataChe",
 			"Ата"
@@ -19,5 +20,9 @@
 	"bs-whoisonline-tag-whoisonlinecount-desc": "Показує кількість усіх користувачів, які увійшли в систему за останні 10 хвилин.",
 	"bs-whoisonline-tag-whoisonlinepopup-desc": "Показує усіх користувачів, що увійшли в систему за останні 10 хвилин.",
 	"bs-whoisonline-collection-type-userlogin": "Ім'я користувача",
-	"bs-whoisonline-collection-var-login": "Увійти"
+	"bs-whoisonline-collection-var-login": "Увійти",
+	"bs-whoisonline-statistics-report-login-duration": "Тривалість входу",
+	"bs-whoisonline-statistics-report-login-duration-axis-value": "Тривалість входу (с)",
+	"bs-whoisonline-pref-interval-help": "Список користувачів оновлюється кожні х секунд.",
+	"bs-whoisonline-pref-maxidletime-help": "Через цей час у секундах без активності користувач вважається офлайн."
 }
