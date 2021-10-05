@@ -19,5 +19,9 @@
 	"bs-whoisonline-tag-whoisonlinecount-desc": "顯示目前登入的使用者數量。",
 	"bs-whoisonline-tag-whoisonlinepopup-desc": "顯示過去 10 分鐘內已登入的所有使用者。",
 	"bs-whoisonline-collection-type-userlogin": "使用者登入",
-	"bs-whoisonline-collection-var-login": "登入"
+	"bs-whoisonline-collection-var-login": "登入",
+	"bs-whoisonline-statistics-report-login-duration": "登入持續時間",
+	"bs-whoisonline-statistics-report-login-duration-axis-value": "登入持續時間（秒）",
+	"bs-whoisonline-pref-interval-help": "使用者清單每 x 秒更新。",
+	"bs-whoisonline-pref-maxidletime-help": "在這段時間（以秒為單位）沒有活動的話，使用者會被視為離線。"
 }
