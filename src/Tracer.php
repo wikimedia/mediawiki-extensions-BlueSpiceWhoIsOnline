@@ -18,10 +18,10 @@ use User;
 use Wikimedia\Rdbms\LoadBalancer;
 
 class Tracer {
-	const SESSION_LOG_TS = 'BlueSpiceWhoIsOnline::lastLoggedTime';
-	const SESSION_LOG_HASH = 'BlueSpiceWhoIsOnline::lastLoggedPageHash';
-	const ONLINE_STATUS_OFFLINE = 'offline';
-	const ONLINE_STATUS_ONLINE = 'online';
+	public const SESSION_LOG_TS = 'BlueSpiceWhoIsOnline::lastLoggedTime';
+	public const SESSION_LOG_HASH = 'BlueSpiceWhoIsOnline::lastLoggedPageHash';
+	public const ONLINE_STATUS_OFFLINE = 'offline';
+	public const ONLINE_STATUS_ONLINE = 'online';
 
 	/**
 	 *
