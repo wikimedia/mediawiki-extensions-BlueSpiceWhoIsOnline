@@ -5,7 +5,7 @@ namespace BlueSpice\WhoIsOnline\Data;
 use BlueSpice\Data\FieldType;
 
 class Schema extends \BlueSpice\Data\Schema {
-	const TABLE_NAME = 'bs_whoisonline';
+	public const TABLE_NAME = 'bs_whoisonline';
 
 	public function __construct() {
 		parent::__construct( [

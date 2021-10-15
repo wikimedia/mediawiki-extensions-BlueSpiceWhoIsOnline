@@ -15,7 +15,7 @@ use MediaWiki\MediaWikiServices;
 use User;
 
 class UserList extends \BlueSpice\Renderer {
-	const PARAM_RECORD_SET = 'recordset';
+	public const PARAM_RECORD_SET = 'recordset';
 
 	/**
 	 *
