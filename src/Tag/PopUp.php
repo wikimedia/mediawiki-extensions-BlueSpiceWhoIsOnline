@@ -10,7 +10,7 @@ use Parser;
 use PPFrame;
 
 class PopUp extends \BlueSpice\Tag\Tag {
-	const PARAM_ANCHOR_TEXT = 'anchortext';
+	public const PARAM_ANCHOR_TEXT = 'anchortext';
 
 	/**
 	 *
