@@ -4,6 +4,7 @@
 			"Ferdinand0101",
 			"Metalhead64",
 			"Mglaser",
+			"Mschlindwein",
 			"Stephan Muggli <muggli@hallowelt.biz>"
 		]
 	},
@@ -22,5 +23,7 @@
 	"bs-whoisonline-collection-type-userlogin": "Benutzeranmeldung",
 	"bs-whoisonline-collection-var-login": "Anmelden",
 	"bs-whoisonline-pref-interval-help": "So oft in Sekunden wird die Anzeige aktualisiert.",
-	"bs-whoisonline-pref-maxidletime-help": "Nach dieser Zeit in Sekunden ohne Aktivität gilt der Nutzer als offline."
+	"bs-whoisonline-pref-maxidletime-help": "Nach dieser Zeit in Sekunden ohne Aktivität gilt der Nutzer als offline.",
+	"bs-whoisonline-statistics-report-login-duration": "Anmeldedauer",
+	"bs-whoisonline-statistics-report-login-duration-axis-value": "Anmeldedauer (Sek.)"
 }

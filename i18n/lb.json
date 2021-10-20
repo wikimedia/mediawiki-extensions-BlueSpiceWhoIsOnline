@@ -14,5 +14,7 @@
 	"bs-whoisonline-pref-orderby-name": "Numm",
 	"bs-whoisonline-pref-interval": "Aktualisatiouns-Intervall a Sekonnen:",
 	"bs-whoisonline-tag-whoisonlinecount-desc": "Gëtt Zuel vun de Benotzer déi sech an de leschten 10 Minutten ageloggt hunn.",
-	"bs-whoisonline-collection-var-login": "Aloggen"
+	"bs-whoisonline-collection-var-login": "Aloggen",
+	"bs-whoisonline-statistics-report-login-duration": "Dauer vum Login",
+	"bs-whoisonline-pref-interval-help": "D'Lëscht vun de Benotzer gëtt all x Sekonnen aktualiséiert."
 }
