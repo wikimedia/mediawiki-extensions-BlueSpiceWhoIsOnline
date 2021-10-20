@@ -15,5 +15,6 @@
 	"bs-whoisonline-tag-whoisonlinecount-desc": "지난 10분 이내로 로그인한 모든 사용자의 수를 표시합니다.",
 	"bs-whoisonline-tag-whoisonlinepopup-desc": "지난 10분 이내에 로그인한 모든 사용자를 표시합니다.",
 	"bs-whoisonline-collection-type-userlogin": "사용자 로그인",
-	"bs-whoisonline-collection-var-login": "로그인"
+	"bs-whoisonline-collection-var-login": "로그인",
+	"bs-whoisonline-pref-interval-help": "사용자 목록이 x 초마다 업데이트됩니다."
 }
