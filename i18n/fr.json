@@ -22,5 +22,9 @@
 	"bs-whoisonline-tag-whoisonlinecount-desc": "Affiche le nombre d’utilisateurs qui se sont connectés depuis les 10 dernières minutes.",
 	"bs-whoisonline-tag-whoisonlinepopup-desc": "Affiche le nombre d’utilisateurs qui se sont connectés dans les 10 dernières minutes.",
 	"bs-whoisonline-collection-type-userlogin": "Connexion de l’utilisateur",
-	"bs-whoisonline-collection-var-login": "Identifiant"
+	"bs-whoisonline-collection-var-login": "Identifiant",
+	"bs-whoisonline-statistics-report-login-duration": "Durée de connexion",
+	"bs-whoisonline-statistics-report-login-duration-axis-value": "Durée de connexion (en sec.)",
+	"bs-whoisonline-pref-interval-help": "La liste des utilisateurs est mise à jour toutes les x secondes.",
+	"bs-whoisonline-pref-maxidletime-help": "Après ce temps en secondes sans activité, un utilisateur est considéré comme déconnecté."
 }
