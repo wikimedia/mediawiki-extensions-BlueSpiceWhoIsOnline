@@ -25,5 +25,9 @@
 	"bs-whoisonline-statistics-report-login-duration": "Statistics report name",
 	"bs-whoisonline-statistics-report-login-duration-axis-value": "Label for the \"value\" axis",
 	"bs-whoisonline-pref-interval-help": "Description for config variable \"WhoIsOnlineInterval\"",
-	"bs-whoisonline-pref-maxidletime-help": "Description for config variable \"WhoIsOnlineMaxIdleTime\""
+	"bs-whoisonline-pref-maxidletime-help": "Description for config variable \"WhoIsOnlineMaxIdleTime\"",
+	"bs-whoisonline-tag-whoisonlinecount-description": "Description for whoisonline tag",
+	"bs-whoisonline-ve-whoisonlinecountinspector-title": "Title for whoisonline tag",
+	"bs-whoisonline-tag-whoisonlinepopup-description": "Description for whoisonlinepopup tag",
+	"bs-whoisonline-ve-whoisonlinepopupinspector-title": "Title for whoisonlinepopup tag"
 }

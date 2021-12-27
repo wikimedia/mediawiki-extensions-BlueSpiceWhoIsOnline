@@ -27,6 +27,7 @@ class AddPopUpTag extends BSInsertMagicAjaxGetData {
 				'bs-whoisonline-tag-whoisonlinepopup-desc'
 			)->text(),
 			'code' => '<bs:whoisonlinepopup />',
+			'mwvecommand' => 'whoisonlinepopupCommand',
 			'examples' => [
 				[ 'code' => $this->getExampleCode() ]
 			],
