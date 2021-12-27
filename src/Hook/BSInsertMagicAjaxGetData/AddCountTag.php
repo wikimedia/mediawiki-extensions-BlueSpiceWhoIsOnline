@@ -27,6 +27,10 @@ class AddCountTag extends BSInsertMagicAjaxGetData {
 				'bs-whoisonline-tag-whoisonlinecount-desc'
 			)->text(),
 			'code' => '<bs:whoisonlinecount />',
+			'examples' => [
+				[ 'code' => '<bs:whoisonlinecount />' ]
+			],
+			'mwvecommand' => 'whoisonlinecountCommand',
 			'helplink' => $this->getHelpLink()
 		];
 
