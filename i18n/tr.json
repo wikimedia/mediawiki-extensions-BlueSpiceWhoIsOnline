@@ -2,6 +2,7 @@
 	"@metadata": {
 		"authors": [
 			"BaRaN6161 TURK",
+			"Can",
 			"Sadrettin",
 			"Sayginer"
 		]
@@ -19,5 +20,8 @@
 	"bs-whoisonline-tag-whoisonlinecount-desc": "Son 10 dakika içinde giriş yapan tüm kullanıcıların sayısını gösterir.",
 	"bs-whoisonline-tag-whoisonlinepopup-desc": "Son 10 dakika içinde giriş yapan tüm kullanıcıları gösterir.",
 	"bs-whoisonline-collection-type-userlogin": "Kullanıcı girişi",
-	"bs-whoisonline-collection-var-login": "Oturum aç"
+	"bs-whoisonline-collection-var-login": "Oturum aç",
+	"bs-whoisonline-statistics-report-login-duration": "Giriş süresi",
+	"bs-whoisonline-statistics-report-login-duration-axis-value": "Giriş süresi (saniye)",
+	"bs-whoisonline-pref-interval-help": "Kullanıcı listesi her x saniyede güncellenir."
 }
