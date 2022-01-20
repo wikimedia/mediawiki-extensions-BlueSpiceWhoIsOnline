@@ -21,5 +21,9 @@
 	"bs-whoisonline-statistics-report-login-duration": "Login duration",
 	"bs-whoisonline-statistics-report-login-duration-axis-value": "Login duration (sec)",
 	"bs-whoisonline-pref-interval-help": "The list of users is upated every x seconds.",
-	"bs-whoisonline-pref-maxidletime-help": "After this time in seconds without activity, a user is considered offline."
+	"bs-whoisonline-pref-maxidletime-help": "After this time in seconds without activity, a user is considered offline.",
+	"bs-whoisonline-tag-whoisonlinecount-description": "Shows the number of users who have logged in within the last 10 minutes",
+	"bs-whoisonline-ve-whoisonlinecountinspector-title": "Who is online count",
+	"bs-whoisonline-tag-whoisonlinepopup-description": "Shows all users who have been logged in within the last 10 minutes. The output is a speech bubble when a user hovers over the related link",
+	"bs-whoisonline-ve-whoisonlinepopupinspector-title": "Who is online popup"
 }
