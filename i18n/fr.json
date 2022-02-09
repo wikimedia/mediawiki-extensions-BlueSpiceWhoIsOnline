@@ -29,6 +29,6 @@
 	"bs-whoisonline-pref-maxidletime-help": "Après ce temps en secondes sans activité, un utilisateur est considéré comme déconnecté.",
 	"bs-whoisonline-tag-whoisonlinecount-description": "Affiche le nombre d’utilisateurs qui se sont connectés lors des 10 dernières minutes",
 	"bs-whoisonline-ve-whoisonlinecountinspector-title": "Compteur de qui est en ligne",
-	"bs-whoisonline-tag-whoisonlinepopup-description": "Affiche tous les utilisateurs qui se sont connectés lors des 10 dernières minutes. La sortie est une bulle de dialogue quand un utilisateur survole le lien associé",
+	"bs-whoisonline-tag-whoisonlinepopup-description": "Affiche tous les utilisateurs qui se sont connectés lors des 10 dernières minutes. La sortie est une bulle de dialogue quand un utilisateur survole le lien associé.",
 	"bs-whoisonline-ve-whoisonlinepopupinspector-title": "Fenêtre surgissante de qui est en ligne"
 }
