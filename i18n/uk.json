@@ -4,7 +4,9 @@
 			"DDPAT",
 			"Movses",
 			"NataChe",
-			"Ата"
+			"Ата",
+			"Ice bulldog",
+			"Samflint"
 		]
 	},
 	"bs-whoisonline-desc": "Виводить список користувачів, які зараз онлайн",
@@ -24,5 +26,9 @@
 	"bs-whoisonline-statistics-report-login-duration": "Тривалість входу",
 	"bs-whoisonline-statistics-report-login-duration-axis-value": "Тривалість входу (с)",
 	"bs-whoisonline-pref-interval-help": "Список користувачів оновлюється кожні х секунд.",
-	"bs-whoisonline-pref-maxidletime-help": "Через цей час у секундах без активності користувач вважається офлайн."
+	"bs-whoisonline-pref-maxidletime-help": "Через цей час у секундах без активності користувач вважається офлайн.",
+	"bs-whoisonline-tag-whoisonlinecount-description": "Показує кількість користувачів, які увійшли протягом останніх 10 хвилин",
+	"bs-whoisonline-ve-whoisonlinecountinspector-title": "Лічильник тих, хто в мережі",
+	"bs-whoisonline-tag-whoisonlinepopup-description": "Показує всіх користувачів, які ввійшли в систему протягом останніх 10 хвилин. Коли користувач наводить курсор на пов’язане посилання, результатом є спливаюча підказка",
+	"bs-whoisonline-ve-whoisonlinepopupinspector-title": "Спливаюче вікно «Хто в мережі»"
 }
