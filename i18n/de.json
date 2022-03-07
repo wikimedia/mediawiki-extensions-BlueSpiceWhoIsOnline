@@ -26,5 +26,6 @@
 	"bs-whoisonline-statistics-report-login-duration-axis-value": "Anmeldedauer (Sek.)",
 	"bs-whoisonline-pref-interval-help": "So oft in Sekunden wird die Anzeige aktualisiert.",
 	"bs-whoisonline-pref-maxidletime-help": "Nach dieser Zeit in Sekunden ohne Aktivität gilt der Nutzer als offline.",
+	"bs-whoisonline-tag-whoisonlinecount-description": "Zeigt die Anzahl aller Benutzer an, die innerhalb der letzten 10 Minuten angemeldet waren",
 	"bs-whoisonline-tag-whoisonlinepopup-description": "Zeigt alle Benutzer an, die innerhalb der letzten 10 Minuten angemeldet waren. Die Ausgabe ist eine Sprechblase, wenn ein Benutzer den Mauszeiger über den verknüpften Link bewegt"
 }
