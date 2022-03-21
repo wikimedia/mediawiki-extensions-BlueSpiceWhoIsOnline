@@ -1,7 +1,8 @@
 {
 	"@metadata": {
 		"authors": [
-			"ديفيد"
+			"ديفيد",
+			"محمد أحمد عبد الفتاح"
 		]
 	},
 	"bs-whoisonline-desc": "يعرض قائمة المستخدمين المتصلين بالإنترنت حاليا",
@@ -17,5 +18,6 @@
 	"bs-whoisonline-tag-whoisonlinecount-desc": "يعرض جميع المستخدمين الذين تم تسجيل دخولهم خلال آخر 10 دقائق.",
 	"bs-whoisonline-tag-whoisonlinepopup-desc": "يعرض جميع المستخدمين الذين تم تسجيل دخولهم خلال آخر 10 دقائق.",
 	"bs-whoisonline-collection-type-userlogin": "تسجيل دخول المستخدم",
-	"bs-whoisonline-collection-var-login": "تسجيل الدخول"
+	"bs-whoisonline-collection-var-login": "تسجيل الدخول",
+	"bs-whoisonline-statistics-report-login-duration": "فترة تسجيل الولوج"
 }
