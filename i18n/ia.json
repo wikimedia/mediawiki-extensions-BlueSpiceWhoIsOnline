@@ -21,5 +21,9 @@
 	"bs-whoisonline-statistics-report-login-duration": "Durata del session",
 	"bs-whoisonline-statistics-report-login-duration-axis-value": "Durata del session (sec)",
 	"bs-whoisonline-pref-interval-help": "Le lista de usatores se actualisa cata x secundas.",
-	"bs-whoisonline-pref-maxidletime-help": "Post iste tempore in secundas sin activitate, un usator es considerate foras de linea."
+	"bs-whoisonline-pref-maxidletime-help": "Post iste tempore in secundas sin activitate, un usator es considerate foras de linea.",
+	"bs-whoisonline-tag-whoisonlinecount-description": "Monstra le numero de usatores que con session aperte in le ultime 10 minutas.",
+	"bs-whoisonline-ve-whoisonlinecountinspector-title": "Numero de usatores in linea",
+	"bs-whoisonline-tag-whoisonlinepopup-description": "Monstra tote le usatores con session aperte in le ultime 10 minutas. Le sortita es un bulla de dialogo que appare quando un usator passa supra le ligamine associate.",
+	"bs-whoisonline-ve-whoisonlinepopupinspector-title": "Fenestra emergente de qui es in linea"
 }
