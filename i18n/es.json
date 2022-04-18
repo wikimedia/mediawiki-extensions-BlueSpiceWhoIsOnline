@@ -2,7 +2,8 @@
 	"@metadata": {
 		"authors": [
 			"Fitoschido",
-			"Macofe"
+			"Macofe",
+			"DiegoAmbrocio"
 		]
 	},
 	"bs-whoisonline-desc": "Muestra una lista de usuarios que están actualmente en línea",
@@ -18,5 +19,10 @@
 	"bs-whoisonline-tag-whoisonlinecount-desc": "Muestra el número de todos los usuarios que se han conectado en los últimos 10 minutos.",
 	"bs-whoisonline-tag-whoisonlinepopup-desc": "Muestra todos los usuarios que se han conectado en los últimos 10 minutos.",
 	"bs-whoisonline-collection-type-userlogin": "Acceso de usuario",
-	"bs-whoisonline-collection-var-login": "Acceso"
+	"bs-whoisonline-collection-var-login": "Acceso",
+	"bs-whoisonline-statistics-report-login-duration": "Duración del inicio de sesión",
+	"bs-whoisonline-statistics-report-login-duration-axis-value": "Duración del inicio de sesión (seg)",
+	"bs-whoisonline-pref-interval-help": "La lista de usuarios se actualiza cada x segundos.",
+	"bs-whoisonline-pref-maxidletime-help": "Después de este tiempo en segundos sin actividad, un usuario se considera desconectado.",
+	"bs-whoisonline-tag-whoisonlinecount-description": "Muestra el número de usuarios que se han conectado en los últimos 10 minutos"
 }
