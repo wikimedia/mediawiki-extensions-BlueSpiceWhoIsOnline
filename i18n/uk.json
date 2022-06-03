@@ -2,11 +2,11 @@
 	"@metadata": {
 		"authors": [
 			"DDPAT",
+			"Ice bulldog",
 			"Movses",
 			"NataChe",
-			"Ата",
-			"Ice bulldog",
-			"Samflint"
+			"Samflint",
+			"Ата"
 		]
 	},
 	"bs-whoisonline-desc": "Виводить список користувачів, які зараз онлайн",

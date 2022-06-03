@@ -1,9 +1,9 @@
 {
 	"@metadata": {
 		"authors": [
+			"DiegoAmbrocio",
 			"Fitoschido",
-			"Macofe",
-			"DiegoAmbrocio"
+			"Macofe"
 		]
 	},
 	"bs-whoisonline-desc": "Muestra una lista de usuarios que están actualmente en línea",
