@@ -5,9 +5,7 @@ namespace BlueSpice\WhoIsOnline\Hook\LoadExtensionSchemaUpdates;
 class AddClearTableLoggedUpdate extends \BlueSpice\Hook\LoadExtensionSchemaUpdates {
 
 	protected function doProcess() {
-		$this->updater->addPostDatabaseUpdateMaintenance(
-			'ClearWhoIsOnlineTableAfterUpgradeTimestamp'
-		);
+		$this->updater->addPostDatabaseUpdateMaintenance( \ClearWhoIsOnlineTableAfterUpgradeTimestamp::class );
 		return true;
 	}
 
