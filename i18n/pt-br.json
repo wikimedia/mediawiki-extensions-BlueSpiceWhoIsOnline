@@ -1,6 +1,7 @@
 {
 	"@metadata": {
 		"authors": [
+			"Duke of Wikipädia",
 			"Eduardo Addad de Oliveira",
 			"Eduardoaddad",
 			"Felipe L. Ewald",
@@ -21,5 +22,8 @@
 	"bs-whoisonline-tag-whoisonlinepopup-desc": "Apresenta todos os usuários que iniciaram a sessão nos últimos 10 minutos.",
 	"bs-whoisonline-collection-type-userlogin": "Entrada de usuário",
 	"bs-whoisonline-collection-var-login": "Entrar",
-	"bs-whoisonline-pref-interval-help": "A lista de usuários é atualizada a cada x segundos."
+	"bs-whoisonline-statistics-report-login-duration": "Duração de sessão",
+	"bs-whoisonline-statistics-report-login-duration-axis-value": "Duração de sessão (seg)",
+	"bs-whoisonline-pref-interval-help": "A lista de usuários é atualizada a cada x segundos.",
+	"bs-whoisonline-pref-maxidletime-help": "Após esse tempo em segundos sem atividade, um usuário é considerado desconectado."
 }
