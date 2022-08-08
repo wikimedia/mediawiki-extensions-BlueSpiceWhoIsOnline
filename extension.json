@@ -56,6 +56,16 @@
 					"class": "\\BlueSpice\\WhoIsOnline\\Statistics\\Report\\LoginDuration"
 				}
 			}
+		},
+		"ContentDroplets": {
+			"Droplets": {
+				"whoisonline-popup": {
+					"class": "\\BlueSpice\\WhoIsOnline\\ContentDroplets\\WhoIsOnlinePopupDroplet"
+				},
+				"whoisonline-count": {
+					"class": "\\BlueSpice\\WhoIsOnline\\ContentDroplets\\WhoIsOnlineCountDroplet"
+				}
+			}
 		}
 	},
 	"ServiceWiringFiles": [
