@@ -13,7 +13,6 @@ use PPFrame;
 class CountHandler extends Handler {
 
 	/**
-	 *
 	 * @param string $processedInput
 	 * @param array $processedArgs
 	 * @param Parser $parser
@@ -30,13 +29,12 @@ class CountHandler extends Handler {
 	}
 
 	/**
-	 *
 	 * @return string
 	 */
 	public function handle() {
 		$recordSet = $this->tracer->getTracedRecords();
 
-		$this->parser->getOutput()->setProperty( 'bs-tag-userscount', 1 );
+		$this->parser->getOutput()->setPageProperty( 'bs-tag-userscount', 1 );
 		return Html::element(
 			'span',
 			[ 'class' => 'bs-whoisonline-count' ],
@@ -45,7 +43,6 @@ class CountHandler extends Handler {
 	}
 
 	/**
-	 *
 	 * @return Config
 	 */
 	protected function getConfig() {

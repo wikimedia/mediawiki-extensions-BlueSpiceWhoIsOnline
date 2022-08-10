@@ -16,19 +16,16 @@ use RequestContext;
 class PopUpHandler extends Handler {
 
 	/**
-	 *
 	 * @var int
 	 */
 	protected static $idCounter = 0;
 
 	/**
-	 *
 	 * @var Tracer
 	 */
 	protected $tracer = null;
 
 	/**
-	 *
 	 * @param string $processedInput
 	 * @param array $processedArgs
 	 * @param Parser $parser
@@ -45,13 +42,12 @@ class PopUpHandler extends Handler {
 	}
 
 	/**
-	 *
 	 * @return string
 	 */
 	public function handle() {
 		$recordSet = $this->tracer->getTracedRecords();
 
-		$this->parser->getOutput()->setProperty( 'bs-tag-userscount', 1 );
+		$this->parser->getOutput()->setPageProperty( 'bs-tag-userscount', 1 );
 
 		$portlet = MediaWikiServices::getInstance()->getService( 'BSRendererFactory' )->get(
 			'whoisonline-userlist',
@@ -75,7 +71,6 @@ class PopUpHandler extends Handler {
 	}
 
 	/**
-	 *
 	 * @return string
 	 */
 	protected function getTargetId() {
@@ -83,7 +78,6 @@ class PopUpHandler extends Handler {
 	}
 
 	/**
-	 *
 	 * @return Config
 	 */
 	protected function getConfig() {
