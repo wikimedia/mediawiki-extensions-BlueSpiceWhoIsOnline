@@ -56,9 +56,9 @@
 			if ( !userName || userName.length < 1 ) {
 				return;
 			}
-			$( this ).addClass(
-				'bs-whoisonline-marker-' + ( markers[userName] ? markers[userName] : 'unchecked' )
-			);
+			var userMarker = ( markers[userName] ? markers[userName] : 'unchecked' );
+			$( this ).addClass( 'bs-whoisonline-marker-' + userMarker );
+			$( this ).attr( 'aria-label', userMarker );
 		} );
 
 		$( '.bs-whoisonline-portlet' ).each( function(){
