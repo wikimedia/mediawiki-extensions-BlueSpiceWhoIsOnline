@@ -84,8 +84,15 @@
 		listener
 	);
 
-	mw.loader.using( 'ext.bootstrap.scripts' ).done( function() {
-		$('.wo-link').tooltip();
+	$('.wo-link').on( 'mouseover', function ( e ) {
+		$tooltip = $( this )[0].nextSibling;
+		if ( !$( $tooltip ).hasClass( 'show' ) ) {
+			$( $tooltip ).addClass( 'show' );
+			$( $tooltip ).css( { 'left': this.offsetLeft } );
+		}
+		setTimeout( function () {
+			$( $tooltip ).removeClass( 'show' );
+		}, 5000 );
 	} );
 
 } )( mediaWiki, jQuery, blueSpice, document );
