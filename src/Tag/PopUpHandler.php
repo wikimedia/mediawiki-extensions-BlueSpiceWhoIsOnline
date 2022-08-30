@@ -63,17 +63,14 @@ class PopUpHandler extends Handler {
 
 		$anchor = Html::element( 'a', [
 				'class' => 'wo-link',
-				'title' => wfMessage( 'bs-whoisonline-widget-title' ),
-				'data-toggle' => 'tooltip',
-				'data-placement' => 'auto',
-				'data-template' => $portlet->render(),
-				'data-delay' => '{ "show": 250, "hide": 1000 }'
+				'title' => wfMessage( 'bs-whoisonline-widget-title' )
 			],
 			( empty( $this->processedArgs[PopUp::PARAM_ANCHOR_TEXT] )
 				? wfMessage( 'bs-whoisonline-widget-title' )
 				: $this->processedArgs[PopUp::PARAM_ANCHOR_TEXT] )
 		);
 
+		$anchor .= $portlet->render();
 		return $anchor;
 	}
 
