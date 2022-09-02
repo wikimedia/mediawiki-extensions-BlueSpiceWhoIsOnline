@@ -14,7 +14,6 @@ use IContextSource;
 use MediaWiki\Linker\LinkRenderer;
 use MediaWiki\MediaWikiServices;
 use MWException;
-use User;
 
 class UserList extends \BlueSpice\Renderer {
 	public const PARAM_RECORD_SET = 'recordset';
@@ -110,8 +109,9 @@ class UserList extends \BlueSpice\Renderer {
 				$this->msg( 'bs-whoisonline-nousers' )->plain()
 			);
 		}
+		$userFactory = MediaWikiServices::getInstance()->getUserFactory();
 		foreach ( $this->recordSet->getRecords() as $record ) {
-			$user = User::newFromId( $record->get( Record::USER_ID ) );
+			$user = $userFactory->newFromId( $record->get( Record::USER_ID ) );
 			if ( !$user ) {
 				continue;
 			}
