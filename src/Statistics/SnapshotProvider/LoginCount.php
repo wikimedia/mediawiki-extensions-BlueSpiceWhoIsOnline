@@ -7,7 +7,7 @@ use BlueSpice\ExtendedStatistics\Snapshot;
 use BlueSpice\ExtendedStatistics\SnapshotDate;
 use Wikimedia\Rdbms\LoadBalancer;
 
-class LoginDuration implements ISnapshotProvider {
+class LoginCount implements ISnapshotProvider {
 	/** @var LoadBalancer */
 	private $loadBalancer;
 
@@ -39,7 +39,6 @@ class LoginDuration implements ISnapshotProvider {
 		);
 
 		$users = [];
-		$lastTs = 0;
 		$lastUser = null;
 		foreach ( $res as $row ) {
 			if ( !isset( $users[$row->user] ) ) {
@@ -48,30 +47,11 @@ class LoginDuration implements ISnapshotProvider {
 			if ( !$lastUser ) {
 				$lastUser = $row->user;
 			} elseif ( $lastUser !== $row->user ) {
-				$lastTs = 0;
 				$lastUser = $row->user;
 			}
-			$ts = \DateTime::createFromFormat( 'YmdHis', $row->ping );
-			if ( $lastTs === 0 ) {
-				$lastTs = $ts;
-			} else {
-				$originalTs = $ts;
-				$diff = $ts->getTimestamp() - $lastTs->getTimestamp();
-				// Inactive more than 5 mins
-				if ( $diff > 300 ) {
-					$lastTs = $originalTs;
-					// Assume user was online for 10 more seconds
-					$users[$row->user] += 10;
-					continue;
-				}
-				$users[$row->user] += $diff;
-			}
+			$users[$row->user] = 1;
 		}
-		$total = 0;
-		foreach ( $users as $name => $duration ) {
-			$total += $duration;
-		}
-		return new Snapshot( $date, $this->getType(), [ 'total' => $total, 'users' => $users ] );
+		return new Snapshot( $date, $this->getType(), [ 'users' => $users ] );
 	}
 
 	/**
@@ -103,7 +83,7 @@ class LoginDuration implements ISnapshotProvider {
 	 * @inheritDoc
 	 */
 	public function getType() {
-		return 'wo-loginduration';
+		return 'wo-logincount';
 	}
 
 	/**

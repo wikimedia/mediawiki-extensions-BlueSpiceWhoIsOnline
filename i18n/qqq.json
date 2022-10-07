@@ -29,5 +29,7 @@
 	"bs-whoisonline-tag-whoisonlinecount-description": "Description for whoisonline tag",
 	"bs-whoisonline-ve-whoisonlinecountinspector-title": "Title for whoisonline tag",
 	"bs-whoisonline-tag-whoisonlinepopup-description": "Description for whoisonlinepopup tag",
-	"bs-whoisonline-ve-whoisonlinepopupinspector-title": "Title for whoisonlinepopup tag"
+	"bs-whoisonline-ve-whoisonlinepopupinspector-title": "Title for whoisonlinepopup tag",
+	"bs-whoisonline-statistics-report-login-number-axis-value": "Label for the \"value\" axis",
+	"bs-whoisonline-statistics-report-login-number": "Statistics report name"
 }
