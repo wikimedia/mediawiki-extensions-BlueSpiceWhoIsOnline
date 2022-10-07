@@ -46,14 +46,14 @@
 		},
 		"BlueSpiceExtendedStatistics": {
 			"SnapshotProviders": {
-				"wo-loginduration": {
-					"class": "\\BlueSpice\\WhoIsOnline\\Statistics\\SnapshotProvider\\LoginDuration",
+				"wo-logincount": {
+					"class": "\\BlueSpice\\WhoIsOnline\\Statistics\\SnapshotProvider\\LoginCount",
 					"services": [ "DBLoadBalancer" ]
 				}
 			},
 			"Reports": {
-				"wo-loginduration": {
-					"class": "\\BlueSpice\\WhoIsOnline\\Statistics\\Report\\LoginDuration"
+				"wo-logincount": {
+					"class": "\\BlueSpice\\WhoIsOnline\\Statistics\\Report\\LoginCount"
 				}
 			}
 		},
@@ -102,14 +102,14 @@
 		},
 		"ext.bluespice.whoisonline.statistics": {
 			"scripts": [
-				"statistics/LoginDurationReport.js"
+				"statistics/LoginCountReport.js"
 			],
 			"dependencies": [
 				"ext.bluespice"
 			],
 			"messages": [
-				"bs-whoisonline-statistics-report-login-duration",
-				"bs-whoisonline-statistics-report-login-duration-axis-value"
+				"bs-whoisonline-statistics-report-login-number-axis-value",
+				"bs-whoisonline-statistics-report-login-number"
 			]
 		},
 		"ext.bluespice.whoisonlinecount.visualEditorTagDefinition": {
