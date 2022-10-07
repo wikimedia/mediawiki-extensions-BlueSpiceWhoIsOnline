@@ -4,14 +4,15 @@ namespace BlueSpice\WhoIsOnline\Statistics\Report;
 
 use BlueSpice\ExtendedStatistics\ClientReportHandler;
 use BlueSpice\ExtendedStatistics\IReport;
+use Message;
 
-class LoginDuration implements IReport {
+class LoginCount implements IReport {
 
 	/**
 	 * @inheritDoc
 	 */
 	public function getSnapshotKey() {
-		return 'wo-loginduration';
+		return 'wo-logincount';
 	}
 
 	/**
@@ -19,25 +20,23 @@ class LoginDuration implements IReport {
 	 */
 	public function getClientData( $snapshots, array $filterData, $limit = 20 ): array {
 		// This report is always aggregated
-		$filterForUsers = $filterData['users'] ?? [];
-		if ( empty( $filterForUsers ) ) {
-			return [];
-		}
 		$processed = [];
 
 		foreach ( $snapshots as $snapshot ) {
 			$data = $snapshot->getData();
 			$users = $data['users'];
+			$usersCount = 0;
 			foreach ( $users as $name => $duration ) {
-				if ( !in_array( $name, $filterForUsers ) ) {
+				if ( $duration == '0' ) {
 					continue;
 				}
-				$processed[] = [
-					'name' => $snapshot->getDate()->forGraph(),
-					'line' => $name,
-					'value' => $duration
-				];
+				$usersCount++;
 			}
+			$processed[] = [
+				'name' => $snapshot->getDate()->forGraph(),
+				'line' => Message::newFromKey( 'bs-whoisonline-statistics-report-login-number' )->plain(),
+				'value' => $usersCount
+			];
 		}
 
 		return $processed;
@@ -49,7 +48,7 @@ class LoginDuration implements IReport {
 	public function getClientReportHandler(): ClientReportHandler {
 		return new ClientReportHandler(
 			[ 'ext.bluespice.whoisonline.statistics' ],
-			'bs.whoisonline.report.LoginDurationReport'
+			'bs.whoisonline.report.LoginCountReport'
 		);
 	}
 }
