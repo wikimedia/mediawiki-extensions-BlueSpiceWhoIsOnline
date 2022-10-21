@@ -2,7 +2,6 @@
 
 namespace BlueSpice\WhoIsOnline\Renderer;
 
-use BlueSpice\Data\ResultSet;
 use BlueSpice\Renderer;
 use BlueSpice\Renderer\Params;
 use BlueSpice\UtilityFactory;
@@ -14,6 +13,7 @@ use IContextSource;
 use MediaWiki\Linker\LinkRenderer;
 use MediaWiki\MediaWikiServices;
 use MWException;
+use MWStake\MediaWiki\Component\DataStore\ResultSet;
 use User;
 
 class UserList extends \BlueSpice\Renderer {
