@@ -2,17 +2,17 @@
 
 namespace BlueSpice\WhoIsOnline;
 
-use BlueSpice\Data\FieldType;
-use BlueSpice\Data\Filter;
-use BlueSpice\Data\Filter\Date;
-use BlueSpice\Data\ReaderParams;
-use BlueSpice\Data\RecordSet;
 use BlueSpice\Timestamp;
 use BlueSpice\UtilityFactory;
 use BlueSpice\WhoIsOnline\Data\Record;
 use BlueSpice\WhoIsOnline\Data\Tracer\Store;
 use Config;
 use IContextSource;
+use MWStake\MediaWiki\Component\DataStore\FieldType;
+use MWStake\MediaWiki\Component\DataStore\Filter;
+use MWStake\MediaWiki\Component\DataStore\Filter\Date;
+use MWStake\MediaWiki\Component\DataStore\ReaderParams;
+use MWStake\MediaWiki\Component\DataStore\RecordSet;
 use ReadOnlyMode;
 use User;
 use Wikimedia\Rdbms\LoadBalancer;
