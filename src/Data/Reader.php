@@ -2,8 +2,8 @@
 
 namespace BlueSpice\WhoIsOnline\Data;
 
-use BlueSpice\Data\DatabaseReader;
-use BlueSpice\Data\ReaderParams;
+use MWStake\MediaWiki\Component\DataStore\DatabaseReader;
+use MWStake\MediaWiki\Component\DataStore\ReaderParams;
 
 class Reader extends DatabaseReader {
 
