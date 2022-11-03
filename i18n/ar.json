@@ -2,7 +2,8 @@
 	"@metadata": {
 		"authors": [
 			"ديفيد",
-			"محمد أحمد عبد الفتاح"
+			"محمد أحمد عبد الفتاح",
+			"Meno25"
 		]
 	},
 	"bs-whoisonline-desc": "يعرض قائمة المستخدمين المتصلين بالإنترنت حاليا",
@@ -19,5 +20,12 @@
 	"bs-whoisonline-tag-whoisonlinepopup-desc": "يعرض جميع المستخدمين الذين تم تسجيل دخولهم خلال آخر 10 دقائق.",
 	"bs-whoisonline-collection-type-userlogin": "تسجيل دخول المستخدم",
 	"bs-whoisonline-collection-var-login": "تسجيل الدخول",
-	"bs-whoisonline-statistics-report-login-duration": "فترة تسجيل الولوج"
+	"bs-whoisonline-statistics-report-login-duration": "فترة تسجيل الولوج",
+	"bs-whoisonline-statistics-report-login-duration-axis-value": "مدة تسجيل الدخول (بالثانية)",
+	"bs-whoisonline-pref-interval-help": "يتم تحديث قائمة المستخدمين كل x ثانية.",
+	"bs-whoisonline-pref-maxidletime-help": "بعد هذا الوقت بالثواني بدون نشاط ، يتم اعتبار المستخدم غير متصل بالإنترنت.",
+	"bs-whoisonline-tag-whoisonlinecount-description": "يظهر عدد المستخدمين الذين قاموا بتسجيل الدخول خلال آخر 10 دقائق",
+	"bs-whoisonline-ve-whoisonlinecountinspector-title": "من هو على الإنترنت العد",
+	"bs-whoisonline-tag-whoisonlinepopup-description": "يظهر كل المستخدمين الذين قاموا بتسجيل الدخول خلال آخر 10 دقائق. الإخراج عبارة عن فقاعة كلامية عندما يقوم المستخدم بتمرير الماوس فوق الارتباط ذي الصلة",
+	"bs-whoisonline-ve-whoisonlinepopupinspector-title": "من هو على الإنترنت المنبثقة"
 }
