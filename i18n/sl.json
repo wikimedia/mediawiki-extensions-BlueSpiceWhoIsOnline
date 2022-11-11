@@ -2,6 +2,7 @@
 	"@metadata": {
 		"authors": [
 			"Dbc334",
+			"Eleassar",
 			"Skalcaa"
 		]
 	},
@@ -16,5 +17,7 @@
 	"bs-whoisonline-pref-orderby-name": "Ime",
 	"bs-whoisonline-pref-interval": "Interval posodobitev v sekundah:",
 	"bs-whoisonline-tag-whoisonlinecount-desc": "Prikaže število vseh uporabnikov, ki so bili prijavljeni v zadnjih 10 minutah.",
-	"bs-whoisonline-tag-whoisonlinepopup-desc": "Prikaže vse uporabnike, ki so bili prijavljeni v zadnjih 10 minutah."
+	"bs-whoisonline-tag-whoisonlinepopup-desc": "Prikaže vse uporabnike, ki so bili prijavljeni v zadnjih 10 minutah.",
+	"bs-whoisonline-statistics-report-login-number-axis-value": "Število prijav",
+	"bs-whoisonline-statistics-report-login-number": "Prijave"
 }
