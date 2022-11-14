@@ -2,6 +2,7 @@
 	"@metadata": {
 		"authors": [
 			"Ajeje Brazorf",
+			"Beta16",
 			"GpieroMW",
 			"Matteocng",
 			"Selven"
@@ -17,5 +18,7 @@
 	"bs-whoisonline-tag-whoisonlinecount-desc": "Mostra il numero totale degli utenti che si sono collegati negli ultimi 10 minuti.",
 	"bs-whoisonline-tag-whoisonlinepopup-desc": "Mostra tutti gli utenti che si sono collegati negli ultimi 10 minuti.",
 	"bs-whoisonline-collection-var-login": "Entra",
-	"bs-whoisonline-statistics-report-login-duration": "Durata dell'inizio di sessione"
+	"bs-whoisonline-statistics-report-login-duration": "Durata dell'inizio di sessione",
+	"bs-whoisonline-statistics-report-login-number-axis-value": "Numero di accessi",
+	"bs-whoisonline-statistics-report-login-number": "Accessi"
 }
