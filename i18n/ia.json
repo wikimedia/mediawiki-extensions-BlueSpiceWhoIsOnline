@@ -25,5 +25,7 @@
 	"bs-whoisonline-tag-whoisonlinecount-description": "Monstra le numero de usatores que con session aperte in le ultime 10 minutas.",
 	"bs-whoisonline-ve-whoisonlinecountinspector-title": "Numero de usatores in linea",
 	"bs-whoisonline-tag-whoisonlinepopup-description": "Monstra tote le usatores con session aperte in le ultime 10 minutas. Le sortita es un bulla de dialogo que appare quando un usator passa supra le ligamine associate.",
-	"bs-whoisonline-ve-whoisonlinepopupinspector-title": "Fenestra emergente de qui es in linea"
+	"bs-whoisonline-ve-whoisonlinepopupinspector-title": "Fenestra emergente de qui es in linea",
+	"bs-whoisonline-statistics-report-login-number-axis-value": "Numero de sessiones",
+	"bs-whoisonline-statistics-report-login-number": "Sessiones"
 }
