@@ -2,6 +2,7 @@
 	"@metadata": {
 		"authors": [
 			"Ajeje Brazorf",
+			"Beta16",
 			"GpieroMW",
 			"Matteocng",
 			"Selven"
@@ -17,5 +18,7 @@
 	"bs-whoisonline-collection-var-login": "Entra",
 	"bs-whoisonline-pref-limitcount": "Numero massimo di utenti mostrati:",
 	"bs-whoisonline-pref-interval": "Intervallo di aggiornamento in secondi:",
-	"bs-whoisonline-statistics-report-login-duration": "Durata dell'inizio di sessione"
+	"bs-whoisonline-statistics-report-login-duration": "Durata dell'inizio di sessione",
+	"bs-whoisonline-statistics-report-login-number-axis-value": "Numero di accessi",
+	"bs-whoisonline-statistics-report-login-number": "Accessi"
 }
