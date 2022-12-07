@@ -85,13 +85,16 @@
 	);
 
 	$('.wo-link').on( 'mouseover', function ( e ) {
-		$tooltip = $( this )[0].nextSibling;
-		if ( !$( $tooltip ).hasClass( 'show' ) ) {
-			$( $tooltip ).addClass( 'show' );
-			$( $tooltip ).css( { 'left': this.offsetLeft } );
+		var targetId = '#' + $( this ).attr( 'data-target-id' );
+		var targetPopup = $( this ).attr( 'data-target' );
+
+		if ( $( this ).find( '.wo-tooltip' ).length === 0 ) {
+			$( this ).append( targetPopup );
+			$( targetId ).css( { 'left': this.offsetLeft } );
 		}
+
 		setTimeout( function () {
-			$( $tooltip ).removeClass( 'show' );
+			$( targetId ).remove();
 		}, 5000 );
 	} );
 
