@@ -52,25 +52,27 @@ class PopUpHandler extends Handler {
 		$recordSet = $this->tracer->getTracedRecords();
 
 		$this->parser->getOutput()->setProperty( 'bs-tag-userscount', 1 );
-
+		$targetId = $this->getTargetId();
 		$portlet = MediaWikiServices::getInstance()->getService( 'BSRendererFactory' )->get(
 			'whoisonline-userlist',
 			new Params( [
-				UserList::PARAM_RECORD_SET => $recordSet
+				UserList::PARAM_RECORD_SET => $recordSet,
+				'target' => $targetId
 			] ),
 			RequestContext::getMain()
 		);
 
 		$anchor = Html::element( 'a', [
 				'class' => 'wo-link',
-				'title' => wfMessage( 'bs-whoisonline-widget-title' )
+				'title' => wfMessage( 'bs-whoisonline-widget-title' ),
+				'data-target-id' => $targetId,
+				'data-target' => $portlet->render()
 			],
 			( empty( $this->processedArgs[PopUp::PARAM_ANCHOR_TEXT] )
 				? wfMessage( 'bs-whoisonline-widget-title' )
 				: $this->processedArgs[PopUp::PARAM_ANCHOR_TEXT] )
 		);
 
-		$anchor .= $portlet->render();
 		return $anchor;
 	}
 
