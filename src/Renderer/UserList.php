@@ -31,6 +31,11 @@ class UserList extends \BlueSpice\Renderer {
 	protected $util = null;
 
 	/**
+	 * @var int
+	 */
+	protected $targetId = 0;
+
+	/**
 	 * Constructor
 	 * @param Config $config
 	 * @param Params $params
@@ -54,6 +59,7 @@ class UserList extends \BlueSpice\Renderer {
 			static::PARAM_RECORD_SET,
 			null
 		);
+		$this->targetId = $params->get( 'target', 0 );
 		if ( !$this->recordSet instanceof ResultSet ) {
 			throw new MWException(
 				"Param '" . static::PARAM_RECORD_SET . "' must be an instance of '"
@@ -133,7 +139,8 @@ class UserList extends \BlueSpice\Renderer {
 	 */
 	public function render() {
 		// wrap the list in a template for bootstrap tooltip
-		$out = '<div class="tooltip bs-tooltip" role="tooltip">';
+		$out = '<div id="' . $this->targetId . '"
+			class="tooltip bs-tooltip wo-tooltip" role="tooltip">';
 		$out .= '<div class="tooltip-arrow"></div>';
 		$out .= '<div class="tooltip-body">';
 		// content of '.tooltip-inner' element will be replaced by link attribute 'title'
