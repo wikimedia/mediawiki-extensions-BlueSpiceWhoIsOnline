@@ -3,7 +3,6 @@
 namespace BlueSpice\WhoIsOnline\Hook\BsAdapterAjaxPingResult;
 
 use BlueSpice\WhoIsOnline\Tracer;
-use User;
 
 class UpdateOnlineMarkers extends \BlueSpice\Hook\BsAdapterAjaxPingResult {
 
@@ -24,8 +23,9 @@ class UpdateOnlineMarkers extends \BlueSpice\Hook\BsAdapterAjaxPingResult {
 	protected function doProcess() {
 		$this->singleResults['onlineMarkers'] = [];
 		$this->singleResults['success'] = true;
+		$userFactory = $this->getServices()->getUserFactory();
 		foreach ( $this->params[0]['onlinemarkers'] as $userName => &$status ) {
-			$user = User::newFromName( $userName );
+			$user = $userFactory->newFromName( $userName );
 			if ( !$user ) {
 				return Tracer::ONLINE_STATUS_OFFLINE;
 			}
