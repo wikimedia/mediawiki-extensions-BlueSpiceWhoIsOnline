@@ -19,5 +19,15 @@
 	"bs-whoisonline-tag-whoisonlinecount-desc": "Prikaže število vseh uporabnikov, ki so bili prijavljeni v zadnjih 10 minutah.",
 	"bs-whoisonline-tag-whoisonlinepopup-desc": "Prikaže vse uporabnike, ki so bili prijavljeni v zadnjih 10 minutah.",
 	"bs-whoisonline-statistics-report-login-number-axis-value": "Število prijav",
-	"bs-whoisonline-statistics-report-login-number": "Prijave"
+	"bs-whoisonline-statistics-report-login-number": "Prijave",
+	"bs-whoisonline-collection-type-userlogin": "Prijava uporabnika",
+	"bs-whoisonline-collection-var-login": "Prijava",
+	"bs-whoisonline-statistics-report-login-duration": "Trajanje prijave",
+	"bs-whoisonline-statistics-report-login-duration-axis-value": "Trajanje prijave (s)",
+	"bs-whoisonline-pref-interval-help": "Seznam uporabnikov se posodobi vsakih x sekund.",
+	"bs-whoisonline-pref-maxidletime-help": "Po tem času v sekundah brez dejavnosti se šteje, da je uporabnik brez povezave.",
+	"bs-whoisonline-tag-whoisonlinecount-description": "Prikazuje število vseh uporabnikov, ki so se prijavili v zadnjih 10 minutah.",
+	"bs-whoisonline-ve-whoisonlinecountinspector-title": "Število prisotnih na spletu",
+	"bs-whoisonline-tag-whoisonlinepopup-description": "Prikazuje vse uporabnike, ki so se prijavili v zadnjih 10 minutah. Rezultat je govorni oblaček, ko uporabnik premakne miškin kazalec nad povezano povezavo.",
+	"bs-whoisonline-ve-whoisonlinepopupinspector-title": "Pojavno okno »Prisotni na spletu«"
 }
