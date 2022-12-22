@@ -2,9 +2,7 @@
 
 namespace BlueSpice\WhoIsOnline\Data;
 
-use BlueSpice\Data\PrimaryDatabaseDataProvider;
-
-class PrimaryDataProvider extends PrimaryDatabaseDataProvider {
+class PrimaryDataProvider extends \MWStake\MediaWiki\Component\DataStore\PrimaryDatabaseDataProvider {
 
 	/**
 	 *
