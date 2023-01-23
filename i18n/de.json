@@ -2,6 +2,7 @@
 	"@metadata": {
 		"authors": [
 			"Ferdinand0101",
+			"Justman10000",
 			"Metalhead64",
 			"Mglaser",
 			"Mschlindwein",
@@ -31,5 +32,6 @@
 	"bs-whoisonline-tag-whoisonlinepopup-description": "Zeigt alle Benutzer an, die innerhalb der letzten 10 Minuten angemeldet waren. Die Ausgabe ist eine Sprechblase, wenn ein Benutzer den Mauszeiger über den verknüpften Link bewegt",
 	"bs-whoisonline-statistics-report-login-number-axis-value": "Anzahl der Anmeldungen",
 	"bs-whoisonline-statistics-report-login-number": "Anmeldungen",
-	"bs-whoisonline-ve-whoisonlinepopupinspector-title": "Wer ist Online-Popup"
+	"bs-whoisonline-ve-whoisonlinepopupinspector-title": "Wer ist Online-Popup",
+	"bs-whoisonline-ve-whoisonlinecountinspector-title": "Wer-ist-online-Zähler"
 }
