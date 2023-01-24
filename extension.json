@@ -116,6 +116,7 @@
 			"scripts": [
 				"bs.whoisonline/util/tag/CountDefinition.js"
 			],
+			"styles": "bluespice.whoIsOnline.droplets.count.css",
 			"messages": [
 				"bs-whoisonline-tag-whoisonlinecount-description",
 				"bs-whoisonline-ve-whoisonlinecountinspector-title"
@@ -125,6 +126,7 @@
 			"scripts": [
 				"bs.whoisonline/util/tag/PopUpDefinition.js"
 			],
+			"styles": "bluespice.whoIsOnline.droplets.popup.css",
 			"messages": [
 				"bs-whoisonline-tag-whoisonlinepopup-description",
 				"bs-whoisonline-ve-whoisonlinepopupinspector-title"

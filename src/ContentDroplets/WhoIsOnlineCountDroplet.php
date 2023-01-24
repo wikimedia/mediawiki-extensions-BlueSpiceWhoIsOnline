@@ -4,7 +4,6 @@ namespace BlueSpice\WhoIsOnline\ContentDroplets;
 
 use MediaWiki\Extension\ContentDroplets\Droplet\TagDroplet;
 use Message;
-use RawMessage;
 
 class WhoIsOnlineCountDroplet extends TagDroplet {
 
@@ -12,21 +11,21 @@ class WhoIsOnlineCountDroplet extends TagDroplet {
 	 * @inheritDoc
 	 */
 	public function getName(): Message {
-		return new RawMessage( 'WhoIsOnlineCount' );
+		return Message::newFromKey( 'bs-whoisonline-droplet-count-name' );
 	}
 
 	/**
 	 * @inheritDoc
 	 */
 	public function getDescription(): Message {
-		return new RawMessage( "WhoIsOnlinecount description" );
+		return Message::newFromKey( 'bs-whoisonline-droplet-count-description' );
 	}
 
 	/**
 	 * @inheritDoc
 	 */
 	public function getIcon(): string {
-		return 'userGroup';
+		return 'droplet-online-count';
 	}
 
 	/**
