@@ -1,6 +1,7 @@
 {
 	"@metadata": {
 		"authors": [
+			"Amire80",
 			"Guycn2",
 			"Steeve815"
 		]
@@ -17,5 +18,16 @@
 	"bs-whoisonline-pref-interval": "כל כמה שניות לעדכן:",
 	"bs-whoisonline-tag-whoisonlinecount-desc": "הצגת מספר המשתמשים שהיו מחוברים לחשבון ב־10 הדקות האחרונות.",
 	"bs-whoisonline-tag-whoisonlinepopup-desc": "הצגת רשימת המשתמשים שהיו מחוברים לחשבון ב־10 הדקות האחרונות.",
-	"bs-whoisonline-collection-var-login": "כניסה"
+	"bs-whoisonline-collection-type-userlogin": "כניסת משתמש",
+	"bs-whoisonline-collection-var-login": "כניסה",
+	"bs-whoisonline-statistics-report-login-duration": "משך הכניסה",
+	"bs-whoisonline-statistics-report-login-duration-axis-value": "משך הכניסה (שניות)",
+	"bs-whoisonline-pref-interval-help": "רשימת המשתמשים מתעדכנת מדי x שניות.",
+	"bs-whoisonline-pref-maxidletime-help": "לאחר הזמן הזה בשניות ללא פעילות, המשתמש נחשב לא מקוון.",
+	"bs-whoisonline-tag-whoisonlinecount-description": "הצגת מספר המשתמשים שהיו מחוברים לחשבון ב־10 הדקות האחרונות",
+	"bs-whoisonline-ve-whoisonlinecountinspector-title": "מספר המחוברים",
+	"bs-whoisonline-tag-whoisonlinepopup-description": "הצגת כל המשתמשים שהתחברו במהלך 10 הדקות האחרונות. הפלט הוא בועת דיבור כאשר משתמש מרחף מעל הקישור הקשור",
+	"bs-whoisonline-ve-whoisonlinepopupinspector-title": "חלון קופץ \"מי מחובר\"",
+	"bs-whoisonline-statistics-report-login-number-axis-value": "מספר הכניסות",
+	"bs-whoisonline-statistics-report-login-number": "כניסות"
 }
