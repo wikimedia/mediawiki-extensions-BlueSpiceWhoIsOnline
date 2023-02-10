@@ -32,8 +32,8 @@ class WhoIsOnlineCountDroplet extends TagDroplet {
 	/**
 	 * @inheritDoc
 	 */
-	public function getRLModule(): string {
-		return 'ext.bluespice.whoisonlinecount.visualEditorTagDefinition';
+	public function getRLModules(): array {
+		return [ 'ext.bluespice.whoisonlinecount.visualEditorTagDefinition' ];
 	}
 
 	/**

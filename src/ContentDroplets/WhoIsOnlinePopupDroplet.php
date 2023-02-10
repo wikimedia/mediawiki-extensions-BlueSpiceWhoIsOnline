@@ -32,8 +32,8 @@ class WhoIsOnlinePopupDroplet extends TagDroplet {
 	/**
 	 * @inheritDoc
 	 */
-	public function getRLModule(): string {
-		return 'ext.bluespice.whoisonlinepopup.visualEditorTagDefinition';
+	public function getRLModules(): array {
+		return [ 'ext.bluespice.whoisonlinepopup.visualEditorTagDefinition' ];
 	}
 
 	/**
