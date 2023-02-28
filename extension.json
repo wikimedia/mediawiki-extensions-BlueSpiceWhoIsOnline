@@ -136,7 +136,6 @@
 		"remoteExtPath": "BlueSpiceWhoIsOnline/resources"
 	},
 	"Hooks": {
-		"ParserFirstCallInit": "\\BlueSpice\\WhoIsOnline\\Hook\\ParserFirstCallInit\\Trace::callback",
 		"BSInsertMagicAjaxGetData": [
 			"\\BlueSpice\\WhoIsOnline\\Hook\\BSInsertMagicAjaxGetData\\AddCountTag::callback",
 			"\\BlueSpice\\WhoIsOnline\\Hook\\BSInsertMagicAjaxGetData\\AddPopUpTag::callback"
@@ -145,7 +144,10 @@
 			"\\BlueSpice\\WhoIsOnline\\Hook\\BSUsageTrackerRegisterCollectors\\AddWhoIsOnlineCountTag::callback",
 			"\\BlueSpice\\WhoIsOnline\\Hook\\BSUsageTrackerRegisterCollectors\\AddWhoIsOnlinePopUpTag::callback"
 		],
-		"BeforePageDisplay": "\\BlueSpice\\WhoIsOnline\\Hook\\BeforePageDisplay\\AddModules::callback",
+		"BeforePageDisplay": [
+			"\\BlueSpice\\WhoIsOnline\\Hook\\BeforePageDisplay\\AddModules::callback",
+			"\\BlueSpice\\WhoIsOnline\\Hook\\BeforePageDisplay\\InsertTrace::callback"
+		],
 		"LoadExtensionSchemaUpdates": [
 			"\\BlueSpice\\WhoIsOnline\\Hook\\LoadExtensionSchemaUpdates\\AddWhoIsOnlineTable::callback",
 			"\\BlueSpice\\WhoIsOnline\\Hook\\LoadExtensionSchemaUpdates\\AddClearTableLoggedUpdate::callback"
