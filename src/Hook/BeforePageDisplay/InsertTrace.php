@@ -13,7 +13,7 @@ class InsertTrace extends \BlueSpice\Hook\BeforePageDisplay {
 	protected function doProcess() {
 		$services = $this->getServices();
 		$context = $this->getContext();
-		DeferredUpdates::addCallableUpdate( function () use ( $services, $context ) {
+		DeferredUpdates::addCallableUpdate( static function () use ( $services, $context ) {
 			$services->getService( 'BSWhoIsOnlineTracer' )->trace( $context );
 		} );
 		return true;
