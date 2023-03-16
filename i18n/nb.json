@@ -21,5 +21,6 @@
 	"bs-whoisonline-statistics-report-login-duration": "Varighet på innlogging",
 	"bs-whoisonline-statistics-report-login-duration-axis-value": "Varighet på innlogging (sek.)",
 	"bs-whoisonline-pref-interval-help": "Lista over brukere oppdateres hvert x. sekund.",
-	"bs-whoisonline-pref-maxidletime-help": "Etter dette antallet sekunder uten aktivitet anses brukeren som offline."
+	"bs-whoisonline-pref-maxidletime-help": "Etter dette antallet sekunder uten aktivitet anses brukeren som offline.",
+	"bs-whoisonline-statistics-report-login-number": "Innlogginger"
 }
