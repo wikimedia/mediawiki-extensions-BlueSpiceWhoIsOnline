@@ -31,5 +31,9 @@
 	"bs-whoisonline-tag-whoisonlinepopup-description": "Description for whoisonlinepopup tag",
 	"bs-whoisonline-ve-whoisonlinepopupinspector-title": "Title for whoisonlinepopup tag",
 	"bs-whoisonline-statistics-report-login-number-axis-value": "Label for the \"value\" axis",
-	"bs-whoisonline-statistics-report-login-number": "Statistics report name"
+	"bs-whoisonline-statistics-report-login-number": "Statistics report name",
+	"bs-whoisonline-droplet-count-name": "Title of droplet for tag WhoIsOnlineCount",
+	"bs-whoisonline-droplet-count-description": "Description of droplet for tag WhoIsOnlineCount",
+	"bs-whoisonline-droplet-popup-name": "Title of droplet for tag WhoIsOnlinePopup",
+	"bs-whoisonline-droplet-popup-description": "Description of droplet for tag WhoIsOnlinePopup"
 }
