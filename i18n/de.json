@@ -33,5 +33,9 @@
 	"bs-whoisonline-tag-whoisonlinepopup-description": "Zeigt alle Benutzer an, die innerhalb der letzten 10 Minuten angemeldet waren. Die Ausgabe ist eine Sprechblase, wenn ein Benutzer den Mauszeiger über den verknüpften Link bewegt",
 	"bs-whoisonline-ve-whoisonlinepopupinspector-title": "Wer ist Online-Popup",
 	"bs-whoisonline-statistics-report-login-number-axis-value": "Anzahl der Anmeldungen",
-	"bs-whoisonline-statistics-report-login-number": "Anmeldungen"
+	"bs-whoisonline-statistics-report-login-number": "Anmeldungen",
+	"bs-whoisonline-droplet-count-name": "Anzahl angemeldeter Benutzer",
+	"bs-whoisonline-droplet-count-description": "Zahl der aktuell angemeldeten Benutzer",
+	"bs-whoisonline-droplet-popup-name": "Liste angemeldeter Benutzer",
+	"bs-whoisonline-droplet-popup-description": "Popup mit einer Liste der aktuell angemeldeten Benutzer"
 }

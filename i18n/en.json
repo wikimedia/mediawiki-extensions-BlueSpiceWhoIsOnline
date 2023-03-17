@@ -27,5 +27,9 @@
 	"bs-whoisonline-tag-whoisonlinepopup-description": "Shows all users who have been logged in within the last 10 minutes. The output is a speech bubble when a user hovers over the related link",
 	"bs-whoisonline-ve-whoisonlinepopupinspector-title": "Who is online popup",
 	"bs-whoisonline-statistics-report-login-number-axis-value": "Number of logins",
-	"bs-whoisonline-statistics-report-login-number": "Logins"
+	"bs-whoisonline-statistics-report-login-number": "Logins",
+	"bs-whoisonline-droplet-count-name": "Number of users logged in",
+	"bs-whoisonline-droplet-count-description": "Number of currently logged in users",
+	"bs-whoisonline-droplet-popup-name": "List of users logged in",
+	"bs-whoisonline-droplet-popup-description": "Pop-up with a list of all users that are currently logged in"
 }
