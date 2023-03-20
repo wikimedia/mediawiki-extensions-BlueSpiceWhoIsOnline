@@ -29,5 +29,9 @@
 	"bs-whoisonline-tag-whoisonlinepopup-description": "Prikazuje vse uporabnike, ki so se prijavili v zadnjih 10 minutah. Rezultat je govorni oblaček, ko uporabnik premakne miškin kazalec nad povezano povezavo.",
 	"bs-whoisonline-ve-whoisonlinepopupinspector-title": "Pojavno okno »Prisotni na spletu«",
 	"bs-whoisonline-statistics-report-login-number-axis-value": "Število prijav",
-	"bs-whoisonline-statistics-report-login-number": "Prijave"
+	"bs-whoisonline-statistics-report-login-number": "Prijave",
+	"bs-whoisonline-droplet-count-name": "Število prijavljenih uporabnikov",
+	"bs-whoisonline-droplet-count-description": "Število trenutno prijavljenih uporabnikov",
+	"bs-whoisonline-droplet-popup-name": "Seznam prijavljenih uporabnikov",
+	"bs-whoisonline-droplet-popup-description": "Pojavno okno s seznamom vseh uporabnikov, ki so trenutno prijavljeni"
 }
