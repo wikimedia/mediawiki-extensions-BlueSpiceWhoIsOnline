@@ -32,5 +32,9 @@
 	"bs-whoisonline-tag-whoisonlinepopup-description": "Affiche tous les utilisateurs qui se sont connectés lors des 10 dernières minutes. La sortie est une bulle de dialogue quand un utilisateur survole le lien associé.",
 	"bs-whoisonline-ve-whoisonlinepopupinspector-title": "Fenêtre surgissante de qui est en ligne",
 	"bs-whoisonline-statistics-report-login-number-axis-value": "Nombre de connexions",
-	"bs-whoisonline-statistics-report-login-number": "Connexions"
+	"bs-whoisonline-statistics-report-login-number": "Connexions",
+	"bs-whoisonline-droplet-count-name": "Nombre d’utilisateurs connectés",
+	"bs-whoisonline-droplet-count-description": "Nombre d’utilisateurs actuellement connectés",
+	"bs-whoisonline-droplet-popup-name": "Liste des utilisateurs connectés",
+	"bs-whoisonline-droplet-popup-description": "Panneau affichant une liste de tous les utilisateurs actuellement connectés"
 }
