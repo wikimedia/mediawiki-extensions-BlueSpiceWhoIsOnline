@@ -8,5 +8,8 @@
 	"bs-whoisonline-pref-orderby": "Поређај по:",
 	"bs-whoisonline-pref-orderby-name": "Име",
 	"bs-whoisonline-statistics-report-login-number-axis-value": "Број пријава",
-	"bs-whoisonline-statistics-report-login-number": "Пријаве"
+	"bs-whoisonline-statistics-report-login-number": "Пријаве",
+	"bs-whoisonline-droplet-count-name": "Број пријављених корисника",
+	"bs-whoisonline-droplet-count-description": "Број тренутно пријављених корисника",
+	"bs-whoisonline-droplet-popup-name": "Списак пријављених корисника"
 }

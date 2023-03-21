@@ -17,5 +17,7 @@
 	"bs-whoisonline-pref-interval": "更新間隔 (秒):",
 	"bs-whoisonline-tag-whoisonlinecount-desc": "過去10分以内にログインした全ユーザーの数を表示します。",
 	"bs-whoisonline-statistics-report-login-number-axis-value": "ログイン数",
-	"bs-whoisonline-statistics-report-login-number": "ログイン"
+	"bs-whoisonline-statistics-report-login-number": "ログイン",
+	"bs-whoisonline-droplet-count-name": "ログインしているユーザーの数",
+	"bs-whoisonline-droplet-popup-name": "ログインしているユーザーのリスト"
 }

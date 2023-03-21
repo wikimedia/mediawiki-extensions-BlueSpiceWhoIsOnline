@@ -31,5 +31,9 @@
 	"bs-whoisonline-tag-whoisonlinepopup-description": "Toont alle gebruikers die de afgelopen 10 minuten waren aangemeld. De uitvoer is een tekstballon wanneer een gebruiker de muisaanwijzer boven de betreffende koppeling houdt.",
 	"bs-whoisonline-ve-whoisonlinepopupinspector-title": "Pop-up met gebruikers online",
 	"bs-whoisonline-statistics-report-login-number-axis-value": "Aantal aanmeldingen",
-	"bs-whoisonline-statistics-report-login-number": "Aanmeldingen"
+	"bs-whoisonline-statistics-report-login-number": "Aanmeldingen",
+	"bs-whoisonline-droplet-count-name": "Aantal ingelogde gebruikers",
+	"bs-whoisonline-droplet-count-description": "Aantal momenteel ingelogde gebruikers",
+	"bs-whoisonline-droplet-popup-name": "Lijst met ingelogde gebruikers",
+	"bs-whoisonline-droplet-popup-description": "Pop-up met een lijst van alle gebruikers die momenteel zijn ingelogd"
 }
