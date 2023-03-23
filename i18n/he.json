@@ -29,5 +29,9 @@
 	"bs-whoisonline-tag-whoisonlinepopup-description": "הצגת כל המשתמשים שהתחברו במהלך 10 הדקות האחרונות. הפלט הוא בועת דיבור כאשר משתמש מרחף מעל הקישור הקשור",
 	"bs-whoisonline-ve-whoisonlinepopupinspector-title": "חלון קופץ \"מי מחובר\"",
 	"bs-whoisonline-statistics-report-login-number-axis-value": "מספר הכניסות",
-	"bs-whoisonline-statistics-report-login-number": "כניסות"
+	"bs-whoisonline-statistics-report-login-number": "כניסות",
+	"bs-whoisonline-droplet-count-name": "מספר המשתמשים המחוברים",
+	"bs-whoisonline-droplet-count-description": "מספר המשתמשים שמחוברים כעת",
+	"bs-whoisonline-droplet-popup-name": "רשימת משתמשים המחוברים",
+	"bs-whoisonline-droplet-popup-description": "חלון קופץ עם רשימה של כל המשתמשים המחוברים כעת"
 }
