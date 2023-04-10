@@ -3,7 +3,8 @@
 		"authors": [
 			"Chrumps",
 			"Rail",
-			"Railfail536"
+			"Railfail536",
+			"WaldiSt"
 		]
 	},
 	"bs-whoisonline-desc": "Wyświetla listę aktualnie aktywnych użytkowników",
@@ -14,5 +15,6 @@
 	"bs-whoisonline-pref-orderby": "Sortuj według:",
 	"bs-whoisonline-pref-interval": "Interwał aktualizacji w sekundach:",
 	"bs-whoisonline-tag-whoisonlinecount-desc": "Pokazuje liczbę wszystkich użytkowników, którzy zalogowali się w ciągu ostatnich 10 minut.",
-	"bs-whoisonline-tag-whoisonlinepopup-desc": "Pokazuje wszystkich użytkowników, którzy zalogowali się w ciągu ostatnich 10 minut."
+	"bs-whoisonline-tag-whoisonlinepopup-desc": "Pokazuje wszystkich użytkowników, którzy zalogowali się w ciągu ostatnich 10 minut.",
+	"bs-whoisonline-droplet-popup-name": "Lista zalogowanych użytkowników"
 }
