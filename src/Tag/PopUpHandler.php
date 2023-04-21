@@ -2,16 +2,14 @@
 
 namespace BlueSpice\WhoIsOnline\Tag;
 
-use BlueSpice\Renderer\Params;
 use BlueSpice\Tag\Handler;
-use BlueSpice\WhoIsOnline\Renderer\UserList;
+use BlueSpice\WhoIsOnline\Data\Record;
 use BlueSpice\WhoIsOnline\Tracer;
 use Config;
 use Html;
 use MediaWiki\MediaWikiServices;
 use Parser;
 use PPFrame;
-use RequestContext;
 
 class PopUpHandler extends Handler {
 
@@ -53,24 +51,19 @@ class PopUpHandler extends Handler {
 
 		$this->parser->getOutput()->setProperty( 'bs-tag-userscount', 1 );
 		$targetId = $this->getTargetId();
-		$portlet = MediaWikiServices::getInstance()->getService( 'BSRendererFactory' )->get(
-			'whoisonline-userlist',
-			new Params( [
-				UserList::PARAM_RECORD_SET => $recordSet,
-				'target' => $targetId
-			] ),
-			RequestContext::getMain()
-		);
+
+		$users = [];
+		foreach ( $recordSet->getRecords() as $record ) {
+			$users[] = $record->get( Record::USER_NAME );
+		}
 
 		$anchor = Html::element( 'a', [
 				'class' => 'wo-link',
 				'title' => wfMessage( 'bs-whoisonline-widget-title' ),
 				'data-target-id' => $targetId,
-				'data-target' => $portlet->render()
+				'data-target' => empty( $users ) ? '' : implode( ',', $users )
 			],
-			( empty( $this->processedArgs[PopUp::PARAM_ANCHOR_TEXT] )
-				? wfMessage( 'bs-whoisonline-widget-title' )
-				: $this->processedArgs[PopUp::PARAM_ANCHOR_TEXT] )
+			wfMessage( 'bs-whoisonline-widget-title' )
 		);
 
 		return $anchor;

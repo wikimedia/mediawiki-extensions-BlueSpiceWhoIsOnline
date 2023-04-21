@@ -84,17 +84,42 @@
 		listener
 	);
 
-	$('.wo-link').on( 'mouseover', function ( e ) {
-		var targetId = '#' + $( this ).attr( 'data-target-id' );
-		var targetPopup = $( this ).attr( 'data-target' );
+	let whoIsOnlinePopup = null;
 
-		if ( $( this ).find( '.wo-tooltip' ).length === 0 ) {
-			$( this ).append( targetPopup );
-			$( targetId ).css( { 'left': this.offsetLeft } );
+	function getPopupContent( data ) {
+		let panel = $( '<div>' );
+		if ( data.length > 0 ) {
+			data = data.split( ',' );
+			for ( let key in data ) {
+				let userWidget = new OOJSPlus.ui.widget.UserWidget( {
+					user_name: data[ key ], showLink: true
+				} );
+				panel.append( userWidget.$element );
+			}
+		} else {
+			$span = $( '<span>' ).text( mw.message( 'bs-whoisonline-nousers' ).text() );
+			panel.append( $span );
 		}
+		return panel;
+	}
+
+	$( '.wo-link' ).on( 'mouseover click', function ( e ) {
+		let targetId = '#' + $( this ).attr( 'data-target-id' );
+		let targetData = $( this ).attr( 'data-target' );
+		if ( !whoIsOnlinePopup ) {
+			let content = getPopupContent( targetData );
+			whoIsOnlinePopup = new OO.ui.PopupWidget( {
+				$content: content,
+				padded: true,
+				id: targetId,
+				width: 300
+			} );
+			$( this ).append( whoIsOnlinePopup.$element );
+		}
+		whoIsOnlinePopup.toggle( true );
 
 		setTimeout( function () {
-			$( targetId ).remove();
+			whoIsOnlinePopup.toggle( false );
 		}, 5000 );
 	} );
 
