@@ -90,8 +90,12 @@
 		},
 		"ext.bluespice.whoisonline": {
 			"scripts": "bluespice.whoIsOnline.js",
+			"messages": [
+				"bs-whoisonline-nousers"
+			],
 			"dependencies": [
-				"ext.bluespice"
+				"ext.bluespice",
+				"ext.oOJSPlus.widgets"
 			]
 		},
 		"ext.bluespice.whoisonline.collection.userlogin": {
