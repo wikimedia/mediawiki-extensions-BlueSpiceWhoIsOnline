@@ -3,7 +3,8 @@
 		"authors": [
 			"Meno25",
 			"ديفيد",
-			"محمد أحمد عبد الفتاح"
+			"محمد أحمد عبد الفتاح",
+			"Alshamiri1"
 		]
 	},
 	"bs-whoisonline-desc": "يعرض قائمة المستخدمين المتصلين بالإنترنت حاليا",
@@ -27,5 +28,7 @@
 	"bs-whoisonline-tag-whoisonlinecount-description": "يظهر عدد المستخدمين الذين قاموا بتسجيل الدخول خلال آخر 10 دقائق",
 	"bs-whoisonline-ve-whoisonlinecountinspector-title": "من هو على الإنترنت العد",
 	"bs-whoisonline-tag-whoisonlinepopup-description": "يظهر كل المستخدمين الذين قاموا بتسجيل الدخول خلال آخر 10 دقائق. الإخراج عبارة عن فقاعة كلامية عندما يقوم المستخدم بتمرير الماوس فوق الارتباط ذي الصلة",
-	"bs-whoisonline-ve-whoisonlinepopupinspector-title": "من هو على الإنترنت المنبثقة"
+	"bs-whoisonline-ve-whoisonlinepopupinspector-title": "من هو على الإنترنت المنبثقة",
+	"bs-whoisonline-statistics-report-login-number-axis-value": "عدد مرات تسجيل الدخول",
+	"bs-whoisonline-statistics-report-login-number": "تسجيل الدخول"
 }
