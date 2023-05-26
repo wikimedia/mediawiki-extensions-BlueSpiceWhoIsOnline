@@ -1,11 +1,23 @@
 {
 	"@metadata": {
 		"authors": [
-			"Csega"
+			"Csega",
+			"Krisztina"
 		]
 	},
 	"bs-whoisonline-pref-orderby": "Rendezés:",
 	"bs-whoisonline-pref-orderby-time": "Futási idő",
 	"bs-whoisonline-pref-orderby-name": "Név",
-	"bs-whoisonline-pref-interval": "Frissítési időköz másodpercben:"
+	"bs-whoisonline-pref-interval": "Frissítési időköz másodpercben:",
+	"bs-whoisonline-desc": "Megjeleníti az online felhasználók listáját",
+	"bs-whoisonline-nousers": "Senki sincs bejelentkezve.",
+	"bs-whoisonline-widget-title": "Online felhasználók",
+	"prefs-whoisonline": "Online felhasználók",
+	"bs-whoisonline-pref-limitcount": "A megjelenített felhasználók maximális száma:",
+	"bs-whoisonline-pref-maxidletime": "Az idő másodpercben, ami után a felhasználó offline állapotba kerül:",
+	"bs-whoisonline-tag-whoisonlinecount-desc": "Az elmúlt 10 percben bejelentkezett felhasználók száma.",
+	"bs-whoisonline-tag-whoisonlinepopup-desc": "Az elmúlt 10 percben bejelentkezett felhasználók száma.",
+	"bs-whoisonline-droplet-count-name": "A bejelentkezett felhasználók száma",
+	"bs-whoisonline-droplet-count-description": "Jelenleg bejelentkezett felhasználók száma",
+	"bs-whoisonline-droplet-popup-name": "A bejelentkezett felhasználók listája"
 }
