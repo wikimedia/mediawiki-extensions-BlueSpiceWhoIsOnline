@@ -59,7 +59,9 @@ class PopUpHandler extends Handler {
 				'data-target-id' => $targetId,
 				'data-target' => empty( $users ) ? '' : implode( ',', $users )
 			],
-			wfMessage( 'bs-whoisonline-widget-title' )
+			( empty( $this->processedArgs[PopUp::PARAM_ANCHOR_TEXT] )
+				? wfMessage( 'bs-whoisonline-widget-title' )
+				: $this->processedArgs[PopUp::PARAM_ANCHOR_TEXT] )
 		);
 
 		return $anchor;
