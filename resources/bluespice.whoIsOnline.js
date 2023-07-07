@@ -92,7 +92,9 @@
 			data = data.split( ',' );
 			for ( let key in data ) {
 				let userWidget = new OOJSPlus.ui.widget.UserWidget( {
-					user_name: data[ key ], showLink: true
+					user_name: data[ key ],
+					showLink: true,
+					showRawUsername: false
 				} );
 				panel.append( userWidget.$element );
 			}
