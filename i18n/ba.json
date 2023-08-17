@@ -3,7 +3,8 @@
 		"authors": [
 			"Sagan",
 			"Лилиә",
-			"Янмурза Баки"
+			"Янмурза Баки",
+			"З. ӘЙЛЕ"
 		]
 	},
 	"bs-whoisonline-desc": "Хәҙерге ваҡытта \"селтәрҙә (online)\" булған ҡатнашыусылар исемлеген күрһәтә.",
@@ -16,6 +17,6 @@
 	"bs-whoisonline-pref-orderby-time": "Эш ваҡыты",
 	"bs-whoisonline-pref-orderby-name": "Исеме",
 	"bs-whoisonline-pref-interval": "Яңыртыу арауығы секундтарҙа:",
-	"bs-whoisonline-tag-whoisonlinecount-desc": "Онлайн ҡатнашыусылар иҫәбен күрһәтә:",
-	"bs-whoisonline-tag-whoisonlinepopup-desc": "Төшөрөлмә исемлектә онлайн ҡатнашыусыларҙың ҙур булмаған исемлеген күрһәтә"
+	"bs-whoisonline-tag-whoisonlinecount-desc": "Һуңғы 10 минутта ингән ҡатнашыусылар иҫәбен күрһәтә.",
+	"bs-whoisonline-tag-whoisonlinepopup-desc": "Һуңғы 10 минутта ингән барлыҡ ҡатнашыусыларҙы күрһәтә."
 }
