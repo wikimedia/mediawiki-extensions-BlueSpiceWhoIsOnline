@@ -14,8 +14,6 @@
 	"bs-whoisonline-pref-orderby-time": "Uptime",
 	"bs-whoisonline-pref-orderby-name": "Name",
 	"bs-whoisonline-pref-interval": "Update interval in seconds:",
-	"bs-whoisonline-tag-whoisonlinecount-desc": "Shows the number of all users who have been logged in within the last 10 minutes.",
-	"bs-whoisonline-tag-whoisonlinepopup-desc": "Shows all users who have been logged in within the last 10 minutes.",
 	"bs-whoisonline-collection-type-userlogin": "User login",
 	"bs-whoisonline-collection-var-login": "Login",
 	"bs-whoisonline-statistics-report-login-duration": "Login duration",

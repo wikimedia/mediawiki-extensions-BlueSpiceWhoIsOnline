@@ -18,8 +18,6 @@
 	"bs-whoisonline-pref-orderby-time": "Option in [{{canonicalurl:Special:WikiAdmin|mode=Preferences}} Special:WikiAdmin?mode=Preferences], option label for uptime.\n\n\"Uptime\" is internally called \"onlinetime\" (Online time).\n{{Identical|Uptime}}",
 	"bs-whoisonline-pref-orderby-name": "Option in [{{canonicalurl:Special:WikiAdmin|mode=Preferences}} Special:WikiAdmin?mode=Preferences], option label for name\n{{Identical|Name}}",
 	"bs-whoisonline-pref-interval": "Option in [{{canonicalurl:Special:WikiAdmin|mode=Preferences}} Special:WikiAdmin?mode=Preferences], label for update interval in seconds:",
-	"bs-whoisonline-tag-whoisonlinecount-desc": "Used in InsertMagic extension, tag description for renders the number of currently logged in users.\n{{Related|Bs-tag-desc}}",
-	"bs-whoisonline-tag-whoisonlinepopup-desc": "Description of a tag which produces a little popup list of users who are currently logged in.\n{{Related|Bs-tag-desc}}",
 	"bs-whoisonline-collection-type-userlogin": "Label for source type \"userlogin\" in entry field \"type\"\n{{Identical|User login}}",
 	"bs-whoisonline-collection-var-login": "Label for entry field \"login\"\n{{Identical|Login}}",
 	"bs-whoisonline-statistics-report-login-duration": "Statistics report name",
