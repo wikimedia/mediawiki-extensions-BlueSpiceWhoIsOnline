@@ -142,10 +142,6 @@
 		"remoteExtPath": "BlueSpiceWhoIsOnline/resources"
 	},
 	"Hooks": {
-		"BSInsertMagicAjaxGetData": [
-			"\\BlueSpice\\WhoIsOnline\\Hook\\BSInsertMagicAjaxGetData\\AddCountTag::callback",
-			"\\BlueSpice\\WhoIsOnline\\Hook\\BSInsertMagicAjaxGetData\\AddPopUpTag::callback"
-		],
 		"BSUsageTrackerRegisterCollectors": [
 			"\\BlueSpice\\WhoIsOnline\\Hook\\BSUsageTrackerRegisterCollectors\\AddWhoIsOnlineCountTag::callback",
 			"\\BlueSpice\\WhoIsOnline\\Hook\\BSUsageTrackerRegisterCollectors\\AddWhoIsOnlinePopUpTag::callback"
