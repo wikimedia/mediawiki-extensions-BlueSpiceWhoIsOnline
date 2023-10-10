@@ -3,7 +3,8 @@
 		"authors": [
 			")8",
 			"Liuxinyu970226",
-			"TsuyaMarisa"
+			"TsuyaMarisa",
+			"Xyb"
 		]
 	},
 	"bs-whoisonline-desc": "显示当前在线的用户列表",
@@ -16,10 +17,9 @@
 	"bs-whoisonline-pref-orderby-time": "运行总时",
 	"bs-whoisonline-pref-orderby-name": "名称",
 	"bs-whoisonline-pref-interval": "每秒更新间隔：",
-	"bs-whoisonline-tag-whoisonlinecount-desc": "显示在过去10分钟内登录的所有用户数量。",
-	"bs-whoisonline-tag-whoisonlinepopup-desc": "显示在过去10分钟内登录的所有用户。",
 	"bs-whoisonline-collection-type-userlogin": "用户登录",
 	"bs-whoisonline-collection-var-login": "登录",
 	"bs-whoisonline-statistics-report-login-duration": "登录持续时间",
-	"bs-whoisonline-statistics-report-login-duration-axis-value": "登录持续时间（秒）"
+	"bs-whoisonline-statistics-report-login-duration-axis-value": "登录持续时间（秒）",
+	"bs-whoisonline-droplet-popup-name": "已登录用户列表"
 }
