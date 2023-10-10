@@ -18,8 +18,6 @@
 	"bs-whoisonline-pref-orderby-time": "Uptime",
 	"bs-whoisonline-pref-orderby-name": "Naam",
 	"bs-whoisonline-pref-interval": "Tijd tussen bijwerken in seconden:",
-	"bs-whoisonline-tag-whoisonlinecount-desc": "Geeft het aantal gebruikers die in de afgelopen 10 minuten aangemeld waren.",
-	"bs-whoisonline-tag-whoisonlinepopup-desc": "Toont alle gebruikers die in de afgelopen 10 minuten aangemeld waren.",
 	"bs-whoisonline-collection-type-userlogin": "Gebruikersaanmelding",
 	"bs-whoisonline-collection-var-login": "Aanmelden",
 	"bs-whoisonline-statistics-report-login-duration": "Aanmeldingsduur",

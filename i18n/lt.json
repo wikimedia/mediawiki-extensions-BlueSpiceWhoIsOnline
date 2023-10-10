@@ -15,8 +15,6 @@
 	"bs-whoisonline-pref-orderby-time": "Veikimo laikas",
 	"bs-whoisonline-pref-orderby-name": "Pavadinimas",
 	"bs-whoisonline-pref-interval": "Atnaujinimo intervalas sekundėmis:",
-	"bs-whoisonline-tag-whoisonlinecount-desc": "Rodo visų vartotojų, kurie buvo prisijungę per paskutines 10 minučių, skaičių.",
-	"bs-whoisonline-tag-whoisonlinepopup-desc": "Rodo visus vartotojus, kurie buvo prisijungę per paskutines 10 minučių.",
 	"bs-whoisonline-collection-type-userlogin": "Naudotojo prisijungimas",
 	"bs-whoisonline-collection-var-login": "Prisijungimas",
 	"bs-whoisonline-statistics-report-login-duration": "Prisijungimo trukmė",

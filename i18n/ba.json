@@ -16,7 +16,5 @@
 	"bs-whoisonline-pref-maxidletime": "Ҡатнашыусы \"offline\" тип билдәләнгәнсе үткән ваҡыт, секундтарҙа:",
 	"bs-whoisonline-pref-orderby-time": "Эш ваҡыты",
 	"bs-whoisonline-pref-orderby-name": "Исеме",
-	"bs-whoisonline-pref-interval": "Яңыртыу арауығы, секундтарҙа:",
-	"bs-whoisonline-tag-whoisonlinecount-desc": "Һуңғы 10 минутта ингән ҡатнашыусылар иҫәбен күрһәтә.",
-	"bs-whoisonline-tag-whoisonlinepopup-desc": "Һуңғы 10 минутта ингән барлыҡ ҡатнашыусыларҙы күрһәтә."
+	"bs-whoisonline-pref-interval": "Яңыртыу арауығы, секундтарҙа:"
 }

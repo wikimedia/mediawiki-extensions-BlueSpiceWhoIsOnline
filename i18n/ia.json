@@ -14,8 +14,6 @@
 	"bs-whoisonline-pref-orderby-time": "Durata del session",
 	"bs-whoisonline-pref-orderby-name": "Nomine",
 	"bs-whoisonline-pref-interval": "Intervallo de actualisation in secundas:",
-	"bs-whoisonline-tag-whoisonlinecount-desc": "Monstra le numero de usatores que con session aperte in le ultime 10 minutas.",
-	"bs-whoisonline-tag-whoisonlinepopup-desc": "Monstra tote le usatores con session aperte in le ultime 10 minutas.",
 	"bs-whoisonline-collection-type-userlogin": "Session de usator",
 	"bs-whoisonline-collection-var-login": "Nomine de usator",
 	"bs-whoisonline-statistics-report-login-duration": "Durata del session",

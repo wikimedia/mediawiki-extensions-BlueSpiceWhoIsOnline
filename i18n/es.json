@@ -16,8 +16,6 @@
 	"bs-whoisonline-pref-orderby-time": "Tiempo de actividad",
 	"bs-whoisonline-pref-orderby-name": "Nombre",
 	"bs-whoisonline-pref-interval": "Intervalo de actualización en segundos:",
-	"bs-whoisonline-tag-whoisonlinecount-desc": "Muestra el número de todos los usuarios que se han conectado en los últimos 10 minutos.",
-	"bs-whoisonline-tag-whoisonlinepopup-desc": "Muestra todos los usuarios que se han conectado en los últimos 10 minutos.",
 	"bs-whoisonline-collection-type-userlogin": "Acceso de usuario",
 	"bs-whoisonline-collection-var-login": "Acceso",
 	"bs-whoisonline-statistics-report-login-duration": "Duración del inicio de sesión",

@@ -16,8 +16,6 @@
 	"bs-whoisonline-pref-orderby-time": "הזמן שחלף מאז הכניסה",
 	"bs-whoisonline-pref-orderby-name": "שם",
 	"bs-whoisonline-pref-interval": "כל כמה שניות לעדכן:",
-	"bs-whoisonline-tag-whoisonlinecount-desc": "הצגת מספר המשתמשים שהיו מחוברים לחשבון ב־10 הדקות האחרונות.",
-	"bs-whoisonline-tag-whoisonlinepopup-desc": "הצגת רשימת המשתמשים שהיו מחוברים לחשבון ב־10 הדקות האחרונות.",
 	"bs-whoisonline-collection-type-userlogin": "כניסת משתמש",
 	"bs-whoisonline-collection-var-login": "כניסה",
 	"bs-whoisonline-statistics-report-login-duration": "משך הכניסה",
