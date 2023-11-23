@@ -2,12 +2,12 @@
 	"@metadata": {
 		"authors": [
 			"Ferdinand0101",
+			"Justman10000",
 			"Metalhead64",
 			"Mglaser",
 			"Mschlindwein",
 			"Stephan Muggli <muggli@hallowelt.biz>",
-			"TMg",
-			"Justman10000"
+			"TMg"
 		]
 	},
 	"bs-whoisonline-desc": "Zeigt eine Liste der User an, die momentan online sind",

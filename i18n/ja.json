@@ -1,9 +1,9 @@
 {
 	"@metadata": {
 		"authors": [
+			"MathXplore",
 			"Shirayuki",
-			"つぶあん派",
-			"MathXplore"
+			"つぶあん派"
 		]
 	},
 	"bs-whoisonline-nousers": "誰もログインしていません。",
@@ -18,6 +18,6 @@
 	"bs-whoisonline-tag-whoisonlinecount-desc": "過去10分以内にログインした全ユーザーの数を表示します。",
 	"bs-whoisonline-statistics-report-login-number-axis-value": "ログイン数",
 	"bs-whoisonline-statistics-report-login-number": "ログイン",
-	"bs-whoisonline-droplet-count-name": "ログインしているユーザーの数",
-	"bs-whoisonline-droplet-popup-name": "ログインしているユーザーのリスト"
+	"bs-whoisonline-droplet-count-name": "ログインしている利用者の数",
+	"bs-whoisonline-droplet-popup-name": "ログインしている利用者のリスト"
 }
