@@ -8,6 +8,7 @@ use BlueSpice\WhoIsOnline\Data\Record;
 use BlueSpice\WhoIsOnline\Data\Tracer\Store;
 use Config;
 use IContextSource;
+use MediaWiki\ResourceLoader\Context as ResourceLoaderContext;
 use MWStake\MediaWiki\Component\DataStore\FieldType;
 use MWStake\MediaWiki\Component\DataStore\Filter;
 use MWStake\MediaWiki\Component\DataStore\Filter\Date;
@@ -187,7 +188,7 @@ class Tracer {
 		if ( defined( 'MW_NO_SESSION' ) ) {
 			return false;
 		}
-		if ( $context instanceof \ResourceLoaderContext ) {
+		if ( $context instanceof ResourceLoaderContext ) {
 			return false;
 		}
 		if ( $context->getRequest()->getVal( 'action', 'view' ) === 'raw' ) {
