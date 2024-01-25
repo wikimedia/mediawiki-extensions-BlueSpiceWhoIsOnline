@@ -91,7 +91,7 @@ class Tracer {
 		$readerParams = new ReaderParams(
 			[
 				ReaderParams::PARAM_FILTER => [ [
-					Filter::KEY_COMPARISON => Date::COMPARISON_LOWER_THAN,
+					Filter::KEY_COMPARISON => Date::COMPARISON_GREATER_THAN,
 					Filter::KEY_PROPERTY => Record::TIMESTAMP,
 					Filter::KEY_VALUE => $maxTS->getTimestamp( TS_MW ),
 					Filter::KEY_TYPE => FieldType::DATE
