@@ -1,9 +1,10 @@
 {
 	"@metadata": {
 		"authors": [
-			"Sveinn í Felli"
+			"Sveinn í Felli",
+			"Stefán Örvar Sigmundsson"
 		]
 	},
-	"bs-whoisonline-pref-limitcount": "Hámarksfjöldi birtra notenda:",
+	"bs-whoisonline-pref-limitcount": "Hámarksfjöldi notenda sem eru birtir:",
 	"bs-whoisonline-statistics-report-login-number": "Innskráningar"
 }
