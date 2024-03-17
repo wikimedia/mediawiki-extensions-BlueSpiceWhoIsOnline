@@ -96,9 +96,9 @@ class Tracer {
 					Filter::KEY_VALUE => $maxTS->getTimestamp( TS_MW ),
 					Filter::KEY_TYPE => FieldType::DATE
 				]
-			] ], [
+				] ], [
 				ReaderParams::PARAM_LIMIT => ReaderParams::LIMIT_INFINITE
-			]
+				]
 		);
 		$this->trancedRecords[$maxIdleSeconds] = ( new Store() )->getReader()->read(
 			$readerParams
