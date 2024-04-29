@@ -7,18 +7,18 @@
 			"Reza1615"
 		]
 	},
-	"bs-whoisonline-desc": "فهرستی از کاربرانی را نمایش می‌دهد که در حال حاضر آنلاین هستند",
-	"bs-whoisonline-nousers": "هیچ‌کس وارد سامانه نشده است.",
-	"bs-whoisonline-widget-title": "چه کسی برخط است؟",
-	"prefs-whoisonline": "چه کسی برخط است؟",
-	"bs-whoisonline-pref-limitcount": "حداکثر تعداد کاربران نشان‌داده‌شده:",
-	"bs-whoisonline-pref-orderby": "ترتیب بر پایه:",
-	"bs-whoisonline-pref-maxidletime": "ثانیه‌ها تا زمانی که کاربر به صورت برون‌خط علامت گذاشته شود:",
-	"bs-whoisonline-pref-orderby-time": "زمان به‌کار",
-	"bs-whoisonline-pref-orderby-name": "نام",
-	"bs-whoisonline-pref-interval": "بازهٔ روزآمدسازی بر حسب ثانیه:",
-	"bs-whoisonline-tag-whoisonlinecount-desc": "تعداد کل کاربرانی را نشان می‌دهد که در ۱۰ دقیقهٔ اخیر، وارد سیستم شده‌اند.",
-	"bs-whoisonline-tag-whoisonlinepopup-desc": "همهٔ کاربرانی را نشان می‌دهد که در ۱۰ دقیقهٔ اخیر، وارد سیستم شده‌اند.",
-	"bs-whoisonline-collection-type-userlogin": "ورود کاربر",
-	"bs-whoisonline-collection-var-login": "ورود به سامانه"
+	"bs-whoisonline-desc": "\u0641\u0647\u0631\u0633\u062a\u06cc \u0627\u0632 \u06a9\u0627\u0631\u0628\u0631\u0627\u0646\u06cc \u0631\u0627 \u0646\u0645\u0627\u06cc\u0634 \u0645\u06cc\u200c\u062f\u0647\u062f \u06a9\u0647 \u062f\u0631 \u062d\u0627\u0644 \u062d\u0627\u0636\u0631 \u0622\u0646\u0644\u0627\u06cc\u0646 \u0647\u0633\u062a\u0646\u062f",
+	"bs-whoisonline-nousers": "\u0647\u06cc\u0686\u200c\u06a9\u0633 \u0648\u0627\u0631\u062f \u0633\u0627\u0645\u0627\u0646\u0647 \u0646\u0634\u062f\u0647 \u0627\u0633\u062a.",
+	"bs-whoisonline-widget-title": "\u0686\u0647 \u06a9\u0633\u06cc \u0628\u0631\u062e\u0637 \u0627\u0633\u062a\u061f",
+	"prefs-whoisonline": "\u0686\u0647 \u06a9\u0633\u06cc \u0628\u0631\u062e\u0637 \u0627\u0633\u062a\u061f",
+	"bs-whoisonline-pref-limitcount": "\u062d\u062f\u0627\u06a9\u062b\u0631 \u062a\u0639\u062f\u0627\u062f \u06a9\u0627\u0631\u0628\u0631\u0627\u0646 \u0646\u0634\u0627\u0646\u200c\u062f\u0627\u062f\u0647\u200c\u0634\u062f\u0647:",
+	"bs-whoisonline-pref-orderby": "\u062a\u0631\u062a\u06cc\u0628 \u0628\u0631 \u067e\u0627\u06cc\u0647:",
+	"bs-whoisonline-pref-maxidletime": "\u062b\u0627\u0646\u06cc\u0647\u200c\u0647\u0627 \u062a\u0627 \u0632\u0645\u0627\u0646\u06cc \u06a9\u0647 \u06a9\u0627\u0631\u0628\u0631 \u0628\u0647 \u0635\u0648\u0631\u062a \u0628\u0631\u0648\u0646\u200c\u062e\u0637 \u0639\u0644\u0627\u0645\u062a \u06af\u0630\u0627\u0634\u062a\u0647 \u0634\u0648\u062f:",
+	"bs-whoisonline-pref-orderby-time": "\u0632\u0645\u0627\u0646 \u0628\u0647\u200c\u06a9\u0627\u0631",
+	"bs-whoisonline-pref-orderby-name": "\u0646\u0627\u0645",
+	"bs-whoisonline-pref-interval": "\u0628\u0627\u0632\u0647\u0654 \u0631\u0648\u0632\u0622\u0645\u062f\u0633\u0627\u0632\u06cc \u0628\u0631 \u062d\u0633\u0628 \u062b\u0627\u0646\u06cc\u0647:",
+	"bs-whoisonline-tag-whoisonlinecount-desc": "\u062a\u0639\u062f\u0627\u062f \u06a9\u0644 \u06a9\u0627\u0631\u0628\u0631\u0627\u0646\u06cc \u0631\u0627 \u0646\u0634\u0627\u0646 \u0645\u06cc\u200c\u062f\u0647\u062f \u06a9\u0647 \u062f\u0631 \u06f1\u06f0 \u062f\u0642\u06cc\u0642\u0647\u0654 \u0627\u062e\u06cc\u0631\u060c \u0648\u0627\u0631\u062f \u0633\u06cc\u0633\u062a\u0645 \u0634\u062f\u0647\u200c\u0627\u0646\u062f.",
+	"bs-whoisonline-tag-whoisonlinepopup-desc": "\u0647\u0645\u0647\u0654 \u06a9\u0627\u0631\u0628\u0631\u0627\u0646\u06cc \u0631\u0627 \u0646\u0634\u0627\u0646 \u0645\u06cc\u200c\u062f\u0647\u062f \u06a9\u0647 \u062f\u0631 \u06f1\u06f0 \u062f\u0642\u06cc\u0642\u0647\u0654 \u0627\u062e\u06cc\u0631\u060c \u0648\u0627\u0631\u062f \u0633\u06cc\u0633\u062a\u0645 \u0634\u062f\u0647\u200c\u0627\u0646\u062f.",
+	"bs-whoisonline-collection-type-userlogin": "\u0648\u0631\u0648\u062f \u06a9\u0627\u0631\u0628\u0631",
+	"bs-whoisonline-collection-var-login": "\u0648\u0631\u0648\u062f \u0628\u0647 \u0633\u0627\u0645\u0627\u0646\u0647"
 }

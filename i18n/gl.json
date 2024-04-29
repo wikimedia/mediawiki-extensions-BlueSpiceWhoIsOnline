@@ -4,16 +4,16 @@
 			"Elisardojm"
 		]
 	},
-	"bs-whoisonline-desc": "Muestra unha lista de usuarios que están actualmente en liña",
-	"bs-whoisonline-nousers": "Niguén está conectado.",
-	"bs-whoisonline-widget-title": "Quen está en liña?",
-	"prefs-whoisonline": "Quen está en liña?",
-	"bs-whoisonline-pref-limitcount": "Número máximo de usuarios amosados:",
+	"bs-whoisonline-desc": "Muestra unha lista de usuarios que est\u00e1n actualmente en li\u00f1a",
+	"bs-whoisonline-nousers": "Nigu\u00e9n est\u00e1 conectado.",
+	"bs-whoisonline-widget-title": "Quen est\u00e1 en li\u00f1a?",
+	"prefs-whoisonline": "Quen est\u00e1 en li\u00f1a?",
+	"bs-whoisonline-pref-limitcount": "N\u00famero m\u00e1ximo de usuarios amosados:",
 	"bs-whoisonline-pref-orderby": "Ordenar por:",
-	"bs-whoisonline-pref-maxidletime": "Tempo en segundos ata que un usuario sexa marcado como sen conexión:",
-	"bs-whoisonline-pref-orderby-time": "Duración",
+	"bs-whoisonline-pref-maxidletime": "Tempo en segundos ata que un usuario sexa marcado como sen conexi\u00f3n:",
+	"bs-whoisonline-pref-orderby-time": "Duraci\u00f3n",
 	"bs-whoisonline-pref-orderby-name": "Nome",
-	"bs-whoisonline-pref-interval": "Intervalo de actualización en segundos:",
-	"bs-whoisonline-tag-whoisonlinecount-desc": "Amosa o número de tódolos usuarios que se conectaron nos últimos 10 minutos.",
-	"bs-whoisonline-tag-whoisonlinepopup-desc": "Amosa tódolos usuarios que se conectaron nos últimos 10 minutos."
+	"bs-whoisonline-pref-interval": "Intervalo de actualizaci\u00f3n en segundos:",
+	"bs-whoisonline-tag-whoisonlinecount-desc": "Amosa o n\u00famero de t\u00f3dolos usuarios que se conectaron nos \u00faltimos 10 minutos.",
+	"bs-whoisonline-tag-whoisonlinepopup-desc": "Amosa t\u00f3dolos usuarios que se conectaron nos \u00faltimos 10 minutos."
 }
