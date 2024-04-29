@@ -4,16 +4,16 @@
 			"Xuacu"
 		]
 	},
-	"bs-whoisonline-desc": "Amuesa una llista d'usuarios que tán coneutaos anguaño",
-	"bs-whoisonline-nousers": "Nun hai naide conectáu.",
-	"bs-whoisonline-widget-title": "¿Quién ta coneutáu?",
-	"prefs-whoisonline": "¿Quién ta coneutáu?",
-	"bs-whoisonline-pref-limitcount": "Númberu máximu d'usuarios amosaos:",
+	"bs-whoisonline-desc": "Amuesa una llista d'usuarios que t\u00e1n coneutaos angua\u00f1o",
+	"bs-whoisonline-nousers": "Nun hai naide conect\u00e1u.",
+	"bs-whoisonline-widget-title": "\u00bfQui\u00e9n ta coneut\u00e1u?",
+	"prefs-whoisonline": "\u00bfQui\u00e9n ta coneut\u00e1u?",
+	"bs-whoisonline-pref-limitcount": "N\u00famberu m\u00e1ximu d'usuarios amosaos:",
 	"bs-whoisonline-pref-orderby": "Ordenar por:",
-	"bs-whoisonline-pref-maxidletime": "Tiempu en segundos hasta qu'un usuariu márcase como desconectáu:",
-	"bs-whoisonline-pref-orderby-time": "Tiempu d'actividá",
+	"bs-whoisonline-pref-maxidletime": "Tiempu en segundos hasta qu'un usuariu m\u00e1rcase como desconect\u00e1u:",
+	"bs-whoisonline-pref-orderby-time": "Tiempu d'activid\u00e1",
 	"bs-whoisonline-pref-orderby-name": "Nome",
 	"bs-whoisonline-pref-interval": "Intervalu d'anovamientu en segundos:",
-	"bs-whoisonline-tag-whoisonlinecount-desc": "Amuesa'l númberu de tolos usuarios que se conectaron nos últimos 10 minutos.",
-	"bs-whoisonline-tag-whoisonlinepopup-desc": "Amuesa tolos usuarios que se conectaron nos últimos 10 minutos."
+	"bs-whoisonline-tag-whoisonlinecount-desc": "Amuesa'l n\u00famberu de tolos usuarios que se conectaron nos \u00faltimos 10 minutos.",
+	"bs-whoisonline-tag-whoisonlinepopup-desc": "Amuesa tolos usuarios que se conectaron nos \u00faltimos 10 minutos."
 }

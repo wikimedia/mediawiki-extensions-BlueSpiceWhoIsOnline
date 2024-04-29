@@ -3,21 +3,21 @@
 		"authors": [
 			"MathXplore",
 			"Shirayuki",
-			"つぶあん派"
+			"\u3064\u3076\u3042\u3093\u6d3e"
 		]
 	},
-	"bs-whoisonline-nousers": "誰もログインしていません。",
-	"bs-whoisonline-widget-title": "オンラインの利用者",
-	"prefs-whoisonline": "オンラインの利用者",
-	"bs-whoisonline-pref-limitcount": "表示する利用者の最大数:",
-	"bs-whoisonline-pref-orderby": "並び順:",
-	"bs-whoisonline-pref-maxidletime": "利用者がオフラインと見なすまでの時間 (秒):",
-	"bs-whoisonline-pref-orderby-time": "オンライン時間",
-	"bs-whoisonline-pref-orderby-name": "名前",
-	"bs-whoisonline-pref-interval": "更新間隔 (秒):",
-	"bs-whoisonline-tag-whoisonlinecount-desc": "過去10分以内にログインした全利用者の数を表示します。",
-	"bs-whoisonline-statistics-report-login-number-axis-value": "ログイン数",
-	"bs-whoisonline-statistics-report-login-number": "ログイン",
-	"bs-whoisonline-droplet-count-name": "ログインしている利用者の数",
-	"bs-whoisonline-droplet-popup-name": "ログインしている利用者のリスト"
+	"bs-whoisonline-nousers": "\u8ab0\u3082\u30ed\u30b0\u30a4\u30f3\u3057\u3066\u3044\u307e\u305b\u3093\u3002",
+	"bs-whoisonline-widget-title": "\u30aa\u30f3\u30e9\u30a4\u30f3\u306e\u5229\u7528\u8005",
+	"prefs-whoisonline": "\u30aa\u30f3\u30e9\u30a4\u30f3\u306e\u5229\u7528\u8005",
+	"bs-whoisonline-pref-limitcount": "\u8868\u793a\u3059\u308b\u5229\u7528\u8005\u306e\u6700\u5927\u6570:",
+	"bs-whoisonline-pref-orderby": "\u4e26\u3073\u9806:",
+	"bs-whoisonline-pref-maxidletime": "\u5229\u7528\u8005\u304c\u30aa\u30d5\u30e9\u30a4\u30f3\u3068\u898b\u306a\u3059\u307e\u3067\u306e\u6642\u9593 (\u79d2):",
+	"bs-whoisonline-pref-orderby-time": "\u30aa\u30f3\u30e9\u30a4\u30f3\u6642\u9593",
+	"bs-whoisonline-pref-orderby-name": "\u540d\u524d",
+	"bs-whoisonline-pref-interval": "\u66f4\u65b0\u9593\u9694 (\u79d2):",
+	"bs-whoisonline-tag-whoisonlinecount-desc": "\u904e\u53bb10\u5206\u4ee5\u5185\u306b\u30ed\u30b0\u30a4\u30f3\u3057\u305f\u5168\u5229\u7528\u8005\u306e\u6570\u3092\u8868\u793a\u3057\u307e\u3059\u3002",
+	"bs-whoisonline-statistics-report-login-number-axis-value": "\u30ed\u30b0\u30a4\u30f3\u6570",
+	"bs-whoisonline-statistics-report-login-number": "\u30ed\u30b0\u30a4\u30f3",
+	"bs-whoisonline-droplet-count-name": "\u30ed\u30b0\u30a4\u30f3\u3057\u3066\u3044\u308b\u5229\u7528\u8005\u306e\u6570",
+	"bs-whoisonline-droplet-popup-name": "\u30ed\u30b0\u30a4\u30f3\u3057\u3066\u3044\u308b\u5229\u7528\u8005\u306e\u30ea\u30b9\u30c8"
 }

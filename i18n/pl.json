@@ -7,14 +7,14 @@
 			"WaldiSt"
 		]
 	},
-	"bs-whoisonline-desc": "Wyświetla listę aktualnie aktywnych użytkowników",
+	"bs-whoisonline-desc": "Wy\u015bwietla list\u0119 aktualnie aktywnych u\u017cytkownik\u00f3w",
 	"bs-whoisonline-nousers": "Nikt nie jest zalogowany.",
 	"bs-whoisonline-widget-title": "Kto jest online?",
 	"prefs-whoisonline": "Kto jest online?",
-	"bs-whoisonline-pref-limitcount": "Maksymalna liczba użytkowników do pokazania:",
-	"bs-whoisonline-pref-orderby": "Sortuj według:",
-	"bs-whoisonline-pref-interval": "Interwał aktualizacji w sekundach:",
-	"bs-whoisonline-tag-whoisonlinecount-desc": "Pokazuje liczbę wszystkich użytkowników, którzy zalogowali się w ciągu ostatnich 10 minut.",
-	"bs-whoisonline-tag-whoisonlinepopup-desc": "Pokazuje wszystkich użytkowników, którzy zalogowali się w ciągu ostatnich 10 minut.",
-	"bs-whoisonline-droplet-popup-name": "Lista zalogowanych użytkowników"
+	"bs-whoisonline-pref-limitcount": "Maksymalna liczba u\u017cytkownik\u00f3w do pokazania:",
+	"bs-whoisonline-pref-orderby": "Sortuj wed\u0142ug:",
+	"bs-whoisonline-pref-interval": "Interwa\u0142 aktualizacji w sekundach:",
+	"bs-whoisonline-tag-whoisonlinecount-desc": "Pokazuje liczb\u0119 wszystkich u\u017cytkownik\u00f3w, kt\u00f3rzy zalogowali si\u0119 w ci\u0105gu ostatnich 10 minut.",
+	"bs-whoisonline-tag-whoisonlinepopup-desc": "Pokazuje wszystkich u\u017cytkownik\u00f3w, kt\u00f3rzy zalogowali si\u0119 w ci\u0105gu ostatnich 10 minut.",
+	"bs-whoisonline-droplet-popup-name": "Lista zalogowanych u\u017cytkownik\u00f3w"
 }
