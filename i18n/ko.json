@@ -5,18 +5,18 @@
 			"Ykhwong"
 		]
 	},
-	"bs-whoisonline-nousers": "\uc544\ubb34\ub3c4 \ub85c\uadf8\uc778\ud558\uc9c0 \uc54a\uc558\uc2b5\ub2c8\ub2e4.",
-	"bs-whoisonline-widget-title": "\uc811\uc18d\ud55c \uc0ac\uc6a9\uc790",
-	"prefs-whoisonline": "\uc811\uc18d\ud55c \uc0ac\uc6a9\uc790",
-	"bs-whoisonline-pref-orderby": "\uc815\ub82c \uae30\uc900:",
-	"bs-whoisonline-pref-orderby-time": "\uac00\ub3d9 \uc2dc\uac04",
-	"bs-whoisonline-pref-orderby-name": "\uc774\ub984",
-	"bs-whoisonline-pref-interval": "\ucd08 \ub2e8\uc704\ub85c \uac31\uc2e0\ud558\uae30:",
-	"bs-whoisonline-tag-whoisonlinecount-desc": "\uc9c0\ub09c 10\ubd84 \uc774\ub0b4\ub85c \ub85c\uadf8\uc778\ud55c \ubaa8\ub4e0 \uc0ac\uc6a9\uc790\uc758 \uc218\ub97c \ud45c\uc2dc\ud569\ub2c8\ub2e4.",
-	"bs-whoisonline-tag-whoisonlinepopup-desc": "\uc9c0\ub09c 10\ubd84 \uc774\ub0b4\uc5d0 \ub85c\uadf8\uc778\ud55c \ubaa8\ub4e0 \uc0ac\uc6a9\uc790\ub97c \ud45c\uc2dc\ud569\ub2c8\ub2e4.",
-	"bs-whoisonline-collection-type-userlogin": "\uc0ac\uc6a9\uc790 \ub85c\uadf8\uc778",
-	"bs-whoisonline-collection-var-login": "\ub85c\uadf8\uc778",
-	"bs-whoisonline-pref-interval-help": "\uc0ac\uc6a9\uc790 \ubaa9\ub85d\uc774 x \ucd08\ub9c8\ub2e4 \uc5c5\ub370\uc774\ud2b8\ub429\ub2c8\ub2e4.",
-	"bs-whoisonline-statistics-report-login-number-axis-value": "\ub85c\uadf8\uc778 \uc218",
-	"bs-whoisonline-statistics-report-login-number": "\ub85c\uadf8\uc778"
+	"bs-whoisonline-nousers": "아무도 로그인하지 않았습니다.",
+	"bs-whoisonline-widget-title": "접속한 사용자",
+	"prefs-whoisonline": "접속한 사용자",
+	"bs-whoisonline-pref-orderby": "정렬 기준:",
+	"bs-whoisonline-pref-orderby-time": "가동 시간",
+	"bs-whoisonline-pref-orderby-name": "이름",
+	"bs-whoisonline-pref-interval": "초 단위로 갱신하기:",
+	"bs-whoisonline-tag-whoisonlinecount-desc": "지난 10분 이내로 로그인한 모든 사용자의 수를 표시합니다.",
+	"bs-whoisonline-tag-whoisonlinepopup-desc": "지난 10분 이내에 로그인한 모든 사용자를 표시합니다.",
+	"bs-whoisonline-collection-type-userlogin": "사용자 로그인",
+	"bs-whoisonline-collection-var-login": "로그인",
+	"bs-whoisonline-pref-interval-help": "사용자 목록이 x 초마다 업데이트됩니다.",
+	"bs-whoisonline-statistics-report-login-number-axis-value": "로그인 수",
+	"bs-whoisonline-statistics-report-login-number": "로그인"
 }

@@ -8,9 +8,9 @@
 			"Selven"
 		]
 	},
-	"bs-whoisonline-nousers": "Nessuno \u00e8 connesso.",
-	"bs-whoisonline-widget-title": "Chi \u00e8 online?",
-	"prefs-whoisonline": "Chi \u00e8 online?",
+	"bs-whoisonline-nousers": "Nessuno è connesso.",
+	"bs-whoisonline-widget-title": "Chi è online?",
+	"prefs-whoisonline": "Chi è online?",
 	"bs-whoisonline-pref-limitcount": "Numero massimo di utenti mostrati:",
 	"bs-whoisonline-pref-orderby": "Ordina per:",
 	"bs-whoisonline-pref-orderby-name": "Nome",
