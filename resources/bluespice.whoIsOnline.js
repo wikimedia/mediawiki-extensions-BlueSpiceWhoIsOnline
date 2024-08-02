@@ -105,9 +105,9 @@
 		return panel;
 	}
 
-	$( '.wo-link' ).on( 'mouseover click', function ( e ) {
-		let targetId = '#' + $( this ).attr( 'data-target-id' );
-		let targetData = $( this ).attr( 'data-target' );
+	function showPopup( element ) {
+		let targetId = '#' + $( element ).attr( 'data-target-id' );
+		let targetData = $( element ).attr( 'data-target' );
 		if ( !whoIsOnlinePopup ) {
 			let content = getPopupContent( targetData );
 			whoIsOnlinePopup = new OO.ui.PopupWidget( {
@@ -116,13 +116,28 @@
 				id: targetId,
 				width: 300
 			} );
-			$( this ).append( whoIsOnlinePopup.$element );
+			$( element ).append( whoIsOnlinePopup.$element );
 		}
 		whoIsOnlinePopup.toggle( true );
+		$( element ).attr( 'aria-expanded', true );
 
 		setTimeout( function () {
 			whoIsOnlinePopup.toggle( false );
+			$( element ).attr( 'aria-expanded', false );
 		}, 5000 );
+	}
+
+	$( '.wo-link' ).on( 'mouseover click', function ( e ) {
+		showPopup( this );
 	} );
 
+	$( '.wo-link' ).on( 'keydown', function ( e ) {
+		if( e.keyCode === 13 ) {
+            showPopup( this );
+        }
+		if( e.keyCode === 27 && whoIsOnlinePopup !== null ) {
+			whoIsOnlinePopup.toggle( false );
+			$( this ).attr( 'aria-expanded', false );
+        }
+	} );
 } )( mediaWiki, jQuery, blueSpice, document );
