@@ -57,7 +57,11 @@ class PopUpHandler extends Handler {
 				'class' => 'wo-link',
 				'title' => wfMessage( 'bs-whoisonline-widget-title' ),
 				'data-target-id' => $targetId,
-				'data-target' => empty( $users ) ? '' : implode( ',', $users )
+				'data-target' => empty( $users ) ? '' : implode( ',', $users ),
+				'tabindex' => '0',
+				'aria-haspopup' => 'true',
+				'aria-expanded' => 'false',
+				'aria-controls' => $targetId
 			],
 			( empty( $this->processedArgs[PopUp::PARAM_ANCHOR_TEXT] )
 				? wfMessage( 'bs-whoisonline-widget-title' )
