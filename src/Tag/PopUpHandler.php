@@ -61,7 +61,8 @@ class PopUpHandler extends Handler {
 				'tabindex' => '0',
 				'aria-haspopup' => 'true',
 				'aria-expanded' => 'false',
-				'aria-controls' => $targetId
+				'aria-controls' => $targetId,
+				'role' => 'button'
 			],
 			( empty( $this->processedArgs[PopUp::PARAM_ANCHOR_TEXT] )
 				? wfMessage( 'bs-whoisonline-widget-title' )
