@@ -120,24 +120,28 @@
 		}
 		whoIsOnlinePopup.toggle( true );
 		$( element ).attr( 'aria-expanded', true );
-
-		setTimeout( function () {
-			whoIsOnlinePopup.toggle( false );
-			$( element ).attr( 'aria-expanded', false );
-		}, 5000 );
 	}
 
-	$( '.wo-link' ).on( 'mouseover click', function ( e ) {
-		showPopup( this );
+	function closePopup( element ) {
+		whoIsOnlinePopup.toggle( false );
+		$( element ).attr( 'aria-expanded', false );
+	}
+
+	$( '.wo-link' ).on( 'mouseover', ( e ) => {
+		showPopup( e.currentTarget );
 	} );
 
-	$( '.wo-link' ).on( 'keydown', function ( e ) {
-		if( e.keyCode === 13 ) {
-            showPopup( this );
-        }
-		if( e.keyCode === 27 && whoIsOnlinePopup !== null ) {
-			whoIsOnlinePopup.toggle( false );
-			$( this ).attr( 'aria-expanded', false );
-        }
+	$( '.wo-link' ).on( 'mouseleave', ( e ) => {
+		closePopup( e.currentTarget );
+	} );
+
+	$( '.wo-link' ).on( 'keydown', ( e ) => {
+		if ( e.key === 'Enter' || e.key === ' ' ) {
+			e.preventDefault();
+			showPopup( e.currentTarget );
+		}
+		if ( e.key === 'Escape' && whoIsOnlinePopup ) {
+			closePopup( e.currentTarget );
+		}
 	} );
 } )( mediaWiki, jQuery, blueSpice, document );
