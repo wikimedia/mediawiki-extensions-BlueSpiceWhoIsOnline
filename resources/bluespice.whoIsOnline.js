@@ -58,7 +58,9 @@
 			}
 			var userMarker = ( markers[userName] ? markers[userName] : 'unchecked' );
 			$( this ).addClass( 'bs-whoisonline-marker-' + userMarker );
-			$( this ).attr( 'aria-label', userMarker );
+			if ( userMarker !== 'unchecked' ) {
+				$( this ).find( 'a' ).attr( 'aria-label', userName + ' ' + userMarker );
+			}
 		} );
 
 		$( '.bs-whoisonline-portlet' ).each( function(){
