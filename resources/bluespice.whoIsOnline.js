@@ -127,7 +127,7 @@
 		$( element ).attr( 'aria-expanded', false );
 	}
 
-	$( '.wo-link' ).on( 'mouseover', ( e ) => {
+	$( '.wo-link' ).on( 'mouseover click', ( e ) => {
 		showPopup( e.currentTarget );
 	} );
 
