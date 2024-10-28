@@ -1,5 +1,6 @@
 .bs-userminiprofile[data-bs-whoisonline-marker] {
 	&.bs-whoisonline-marker-online {
+		div.bs-social-entity-profileimage-wrapper::after,
 		a::after {
 			color: greenyellow;
 			text-stroke: 1px grey;
@@ -11,9 +12,6 @@
 			bottom: 5%;
 			font-size: 100%;
 		}
-	}
-	&[data-bs-userinfo] {
-		pointer-events: none;
 	}
 }
 

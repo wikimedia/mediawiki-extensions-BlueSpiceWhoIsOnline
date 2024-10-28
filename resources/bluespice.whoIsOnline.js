@@ -60,6 +60,7 @@
 			$( this ).addClass( 'bs-whoisonline-marker-' + userMarker );
 			if ( userMarker !== 'unchecked' ) {
 				$( this ).find( 'a' ).attr( 'aria-label', userName + ' ' + userMarker );
+				$( this ).find( 'div.bs-social-entity-profileimage-wrapper' ).attr( 'aria-label', userName + ' ' + userMarker );
 			}
 		} );
 
