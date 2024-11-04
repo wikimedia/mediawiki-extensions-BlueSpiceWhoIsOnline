@@ -17,8 +17,6 @@
 	"bs-whoisonline-pref-orderby-time": "زمان به‌کار",
 	"bs-whoisonline-pref-orderby-name": "نام",
 	"bs-whoisonline-pref-interval": "بازهٔ روزآمدسازی بر حسب ثانیه:",
-	"bs-whoisonline-tag-whoisonlinecount-desc": "تعداد کل کاربرانی را نشان می‌دهد که در ۱۰ دقیقهٔ اخیر، وارد سیستم شده‌اند.",
-	"bs-whoisonline-tag-whoisonlinepopup-desc": "همهٔ کاربرانی را نشان می‌دهد که در ۱۰ دقیقهٔ اخیر، وارد سیستم شده‌اند.",
 	"bs-whoisonline-collection-type-userlogin": "ورود کاربر",
 	"bs-whoisonline-collection-var-login": "ورود به سامانه"
 }
