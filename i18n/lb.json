@@ -1,14 +1,15 @@
 {
 	"@metadata": {
 		"authors": [
-			"Robby"
+			"Robby",
+			"Volvox"
 		]
 	},
 	"bs-whoisonline-desc": "Weist eng Lëscht vun de Benotzer déi elo online sinn",
 	"bs-whoisonline-nousers": "Et ass keen ageloggt.",
 	"bs-whoisonline-widget-title": "Wien ass online?",
 	"prefs-whoisonline": "Wien ass online?",
-	"bs-whoisonline-pref-limitcount": "Maximal Zuel vu Benotzer déi gewise ginn:",
+	"bs-whoisonline-pref-limitcount": "Maximal Zuel vu Benotzer, déi gewise ginn:",
 	"bs-whoisonline-pref-orderby": "Zortéieren no:",
 	"bs-whoisonline-pref-maxidletime": "Zäit a Sekonne bis e Benotzer als offline markéiert gëtt:",
 	"bs-whoisonline-pref-orderby-name": "Numm",
