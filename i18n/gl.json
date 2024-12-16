@@ -10,8 +10,6 @@
 	"prefs-whoisonline": "Quen está en liña?",
 	"bs-whoisonline-pref-limitcount": "Número máximo de usuarios amosados:",
 	"bs-whoisonline-pref-orderby": "Ordenar por:",
-	"bs-whoisonline-pref-maxidletime": "Tempo en segundos ata que un usuario sexa marcado como sen conexión:",
 	"bs-whoisonline-pref-orderby-time": "Duración",
-	"bs-whoisonline-pref-orderby-name": "Nome",
-	"bs-whoisonline-pref-interval": "Intervalo de actualización en segundos:"
+	"bs-whoisonline-pref-orderby-name": "Nome"
 }
