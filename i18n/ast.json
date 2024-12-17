@@ -10,8 +10,6 @@
 	"prefs-whoisonline": "¿Quién ta coneutáu?",
 	"bs-whoisonline-pref-limitcount": "Númberu máximu d'usuarios amosaos:",
 	"bs-whoisonline-pref-orderby": "Ordenar por:",
-	"bs-whoisonline-pref-maxidletime": "Tiempu en segundos hasta qu'un usuariu márcase como desconectáu:",
 	"bs-whoisonline-pref-orderby-time": "Tiempu d'actividá",
-	"bs-whoisonline-pref-orderby-name": "Nome",
-	"bs-whoisonline-pref-interval": "Intervalu d'anovamientu en segundos:"
+	"bs-whoisonline-pref-orderby-name": "Nome"
 }

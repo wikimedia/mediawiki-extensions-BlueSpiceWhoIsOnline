@@ -14,10 +14,8 @@
 	"prefs-whoisonline": "Vem är online?",
 	"bs-whoisonline-pref-limitcount": "Maximalt antal användare som visas:",
 	"bs-whoisonline-pref-orderby": "Sortera efter:",
-	"bs-whoisonline-pref-maxidletime": "Tid i sekunder tills en användare markeras som offline:",
 	"bs-whoisonline-pref-orderby-time": "Drifttid",
 	"bs-whoisonline-pref-orderby-name": "Namn",
-	"bs-whoisonline-pref-interval": "Uppdateringsintervall i sekunder:",
 	"bs-whoisonline-collection-type-userlogin": "Användarinloggning",
 	"bs-whoisonline-collection-var-login": "Logga in"
 }
