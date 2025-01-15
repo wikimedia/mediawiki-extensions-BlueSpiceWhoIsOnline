@@ -33,5 +33,9 @@
 	"bs-whoisonline-droplet-count-name": "מספר המשתמשים המחוברים",
 	"bs-whoisonline-droplet-count-description": "מספר המשתמשים שמחוברים כעת",
 	"bs-whoisonline-droplet-popup-name": "רשימת משתמשים המחוברים",
-	"bs-whoisonline-droplet-popup-description": "חלון קופץ עם רשימה של כל המשתמשים המחוברים כעת"
+	"bs-whoisonline-droplet-popup-description": "חלון קופץ עם רשימה של כל המשתמשים המחוברים כעת",
+	"bs-whoisonline-pref-maxidletime-label": "זמן תפוגה ללא חיבור לרשת (בשניות)",
+	"bs-whoisonline-pref-interval-label": "מרווח זמן לעדכון (בשניות)",
+	"bs-whoisonline-pref-interval-help-label": "מספר השניות שאחריהן רשימת המשתמשים מתעדכנת",
+	"bs-whoisonline-pref-maxidletime-help-label": "מספר השניות של חוסר פעילות שלאחריהן המשתמש מסומן בתור לא מחובר לרשת"
 }
