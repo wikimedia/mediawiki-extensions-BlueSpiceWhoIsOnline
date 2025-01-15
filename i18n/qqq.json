@@ -1,6 +1,7 @@
 {
 	"@metadata": {
 		"authors": [
+			"Amire80",
 			"Liuxinyu970226",
 			"Nemo bis",
 			"Robby",
@@ -33,5 +34,9 @@
 	"bs-whoisonline-droplet-count-name": "Title of droplet for tag WhoIsOnlineCount",
 	"bs-whoisonline-droplet-count-description": "Description of droplet for tag WhoIsOnlineCount",
 	"bs-whoisonline-droplet-popup-name": "Title of droplet for tag WhoIsOnlinePopup",
-	"bs-whoisonline-droplet-popup-description": "Description of droplet for tag WhoIsOnlinePopup"
+	"bs-whoisonline-droplet-popup-description": "Description of droplet for tag WhoIsOnlinePopup",
+	"bs-whoisonline-pref-maxidletime-label": "Option in [{{canonicalurl:Special:WikiAdmin|mode=Preferences}} Special:WikiAdmin?mode=Preferences], label for time in seconds until a user is marked as offline. See {{msg-mw|Bs-whoisonline-pref-maxidletime-help-label}}.",
+	"bs-whoisonline-pref-interval-label": "Option in [{{canonicalurl:Special:WikiAdmin|mode=Preferences}} Special:WikiAdmin?mode=Preferences], label for update interval in seconds:",
+	"bs-whoisonline-pref-interval-help-label": "Description for config variable \"WhoIsOnlineInterval\"",
+	"bs-whoisonline-pref-maxidletime-help-label": "Description for config variable \"WhoIsOnlineMaxIdleTime\""
 }

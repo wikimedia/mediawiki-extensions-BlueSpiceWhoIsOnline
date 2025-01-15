@@ -29,5 +29,9 @@
 	"bs-whoisonline-droplet-count-name": "Number of users logged in",
 	"bs-whoisonline-droplet-count-description": "Number of currently logged in users",
 	"bs-whoisonline-droplet-popup-name": "List of users logged in",
-	"bs-whoisonline-droplet-popup-description": "Pop-up with a list of all users that are currently logged in"
+	"bs-whoisonline-droplet-popup-description": "Pop-up with a list of all users that are currently logged in",
+	"bs-whoisonline-pref-maxidletime-label": "Offline timeout (seconds)",
+	"bs-whoisonline-pref-interval-label": "Update interval (seconds)",
+	"bs-whoisonline-pref-interval-help-label": "The number of seconds after which the list of users is updated",
+	"bs-whoisonline-pref-maxidletime-help-label": "The number of seconds of inactivity after which a user is marked as offline"
 }
