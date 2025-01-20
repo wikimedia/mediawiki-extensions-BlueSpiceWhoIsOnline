@@ -9,13 +9,13 @@ use BlueSpice\WhoIsOnline\Data\Tracer\Store;
 use Config;
 use IContextSource;
 use MediaWiki\ResourceLoader\Context as ResourceLoaderContext;
+use MediaWiki\User\User;
 use MWStake\MediaWiki\Component\DataStore\FieldType;
 use MWStake\MediaWiki\Component\DataStore\Filter;
 use MWStake\MediaWiki\Component\DataStore\Filter\Date;
 use MWStake\MediaWiki\Component\DataStore\ReaderParams;
 use MWStake\MediaWiki\Component\DataStore\RecordSet;
 use ReadOnlyMode;
-use User;
 use Wikimedia\Rdbms\LoadBalancer;
 
 class Tracer {
