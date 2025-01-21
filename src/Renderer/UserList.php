@@ -10,6 +10,7 @@ use Config;
 use Html;
 use HtmlArmor;
 use IContextSource;
+use MediaWiki\Context\RequestContext;
 use MediaWiki\Linker\LinkRenderer;
 use MediaWiki\MediaWikiServices;
 use MWException;
@@ -88,7 +89,7 @@ class UserList extends \BlueSpice\Renderer {
 				false
 			);
 			if ( !$context instanceof IContextSource ) {
-				$context = \RequestContext::getMain();
+				$context = RequestContext::getMain();
 			}
 		}
 		if ( !$linkRenderer ) {
