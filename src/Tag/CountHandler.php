@@ -4,8 +4,8 @@ namespace BlueSpice\WhoIsOnline\Tag;
 
 use BlueSpice\Tag\Handler;
 use BlueSpice\WhoIsOnline\Tracer;
-use Html;
 use MediaWiki\Config\Config;
+use MediaWiki\Html\Html;
 use MediaWiki\MediaWikiServices;
 use Parser;
 use PPFrame;
