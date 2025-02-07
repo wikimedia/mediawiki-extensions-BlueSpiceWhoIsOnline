@@ -4,7 +4,7 @@ namespace BlueSpice\WhoIsOnline\Tag;
 
 use BlueSpice\Tag\GenericHandler;
 use BlueSpice\Tag\MarkerType\NoWiki;
-use Parser;
+use MediaWiki\Parser\Parser;
 use PPFrame;
 
 class Count extends \BlueSpice\Tag\Tag {

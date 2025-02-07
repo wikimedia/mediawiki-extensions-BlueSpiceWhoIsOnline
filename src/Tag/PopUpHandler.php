@@ -8,7 +8,7 @@ use BlueSpice\WhoIsOnline\Tracer;
 use MediaWiki\Config\Config;
 use MediaWiki\Html\Html;
 use MediaWiki\MediaWikiServices;
-use Parser;
+use MediaWiki\Parser\Parser;
 use PPFrame;
 
 class PopUpHandler extends Handler {
