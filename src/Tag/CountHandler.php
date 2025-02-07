@@ -8,7 +8,7 @@ use MediaWiki\Config\Config;
 use MediaWiki\Html\Html;
 use MediaWiki\MediaWikiServices;
 use MediaWiki\Parser\Parser;
-use PPFrame;
+use MediaWiki\Parser\PPFrame;
 
 class CountHandler extends Handler {
 
