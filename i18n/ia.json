@@ -25,5 +25,9 @@
 	"bs-whoisonline-droplet-count-name": "Numero de usatores in session",
 	"bs-whoisonline-droplet-count-description": "Numero de usatores actualmente in session aperte",
 	"bs-whoisonline-droplet-popup-name": "Lista de usatores in session",
-	"bs-whoisonline-droplet-popup-description": "Fenestra emergente con un lista de tote le usatores que es actualmente in session aperte"
+	"bs-whoisonline-droplet-popup-description": "Fenestra emergente con un lista de tote le usatores que es actualmente in session aperte",
+	"bs-whoisonline-pref-maxidletime-label": "Limite de session inactive (in secundas)",
+	"bs-whoisonline-pref-interval-label": "Intervallo de actualisation (in secundas)",
+	"bs-whoisonline-pref-interval-help-label": "Le numero de secundas post le quales le lista de usatores se actualisa",
+	"bs-whoisonline-pref-maxidletime-help-label": "Le numero de secundas de inactivitate post le quales un usator es marcate como foras de linea"
 }
