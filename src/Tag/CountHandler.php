@@ -24,7 +24,7 @@ class CountHandler implements ITagHandler {
 	public function getRenderedContent( string $input, array $params, Parser $parser, PPFrame $frame ): string {
 		$recordSet = $this->tracer->getTracedRecords();
 
-		$parser->getOutput()->setPageProperty( 'bs-tag-userscount', 1 );
+		$parser->getOutput()->setPageProperty( 'bs-tag-userscount', '1' );
 		return Html::element(
 			'span',
 			[ 'class' => 'bs-whoisonline-count' ],
