@@ -124,6 +124,9 @@
 			"messages": [
 				"bs-whoisonline-tag-whoisonlinecount-description",
 				"bs-whoisonline-ve-whoisonlinecountinspector-title"
+			],
+			"dependencies": [
+				"ext.bluespice.visualEditorConnector.tags.classes"
 			]
 		},
 		"ext.bluespice.whoisonlinepopup.visualEditorTagDefinition": {
@@ -134,6 +137,9 @@
 			"messages": [
 				"bs-whoisonline-tag-whoisonlinepopup-description",
 				"bs-whoisonline-ve-whoisonlinepopupinspector-title"
+			],
+			"dependencies": [
+				"ext.bluespice.visualEditorConnector.tags.classes"
 			]
 		}
 	},
