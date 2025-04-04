@@ -66,8 +66,7 @@ class Count extends \BlueSpice\Tag\Tag {
 	}
 
 	/**
-	 *
-	 * @param type $processedInput
+	 * @param string $processedInput
 	 * @param array $processedArgs
 	 * @param Parser $parser
 	 * @param PPFrame $frame
