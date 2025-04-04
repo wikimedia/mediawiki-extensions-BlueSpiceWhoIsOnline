@@ -19,8 +19,9 @@ class CountHandler extends Handler {
 	 * @param PPFrame $frame
 	 * @param Tracer|null $tracer
 	 */
-	public function __construct( $processedInput, array $processedArgs,
-		Parser $parser, PPFrame $frame, Tracer $tracer = null ) {
+	public function __construct(
+		$processedInput, array $processedArgs, Parser $parser, PPFrame $frame, ?Tracer $tracer = null
+	) {
 		parent::__construct( $processedInput, $processedArgs, $parser, $frame );
 		if ( !$tracer ) {
 			$tracer = MediaWikiServices::getInstance()->getService( 'BSWhoIsOnlineTracer' );
