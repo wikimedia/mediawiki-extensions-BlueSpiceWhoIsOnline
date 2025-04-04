@@ -45,9 +45,10 @@ class UserList extends \BlueSpice\Renderer {
 	 * @param string $name | ''
 	 * @param UtilityFactory|null $util
 	 */
-	protected function __construct( Config $config, Params $params,
-		LinkRenderer $linkRenderer = null, IContextSource $context = null,
-		$name = '', UtilityFactory $util = null ) {
+	protected function __construct(
+		Config $config, Params $params, ?LinkRenderer $linkRenderer = null,
+		?IContextSource $context = null, $name = '', ?UtilityFactory $util = null
+	) {
 		parent::__construct( $config, $params, $linkRenderer, $context, $name );
 
 		$this->util = $util;
@@ -80,9 +81,10 @@ class UserList extends \BlueSpice\Renderer {
 	 * @param UtilityFactory|null $util
 	 * @return Renderer
 	 */
-	public static function factory( $name, MediaWikiServices $services, Config $config,
-		Params $params, IContextSource $context = null, LinkRenderer $linkRenderer = null,
-		UtilityFactory $util = null ) {
+	public static function factory(
+		$name, MediaWikiServices $services, Config $config, Params $params,
+		?IContextSource $context = null, ?LinkRenderer $linkRenderer = null, ?UtilityFactory $util = null
+	) {
 		if ( !$context ) {
 			$context = $params->get(
 				static::PARAM_CONTEXT,
