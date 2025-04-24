@@ -8,8 +8,7 @@
 	},
 	"autoload": {
 		"psr-4": {
-			"BlueSpice\\WhoIsOnline\\": "src",
-			"BlueSpice\\WhoIsOnline\\Tests\\": "tests/phpunit"
+			"BlueSpice\\WhoIsOnline\\": "src"
 		}
 	},
 	"require-dev": {
