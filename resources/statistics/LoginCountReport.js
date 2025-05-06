@@ -1,4 +1,4 @@
-(function ( mw, $, bs) {
+( function ( mw, $, bs ) {
 	bs.util.registerNamespace( 'bs.whoisonline.report' );
 
 	bs.whoisonline.report.LoginCountReport = function ( cfg ) {
@@ -19,8 +19,8 @@
 
 	bs.whoisonline.report.LoginCountReport.prototype.getAxisLabels = function () {
 		return {
-			value: mw.message( "bs-whoisonline-statistics-report-login-number-axis-value" ).text()
+			value: mw.message( 'bs-whoisonline-statistics-report-login-number-axis-value' ).text()
 		};
 	};
 
-} )( mediaWiki, jQuery , blueSpice);
+}( mediaWiki, jQuery, blueSpice ) );

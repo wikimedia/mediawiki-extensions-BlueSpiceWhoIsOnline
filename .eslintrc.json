@@ -1,16 +1,23 @@
 {
 	"root": true,
 	"extends": [
-		"wikimedia/client-es6",
+		"wikimedia/client",
 		"wikimedia/jquery",
 		"wikimedia/mediawiki"
 	],
+	"parserOptions": {
+		"sourceType": "commonjs"
+	},
 	"globals": {
 		"blueSpice": "readonly",
+		"bs": "readonly",
+		"BSPing": "readonly",
 		"jQuery": "readonly",
-		"mediaWiki": "readonly"
+		"mediaWiki": "readonly",
+		"OOJSPlus": "readonly"
 	},
 	"rules": {
+		"max-len": "off",
 		"no-jquery/no-global-selector": "off"
 	}
 }
