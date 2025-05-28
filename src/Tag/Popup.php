@@ -7,17 +7,21 @@ use MediaWiki\Message\Message;
 use MWStake\MediaWiki\Component\GenericTagHandler\ClientTagSpecification;
 use MWStake\MediaWiki\Component\GenericTagHandler\GenericTag;
 use MWStake\MediaWiki\Component\GenericTagHandler\ITagHandler;
+use MWStake\MediaWiki\Component\InputProcessor\Processor\StringValue;
 
-class Count extends GenericTag {
+class Popup extends GenericTag {
+
+	/** @var int */
+	private int $counter = 0;
 
 	/**
 	 * @inheritDoc
 	 */
 	public function getTagNames(): array {
 		return [
-			'userscount',
-			'bs:whoisonline:count',
-			'bs:whoisonlinecount',
+			'userslink',
+			'bs:whoisonline:popup',
+			'bs:whoisonlinepopup',
 		];
 	}
 
@@ -32,14 +36,19 @@ class Count extends GenericTag {
 	 * @inheritDoc
 	 */
 	public function getHandler( MediaWikiServices $services ): ITagHandler {
-		return new CountHandler( $services->getService( 'BSWhoIsOnlineTracer' ) );
+		$id = $this->counter++;
+		return new PopupHandler( $services->getService( 'BSWhoIsOnlineTracer' ), $id );
 	}
 
 	/**
 	 * @inheritDoc
 	 */
 	public function getParamDefinition(): ?array {
-		return null;
+		$anchorText = new StringValue();
+
+		return [
+			'anchortext' => $anchorText,
+		];
 	}
 
 	/**
@@ -47,10 +56,10 @@ class Count extends GenericTag {
 	 */
 	public function getClientTagSpecification(): ClientTagSpecification|null {
 		return new ClientTagSpecification(
-			'Whoisonlinecount',
-			Message::newFromKey( 'bs-whoisonline-tag-whoisonlinecount-description' ),
+			'Whoisonlinepopup',
+			Message::newFromKey( 'bs-whoisonline-tag-whoisonlinepopup-description' ),
 			null,
-			Message::newFromKey( 'bs-whoisonline-ve-whoisonlinecountinspector-title' )
+			Message::newFromKey( 'bs-whoisonline-ve-whoisonlinepopupinspector-title' )
 		);
 	}
 }
