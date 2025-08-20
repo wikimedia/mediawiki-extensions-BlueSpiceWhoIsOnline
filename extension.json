@@ -24,14 +24,10 @@
 				}
 			},
 			"ConfigDefinitionRegistry": {
-				"WhoIsOnlineMaxIdleTime": "\\BlueSpice\\WhoIsOnline\\ConfigDefinition\\MaxIdleTime::getInstance",
-				"WhoIsOnlineInterval": "\\BlueSpice\\WhoIsOnline\\ConfigDefinition\\Interval::getInstance"
+				"WhoIsOnlineMaxIdleTime": "\\BlueSpice\\WhoIsOnline\\ConfigDefinition\\MaxIdleTime::getInstance"
 			},
 			"RunJobsTriggerHandlerRegistry": {
 				"bs-whoisonline-deleteoldentries": "\\BlueSpice\\WhoIsOnline\\RunJobsTriggerHandler\\DeleteOldEntries::factory"
-			},
-			"RendererRegistry": {
-				"whoisonline-userlist": "\\BlueSpice\\WhoIsOnline\\Renderer\\UserList::factory"
 			}
 		},
 		"BlueSpiceExtendedStatistics": {
@@ -131,10 +127,6 @@
 			"\\BlueSpice\\WhoIsOnline\\Hook\\LoadExtensionSchemaUpdates\\AddWhoIsOnlineTable::callback",
 			"\\BlueSpice\\WhoIsOnline\\Hook\\LoadExtensionSchemaUpdates\\AddClearTableLoggedUpdate::callback"
 		],
-		"BsAdapterAjaxPingResult": [
-			"\\BlueSpice\\WhoIsOnline\\Hook\\BsAdapterAjaxPingResult\\UpdatePortlets::callback",
-			"\\BlueSpice\\WhoIsOnline\\Hook\\BsAdapterAjaxPingResult\\UpdateOnlineMarkers::callback"
-		],
 		"BSFoundationRendererMakeTagAttribs": "\\BlueSpice\\WhoIsOnline\\Hook\\BSFoundationRendererMakeTagAttribs\\AddUserProfileOnlineMarkerMetaData::callback",
 		"MergeAccountFromTo": "\\BlueSpice\\WhoIsOnline\\Hook\\MergeAccountFromTo\\MergeWhoIsOnlineDBFields::callback",
 		"MWStakeGenericTagHandlerInitTags": "registerTags"
@@ -149,11 +141,6 @@
 		"WhoIsOnlineMaxIdleTime": {
 			"value": 600,
 			"descriptionmsg": "bs-whoisonline-pref-maxidletime",
-			"public": true
-		},
-		"WhoIsOnlineInterval": {
-			"value": 10,
-			"descriptionmsg": "bs-whoisonline-pref-interval",
 			"public": true
 		},
 		"WhoIsOnlineLimitCount": {
