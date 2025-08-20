@@ -157,6 +157,7 @@ class Tracer {
 		return array_filter(
 			$this->getTracedRecords()->getRecords(),
 			static function ( Record $e ) use( $user ) {
+				error_log( $e->get( Record::USER_NAME ) );
 				return $e->get( Record::USER_NAME, 'Anon' ) === $user->getName();
 			} )
 			? static::ONLINE_STATUS_ONLINE
@@ -215,7 +216,6 @@ class Tracer {
 		);
 
 		$idleSeconds = $this->config->get( 'WhoIsOnlineMaxIdleTime' )
-			+ $this->config->get( 'WhoIsOnlineInterval' )
 			+ ( $this->config->get( 'WhoIsOnlineMaxIdleTime' ) * 0.1 );
 
 		$nextLogTs = Timestamp::getInstance( $lastLoggedTime )->timestamp;
