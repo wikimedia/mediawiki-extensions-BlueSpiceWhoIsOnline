@@ -113,7 +113,8 @@
 			],
 			"messages": [
 				"bs-whoisonline-statistics-report-login-number-axis-value",
-				"bs-whoisonline-statistics-report-login-number"
+				"bs-whoisonline-statistics-report-login-number",
+				"bs-whoisonline-statistics-report-login-number-desc"
 			]
 		},
 		"ext.bluespice.whoisonlinecount.visualEditorTagDefinition": {
