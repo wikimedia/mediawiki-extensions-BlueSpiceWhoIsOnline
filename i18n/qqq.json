@@ -38,5 +38,6 @@
 	"bs-whoisonline-pref-maxidletime-label": "Option in [{{canonicalurl:Special:WikiAdmin|mode=Preferences}} Special:WikiAdmin?mode=Preferences], label for time in seconds until a user is marked as offline. See {{msg-mw|Bs-whoisonline-pref-maxidletime-help-label}}.",
 	"bs-whoisonline-pref-interval-label": "Option in [{{canonicalurl:Special:WikiAdmin|mode=Preferences}} Special:WikiAdmin?mode=Preferences], label for update interval in seconds:",
 	"bs-whoisonline-pref-interval-help-label": "Description for config variable \"WhoIsOnlineInterval\"",
-	"bs-whoisonline-pref-maxidletime-help-label": "Description for config variable \"WhoIsOnlineMaxIdleTime\""
+	"bs-whoisonline-pref-maxidletime-help-label": "Description for config variable \"WhoIsOnlineMaxIdleTime\"",
+	"bs-whoisonline-statistics-report-login-number-desc": "Statistics report description"
 }

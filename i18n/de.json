@@ -41,5 +41,6 @@
 	"bs-whoisonline-pref-maxidletime-label": "Offline-Zeitlimit (Sekunden)",
 	"bs-whoisonline-pref-interval-label": "Aktualisierungsintervall (Sekunden)",
 	"bs-whoisonline-pref-interval-help-label": "Die Anzahl der Sekunden, nach denen die Liste der Benutzer aktualisiert wird",
-	"bs-whoisonline-pref-maxidletime-help-label": "Nach dieser Zeit in Sekunden ohne Aktivität gilt der Nutzer als offline."
+	"bs-whoisonline-pref-maxidletime-help-label": "Nach dieser Zeit in Sekunden ohne Aktivität gilt der Nutzer als offline.",
+	"bs-whoisonline-statistics-report-login-number-desc": "Tägliche Anmeldungen im gewählten Zeitraum"
 }
