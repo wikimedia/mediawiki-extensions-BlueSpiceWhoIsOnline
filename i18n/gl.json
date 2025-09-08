@@ -27,6 +27,7 @@
 	"bs-whoisonline-ve-whoisonlinepopupinspector-title": "Ventá emerxente de quen está en liña",
 	"bs-whoisonline-statistics-report-login-number-axis-value": "Número de inicios de sesión",
 	"bs-whoisonline-statistics-report-login-number": "Inicios de sesión",
+	"bs-whoisonline-statistics-report-login-number-desc": "Inicios de sesión diarios durante o período seleccionado",
 	"bs-whoisonline-droplet-count-name": "Número de usuarios que iniciaron sesión",
 	"bs-whoisonline-droplet-count-description": "Número de usuarios coa sesión iniciada nestes intres",
 	"bs-whoisonline-droplet-popup-name": "Lista de usuarios que iniciaron sesión",

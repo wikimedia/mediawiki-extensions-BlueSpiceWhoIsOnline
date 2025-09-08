@@ -26,6 +26,7 @@
 	"bs-whoisonline-ve-whoisonlinepopupinspector-title": "Fenestra emergente de qui es in linea",
 	"bs-whoisonline-statistics-report-login-number-axis-value": "Numero de sessiones",
 	"bs-whoisonline-statistics-report-login-number": "Sessiones",
+	"bs-whoisonline-statistics-report-login-number-desc": "Aperturas de session quotidian durante le periodo seligite",
 	"bs-whoisonline-droplet-count-name": "Numero de usatores in session",
 	"bs-whoisonline-droplet-count-description": "Numero de usatores actualmente in session aperte",
 	"bs-whoisonline-droplet-popup-name": "Lista de usatores in session",
