@@ -1,6 +1,7 @@
 {
 	"@metadata": {
 		"authors": [
+			"Bananax47",
 			"Gomoko",
 			"Mahabarata",
 			"SnowedEarth",
@@ -41,5 +42,6 @@
 	"bs-whoisonline-pref-maxidletime-label": "Délai d'inactivité (en seconde)",
 	"bs-whoisonline-pref-interval-label": "Intervalle de mise à jour (en seconde)",
 	"bs-whoisonline-pref-interval-help-label": "Nombre de secondes après lesquelles la liste des utilisateurs est mise à jour",
-	"bs-whoisonline-pref-maxidletime-help-label": "Nombre de secondes d'inactivité après lesquelles un utilisateur est indiqué comme hors ligne"
+	"bs-whoisonline-pref-maxidletime-help-label": "Nombre de secondes d'inactivité après lesquelles un utilisateur est indiqué comme hors ligne",
+	"bs-whoisonline-statistics-report-login-number-desc": "Connexions quotidiennes pendant la période sélectionnée"
 }

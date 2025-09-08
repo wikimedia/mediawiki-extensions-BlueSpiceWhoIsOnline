@@ -37,5 +37,6 @@
 	"bs-whoisonline-pref-maxidletime-label": "זמן תפוגה ללא חיבור לרשת (בשניות)",
 	"bs-whoisonline-pref-interval-label": "מרווח זמן לעדכון (בשניות)",
 	"bs-whoisonline-pref-interval-help-label": "מספר השניות שאחריהן רשימת המשתמשים מתעדכנת",
-	"bs-whoisonline-pref-maxidletime-help-label": "מספר השניות של חוסר פעילות שלאחריהן המשתמש מסומן בתור לא מחובר לרשת"
+	"bs-whoisonline-pref-maxidletime-help-label": "מספר השניות של חוסר פעילות שלאחריהן המשתמש מסומן בתור לא מחובר לרשת",
+	"bs-whoisonline-statistics-report-login-number-desc": "כניסות מדי יום בתקופה שנבחרה"
 }
