@@ -38,5 +38,6 @@
 	"bs-whoisonline-pref-maxidletime-label": "مهلة عدم الاتصال بالإنترنت (ثواني)",
 	"bs-whoisonline-pref-interval-label": "فترة التحديث (بالثواني)",
 	"bs-whoisonline-pref-interval-help-label": "عدد الثواني التي يتم بعدها تحديث قائمة المستخدمين",
-	"bs-whoisonline-pref-maxidletime-help-label": "عدد ثواني عدم النشاط التي بعدها يتم وضع علامة على المستخدم بأنه غير متصل بالإنترنت"
+	"bs-whoisonline-pref-maxidletime-help-label": "عدد ثواني عدم النشاط التي بعدها يتم وضع علامة على المستخدم بأنه غير متصل بالإنترنت",
+	"bs-whoisonline-statistics-report-login-number-desc": "تسجيلات الدخول اليومية خلال الفترة المحددة"
 }
