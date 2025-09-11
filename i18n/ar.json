@@ -29,6 +29,7 @@
 	"bs-whoisonline-ve-whoisonlinepopupinspector-title": "من هو على الإنترنت المنبثقة",
 	"bs-whoisonline-statistics-report-login-number-axis-value": "عدد مرات تسجيل الدخول",
 	"bs-whoisonline-statistics-report-login-number": "تسجيل الدخول",
+	"bs-whoisonline-statistics-report-login-number-desc": "تسجيلات الدخول اليومية خلال الفترة المحددة",
 	"bs-whoisonline-droplet-count-name": "عدد المستخدمين الذين قاموا بتسجيل الدخول",
 	"bs-whoisonline-droplet-count-description": "عدد المستخدمين المسجلين دخول حاليا",
 	"bs-whoisonline-droplet-popup-name": "قائمة المستخدمين الذين قاموا بتسجيل الدخول",
