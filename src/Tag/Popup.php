@@ -4,6 +4,7 @@ namespace BlueSpice\WhoIsOnline\Tag;
 
 use MediaWiki\MediaWikiServices;
 use MediaWiki\Message\Message;
+use MWStake\MediaWiki\Component\FormEngine\StandaloneFormSpecification;
 use MWStake\MediaWiki\Component\GenericTagHandler\ClientTagSpecification;
 use MWStake\MediaWiki\Component\GenericTagHandler\GenericTag;
 use MWStake\MediaWiki\Component\GenericTagHandler\ITagHandler;
@@ -55,10 +56,20 @@ class Popup extends GenericTag {
 	 * @inheritDoc
 	 */
 	public function getClientTagSpecification(): ClientTagSpecification|null {
+		$formSpec = new StandaloneFormSpecification();
+		$formSpec->setItems( [
+			[
+				'type' => 'text',
+				'name' => 'anchortext',
+				'label' => Message::newFromKey( 'bs-whoisonline-tag-whoisonlinepopup-param-text-label' )->text(),
+				'help' => Message::newFromKey( 'bs-whoisonline-tag-whoisonlinepopup-param-text-help' )->text(),
+				'value' => Message::newFromKey( 'bs-whoisonline-widget-title' )->text()
+			]
+		] );
 		return new ClientTagSpecification(
 			'Whoisonlinepopup',
 			Message::newFromKey( 'bs-whoisonline-tag-whoisonlinepopup-description' ),
-			null,
+			$formSpec,
 			Message::newFromKey( 'bs-whoisonline-ve-whoisonlinepopupinspector-title' )
 		);
 	}
