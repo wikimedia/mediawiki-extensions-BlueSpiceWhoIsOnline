@@ -53,4 +53,11 @@ class Count extends GenericTag {
 			Message::newFromKey( 'bs-whoisonline-ve-whoisonlinecountinspector-title' )
 		);
 	}
+
+	/**
+	 * @inheritDoc
+	 */
+	public function getContainerElementName(): ?string {
+		return 'span';
+	}
 }

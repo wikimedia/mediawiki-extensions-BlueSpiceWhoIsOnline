@@ -62,4 +62,11 @@ class Popup extends GenericTag {
 			Message::newFromKey( 'bs-whoisonline-ve-whoisonlinepopupinspector-title' )
 		);
 	}
+
+	/**
+	 * @inheritDoc
+	 */
+	public function getContainerElementName(): ?string {
+		return 'span';
+	}
 }
