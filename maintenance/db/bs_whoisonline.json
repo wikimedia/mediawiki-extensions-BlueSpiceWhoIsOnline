@@ -78,8 +78,7 @@
 				"comment": "YmdHis",
 				"type": "mwtimestamp",
 				"options": {
-					"notnull": true,
-					"default": 0
+					"notnull": true
 				}
 			}
 		],
