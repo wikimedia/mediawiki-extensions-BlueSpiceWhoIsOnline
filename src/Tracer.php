@@ -157,7 +157,6 @@ class Tracer {
 		return array_filter(
 			$this->getTracedRecords()->getRecords(),
 			static function ( Record $e ) use( $user ) {
-				error_log( $e->get( Record::USER_NAME ) );
 				return $e->get( Record::USER_NAME, 'Anon' ) === $user->getName();
 			} )
 			? static::ONLINE_STATUS_ONLINE
