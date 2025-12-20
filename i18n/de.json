@@ -42,5 +42,7 @@
 	"bs-whoisonline-pref-interval-label": "Aktualisierungsintervall (Sekunden)",
 	"bs-whoisonline-pref-interval-help-label": "Die Anzahl der Sekunden, nach denen die Liste der Benutzer aktualisiert wird",
 	"bs-whoisonline-pref-maxidletime-help-label": "Nach dieser Zeit in Sekunden ohne Aktivität gilt der Nutzer als offline.",
-	"bs-whoisonline-statistics-report-login-number-desc": "Tägliche Anmeldungen im gewählten Zeitraum"
+	"bs-whoisonline-statistics-report-login-number-desc": "Tägliche Anmeldungen im gewählten Zeitraum",
+	"bs-whoisonline-tag-whoisonlinepopup-param-text-label": "Linktext",
+	"bs-whoisonline-tag-whoisonlinepopup-param-text-help": "Text, der für den Link angezeigt wird, der die Benutzerliste öffnet"
 }
