@@ -27,7 +27,7 @@
 	"bs-whoisonline-pref-maxidletime-help": "بعد هذا الوقت بالثواني بدون نشاط ، يتم اعتبار المستخدم غير متصل بالإنترنت.",
 	"bs-whoisonline-tag-whoisonlinecount-description": "يظهر عدد المستخدمين الذين قاموا بتسجيل الدخول خلال آخر 10 دقائق",
 	"bs-whoisonline-ve-whoisonlinecountinspector-title": "من هو على الإنترنت العد",
-	"bs-whoisonline-tag-whoisonlinepopup-description": "يظهر كل المستخدمين الذين قاموا بتسجيل الدخول خلال آخر 10 دقائق. الإخراج عبارة عن فقاعة كلامية عندما يقوم المستخدم بتمرير الماوس فوق الارتباط ذي الصلة",
+	"bs-whoisonline-tag-whoisonlinepopup-description": "يعرض هذا القسم جميع المستخدمين الذين قاموا بتسجيل الدخول خلال آخر 10 دقائق. تظهر القائمة عند تمرير مؤشر الماوس فوق الرابط ذي الصلة.",
 	"bs-whoisonline-ve-whoisonlinepopupinspector-title": "من هو على الإنترنت المنبثقة",
 	"bs-whoisonline-statistics-report-login-number-axis-value": "عدد مرات تسجيل الدخول",
 	"bs-whoisonline-statistics-report-login-number": "تسجيل الدخول",
@@ -39,5 +39,7 @@
 	"bs-whoisonline-pref-interval-label": "فترة التحديث (بالثواني)",
 	"bs-whoisonline-pref-interval-help-label": "عدد الثواني التي يتم بعدها تحديث قائمة المستخدمين",
 	"bs-whoisonline-pref-maxidletime-help-label": "عدد ثواني عدم النشاط التي بعدها يتم وضع علامة على المستخدم بأنه غير متصل بالإنترنت",
-	"bs-whoisonline-statistics-report-login-number-desc": "تسجيلات الدخول اليومية خلال الفترة المحددة"
+	"bs-whoisonline-statistics-report-login-number-desc": "تسجيلات الدخول اليومية خلال الفترة المحددة",
+	"bs-whoisonline-tag-whoisonlinepopup-param-text-label": "نص الرابط",
+	"bs-whoisonline-tag-whoisonlinepopup-param-text-help": "النص المعروض للرابط الذي يفتح قائمة المستخدمين"
 }
