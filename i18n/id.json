@@ -2,9 +2,8 @@
 	"@metadata": {
 		"authors": [
 			"Rachmat.Wahidi",
-			"Rachmat04"
+			"Rachmat04",
+			"Fafau06"
 		]
-	},
-	"bs-whoisonline-tag-whoisonlinecount-desc": "Tampilkan jumlah semua pengguna yang masuk log dalam 10 menit terakhir.",
-	"bs-whoisonline-tag-whoisonlinepopup-desc": "Tampilkan semua pengguna yang masuk log dalam 10 menit terakhir."
+	}
 }
