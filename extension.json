@@ -25,9 +25,6 @@
 			},
 			"ConfigDefinitionRegistry": {
 				"WhoIsOnlineMaxIdleTime": "\\BlueSpice\\WhoIsOnline\\ConfigDefinition\\MaxIdleTime::getInstance"
-			},
-			"RunJobsTriggerHandlerRegistry": {
-				"bs-whoisonline-deleteoldentries": "\\BlueSpice\\WhoIsOnline\\RunJobsTriggerHandler\\DeleteOldEntries::factory"
 			}
 		},
 		"BlueSpiceExtendedStatistics": {
@@ -62,6 +59,9 @@
 			"i18n"
 		]
 	},
+	"ExtensionFunctions": [
+		"BlueSpice\\WhoIsOnline\\DeleteOldEntriesCron::register"
+	],
 	"ExtensionMessagesFiles": {
 		"WhoIsOnlineMagic": "languages/WhoIsOnline.i18n.magic.php"
 	},
