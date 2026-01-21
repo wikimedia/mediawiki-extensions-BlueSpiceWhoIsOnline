@@ -28,5 +28,7 @@
 	"bs-whoisonline-droplet-count-name": "Numero de usatores in session",
 	"bs-whoisonline-droplet-count-description": "Numero de usatores actualmente in session aperte",
 	"bs-whoisonline-droplet-popup-name": "Lista de usatores in session",
-	"bs-whoisonline-droplet-popup-description": "Fenestra emergente con un lista de tote le usatores que es actualmente in session aperte"
+	"bs-whoisonline-droplet-popup-description": "Fenestra emergente con un lista de tote le usatores que es actualmente in session aperte",
+	"bs-whoisonline-tag-whoisonlinepopup-param-text-label": "Texto del ligamine",
+	"bs-whoisonline-tag-whoisonlinepopup-param-text-help": "Texto monstrate pro le ligamine que aperi le lista de usatores"
 }
