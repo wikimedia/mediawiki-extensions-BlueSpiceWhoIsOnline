@@ -36,5 +36,7 @@
 	"bs-whoisonline-pref-interval-label": "Intervallo de actualisation (in secundas)",
 	"bs-whoisonline-pref-interval-help-label": "Le numero de secundas post le quales le lista de usatores se actualisa",
 	"bs-whoisonline-pref-maxidletime-help-label": "Le numero de secundas de inactivitate post le quales un usator es marcate como foras de linea",
-	"bs-whoisonline-statistics-report-login-number-desc": "Aperturas de session quotidian durante le periodo seligite"
+	"bs-whoisonline-statistics-report-login-number-desc": "Aperturas de session quotidian durante le periodo seligite",
+	"bs-whoisonline-tag-whoisonlinepopup-param-text-label": "Texto del ligamine",
+	"bs-whoisonline-tag-whoisonlinepopup-param-text-help": "Texto monstrate pro le ligamine que aperi le lista de usatores"
 }
