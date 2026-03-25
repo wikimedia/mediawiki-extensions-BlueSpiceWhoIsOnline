@@ -1,7 +1,9 @@
 {
 	"@metadata": {
 		"authors": [
+			"Bananax47",
 			"Gomoko",
+			"Mahabarata",
 			"SnowedEarth",
 			"Thibaut120094",
 			"Verdy p",
@@ -36,5 +38,8 @@
 	"bs-whoisonline-droplet-count-name": "Nombre d’utilisateurs connectés",
 	"bs-whoisonline-droplet-count-description": "Nombre d’utilisateurs actuellement connectés",
 	"bs-whoisonline-droplet-popup-name": "Liste des utilisateurs connectés",
-	"bs-whoisonline-droplet-popup-description": "Panneau affichant une liste de tous les utilisateurs actuellement connectés"
+	"bs-whoisonline-droplet-popup-description": "Panneau affichant une liste de tous les utilisateurs actuellement connectés",
+	"bs-whoisonline-pref-maxidletime-label": "Délai d'inactivité (en seconde)",
+	"bs-whoisonline-pref-maxidletime-help-label": "Nombre de secondes d'inactivité après lesquelles un utilisateur est indiqué comme hors ligne",
+	"bs-whoisonline-statistics-report-login-number-desc": "Connexions quotidiennes pendant la période sélectionnée"
 }
