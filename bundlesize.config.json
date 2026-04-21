@@ -1,0 +1,10 @@
+[
+	{
+		"resourceModule": "ext.bluespice.whoisonline",
+		"maxSize": "2 kB"
+	},
+	{
+		"resourceModule": "ext.bluespice.whoisonline.styles",
+		"maxSize": "2 kB"
+	}
+]

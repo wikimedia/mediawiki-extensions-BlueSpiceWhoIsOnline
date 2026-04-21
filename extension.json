@@ -155,6 +155,9 @@
 	"AutoloadNamespaces": {
 		"BlueSpice\\WhoIsOnline\\": "src/"
 	},
+	"TestAutoloadNamespaces": {
+		"BlueSpice\\WhoIsOnline\\Tests\\": "tests/phpunit/"
+	},
 	"load_composer_autoloader": true,
 	"manifest_version": 2
 }
